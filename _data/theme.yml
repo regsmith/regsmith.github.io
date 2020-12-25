@@ -1,0 +1,6 @@
+skin: steel # default, night, plum, sea, soft, steel
+
+navigation_pages:
+  - about.md
+  - powerrankings.md
+  - pages/constitution.md

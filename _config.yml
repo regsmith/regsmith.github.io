@@ -1,3 +1,9 @@
-theme: jekyll-theme-dinky
-title: League of Calamitous Intent Fantasy
+theme: jekyll-theme-basically-basic
+title: League of Calamitous Intent
 description: Overview of the league with seasonal stats and league history
+logo: /assests/logo.png
+
+twitter_username: TheFifthsWord
+github_username:  regsmith
+plugins:
+  - jekyll-feed
