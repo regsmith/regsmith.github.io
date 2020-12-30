@@ -1,0 +1,99 @@
+---
+layout: page
+title: Q Manchu
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+    position: absolute;
+    transform: translate(0%, 0%);
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  transform: translate(0%, 0%);
+  opacity: 0.8;
+  border: 4px ridge red;
+  border-radius: 18px;
+}
+
+.grid-container {
+  display: grid;
+  grid-auto-columns: minmax(175px, auto);
+  grid-auto-rows: minmax(100px, auto);
+  border: 4px ridge black;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 0px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item1 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  border-color: black;
+  border-style: ridge;
+  border-width: 0px 4px 0px 0px;
+}
+
+.item2 {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  border-color: black;
+  border-style: ridge;
+  border-width: 0px 0px 4px 0px;
+}
+
+.item3 {
+  font-size: 22px;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  border-color: black;
+  border-style: ridge;
+  border-width: 4px 0px 0px 0px;
+  font-size: 24px;
+}
+
+.item6 {
+    grid-column: 4;
+    grid-row: 1 / span 3;
+    border-color: black;
+    border-style: ridge;
+    border-width: 0px 0px 0px 4px;
+    font-size: 24px;
+}
+</style>
+</head>
+
+<body>
+  <div class="grid-container">
+      <div class="grid-item item1">
+          <img class="logo" src="https://sleepercdn.com/avatars/a6e3e56d04e7d625425bc13334a8d99a" alt="Q Manchu">
+          <div class="center">Q Manchu</div>
+      </div>
+    <div class="grid-item item2"><b>bigqpancakes56</b></div>
+    <div class="grid-item item3">
+        <p><br>Owner Since<br>2020</p>
+    </div>
+    <div class="grid-item item3">
+        <p><br>League Titles<br>0</p>
+    </div>
+    <div class="grid-item item5">This is some new text</div>
+    <div class="grid-item item6">Record:<br>4-9 (9th)<br>Power Score:<br>555 (10th)<br></div>
+  </div>
+</body>
