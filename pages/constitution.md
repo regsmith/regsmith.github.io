@@ -6,7 +6,7 @@ permalink: /constitution/
 
 # Contents
 1. [Keepers](#keepers)
-2. [Prizes](#prizes)
+2. [Entry & Prizes](#prizes)
 3. [Draft](#draft)
 4. [Trading](#trading)
 5. [Free Agency/Waivers](#fawaivers)
@@ -39,7 +39,8 @@ Players picked up from waivers (including dropped drafted players except keepers
 
 ---
 
-## Prizes <a name="prizes"></a>
+## Entry & Prizes <a name="prizes"></a>
+- Season fee is $50 to be sent prior to the draft
 - The winner of the playoff final will receive $400   
 - The runner up will receive $50  
 - The regular season champ will receive $50
