@@ -12,6 +12,8 @@ actions:
 
 image: /assets/logo.png # URL to a hero image associated with the post (e.g., /assets/page-pic.jpg)
 entries_layout: grid
+
+redirect_to: "https://lcifantasy.ca"
 ---
 
 # Zane is your 2020 Champion!
