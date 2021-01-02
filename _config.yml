@@ -13,7 +13,5 @@ regsmith:
   twitter: TheFifthsWord
   picture: /assets/authors/regsmith.jpeg
 
-url: http://lcifantasy.ca
-
 gems:
   - jekyll-redirect-from
