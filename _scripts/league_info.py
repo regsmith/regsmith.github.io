@@ -101,23 +101,27 @@ def league_owners():
     for record in standings:
         for owner in users:
             team_name = owner['metadata'].get('team_name')
+            print(owner)
             if team_name is None:
                 team_name = owner['display_name']
             if team_name in record:
+                for roster in rosters:
+                    if owner['user_id'] == roster['owner_id']:
+                        points_against = roster['settings']['fpts_against']
                 team_record = record[1] + "-" + record[2]
-                league_owners.append({'display_name': owner['display_name'], 'user_id': owner['user_id'], 'team_name': team_name, 'record': team_record, 'points_scored': record[3]})
+                league_owners.append({'display_name': owner['display_name'], 'user_id': owner['user_id'], 'team_name': team_name, 'record': team_record, 'points_scored': record[3], 'points_against': points_against})
     return league_owners
 
 def league_standings():
     table = []
-    headers = ["Team Name", "User", "Record", "Points Scored"]
+    headers = ["User", "Team Name", "Record", "Points Scored", "Points Against"]
     for owner in league_owners:
         place_str = ""
         # for place, user_id in league_winners().items():
         #     if owner['user_id'] == user_id:
         #         place_str = " (" + place + ")"
-        table.append([owner['team_name'], owner['display_name'] + place_str, owner['record'], owner['points_scored']])
-    print(tabulate(table, headers, tablefmt="html"))
+        table.append([owner['display_name'] + place_str, owner['team_name'], owner['record'], owner['points_scored'], owner['points_against']])
+    print(tabulate(table, headers, tablefmt="github"))
 
 def team_rosters():
     print("\nTeam Rosters\n")
@@ -217,14 +221,14 @@ league_owners = league_owners()
 # draft_picks = Drafts(draft_id()).get_all_picks()
 # previous_keepers = keepers_from_draft()
 # weekly_transactions = all_transactions()
-
-print(users)
-user = User(597616010341711872)
-print(user.get_user())
-print(team_logo(597616010341711872))
+#
+# print(users)
+# user = User(597616010341711872)
+# print(user.get_user())
+# print(team_logo(597616010341711872))
 
 # with open(inputfile) as json_file:
 #     players = json.load(json_file)
 #
-# league_standings()
+league_standings()
 # team_rosters()
