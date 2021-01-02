@@ -1,5 +1,5 @@
 remote_theme: "mmistakes/jekyll-theme-basically-basic"
-title: League of Calamitous Intent
+title: LCI Fantasy Football
 description: Overview of the league with seasonal stats and league history
 logo: /assets/logo.png
 
@@ -7,3 +7,10 @@ twitter_username: TheFifthsWord
 github_username:  regsmith
 plugins:
   - jekyll-feed
+
+regsmith:
+  name: Reg Smith
+  twitter: TheFifthsWord
+  picture: /assets/authors/regsmith.jpeg
+
+url: http://lcifantasy.ca
