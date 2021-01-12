@@ -1,0 +1,163 @@
+---
+layout: page
+title: League History
+---
+<style>
+    table {
+    	max-width: 100%;
+    	background-color: transparent
+    }
+
+    th {
+    	text-align: left
+    }
+
+    .table {
+    	width: 100%;
+    	margin-bottom: 20px
+    }
+
+    	.table > thead > tr > th {
+    		padding: 8px;
+    		line-height: 1.42857143;
+    		border-top: 1px solid #ddd
+    	}
+
+    	.table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    		padding: 8px;
+    		line-height: 1.42857143;
+    		vertical-align: top;
+    		border-top: 1px solid #ddd
+    	}
+
+    	.table > thead > tr > th {
+    		vertical-align: bottom;
+    		border-bottom: 2px solid #ddd
+    	}
+
+    	.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+    		border-top: 0
+    	}
+
+    	.table > tbody + tbody {
+    		border-top: 2px solid #ddd
+    	}
+
+    	.table .table {
+    		background-color: #fff
+    	}
+</style>
+
+<div>
+    <table class="table">
+        <thead>
+			<tr>
+				<th></th>
+			</tr>
+			<tr>
+				<th colspan="1">Year</th>
+                <th style="text-align:center" class="ng-binding ng-scope">Winner</th>
+                <th style="text-align:center" class="ng-binding ng-scope">Runner Up</th>
+                <th style="text-align:center" class="ng-binding ng-scope">Best Record</th>
+			</tr>
+		</thead>
+        <tbody>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding"><a href="seasons/2020.html">2020</a></td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Zane</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Jaron</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Zane</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2019</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Nic</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Stefan</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Stefan</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2018</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Nic</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Reg</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Nic</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2017</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Connor</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Nic</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Connor</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2016</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Nic</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Ben</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Zack</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2015</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Alex</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Zane</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Connor</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2014</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Zack</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2013</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Reg</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Zack</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2012</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Nic</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2011</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2010</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2009</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Zack</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2008</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2007</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Reg</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2006</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+			</tr>
+            <tr ng-repeat="team in teams" class="ng-scope">
+				<td class="ng-binding">2005</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">Reg</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+                <td style="text-align:center" class="ng-binding ng-scope secondary">???</td>
+			</tr>
+        </tbody>
+    </table>
+</div>
