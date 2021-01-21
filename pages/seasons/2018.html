@@ -1,0 +1,133 @@
+---
+layout: page
+title: 2018 Season
+year: 2018
+---
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+<script src="../../assets/jscripts/lazyload.js"></script>
+<head>
+    <link href="../../assets/stylesheets/pages.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Season Standings</h1>
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="tg-wc04">Team</th>
+                <th class="tg-wc04">Record</th>
+                <th class="tg-wc04">Points For</th>
+                <th class="tg-wc04">Points Against</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tg-gmla">The Golden Geese</td>
+                <td class="tg-gmla">10-3</td>
+                <td class="tg-gmla">1650</td>
+                <td class="tg-gmla">1420</td>
+            </tr>
+            <tr>
+                <td class="tg-gmla">BMS Goats</td>
+                <td class="tg-gmla">9-4</td>
+                <td class="tg-gmla">1482</td>
+                <td class="tg-gmla">1510</td>
+            </tr>
+            <tr>
+                <td class="tg-gmla">Bradys Dad Kisses</td>
+                <td class="tg-gmla">8-5</td>
+                <td class="tg-gmla">1679</td>
+                <td class="tg-gmla">1500</td>
+            </tr>
+            <tr>
+                <td class="tg-gmla">Gil Harris</td>
+                <td class="tg-gmla">7-6</td>
+                <td class="tg-gmla">1579</td>
+                <td class="tg-gmla">1493</td>
+            </tr>
+            <tr>
+                <td class="tg-gmla">Globo Gym Pur Cobras</td>
+                <td class="tg-gmla">7-6</td>
+                <td class="tg-gmla">1505</td>
+                <td class="tg-gmla">1371</td>
+            </tr>
+            <tr>
+                <td class="tg-gmla">Came & Wentz</td>
+                <td class="tg-gmla">7-6</td>
+                <td class="tg-gmla">1451</td>
+                <td class="tg-gmla">1544</td>
+            </tr>
+            <tr>
+                <td class="tg-gmla">De more de Maryius</td>
+                <td class="tg-gmla">5-8</td>
+                <td class="tg-gmla">1344</td>
+                <td class="tg-gmla">1550</td>
+            </tr>
+            <tr>
+                <td class="tg-gmla">Calgary Cannons</td>
+                <td class="tg-gmla">4-9</td>
+                <td class="tg-gmla">1518</td>
+                <td class="tg-gmla">1535</td>
+            </tr>
+            <tr>
+                <td class="tg-gmla">A Team Has No Name</td>
+                <td class="tg-gmla">4-9</td>
+                <td class="tg-gmla">1435</td>
+                <td class="tg-gmla">1576</td>
+            </tr>
+            <tr>
+                <td class="tg-gmla">2 Headed Garbage Men</td>
+                <td class="tg-gmla">4-9</td>
+                <td class="tg-gmla">1404</td>
+                <td class="tg-gmla">1549</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h1>Draft Recap</h1>
+    <p>work in progress..</p>
+
+    <hr>
+
+    <h1>Championship Games</h1>
+    <table class="tg" style="table-layout: fixed">
+        <tbody>
+            <tr>
+                <th class="tg-wc04" colspan="4">Finals</th>
+            </tr>
+            <tr>
+                <td class="tg-gmla">BMS Goats</td>
+                <td class="tg-gmla"><b>98.98</b></td>
+                <td class="tg-gmla">The Golden Geese</td>
+                <td class="tg-gmla"><b>142.14</b></td>
+            </tr>
+            <tr>
+                <th class="tg-wc04" colspan="4">Third Place</th>
+            </tr>
+            <tr>
+                <td class="tg-gmla">Globo Gym Pur Cobras</td>
+                <td class="tg-gmla"><b>140.36</b></td>
+                <td class="tg-gmla">Bradys Dad Kisses</td>
+                <td class="tg-gmla"><b>123.44</b></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>2018 Posts</h2>
+    {% for post in site.posts %}
+    {% capture post_year %}{{post.date | date: "%Y"}}{% endcapture %}
+    {% if post_year == "2019" %}
+    <ul>
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    </ul>
+    {% endif %}
+    {% endfor %}
+</body>
+</html>
