@@ -1,0 +1,76 @@
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    sorttable;
+}
+
+.tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg .tg-wc04 {
+    background-color: #646a71;
+    border-color: #000000;
+    color: #efefef;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+}
+
+.tg .tg-wc05 {
+    background-color: #646a71;
+    border-color: #000000;
+    color: #efefef;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center
+}
+
+.tg .tg-gmla {
+    border-color: inherit;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: top
+}
+
+.tg .tg-gmla2 {
+    border-color: inherit;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: top
+}
+
+.img draftimg {
+    background: #F1F1FA;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    border: 0;
+}
+
+@import "{{ site.theme }}";
+
+.inner {
+    max-width: 100%;
+}
