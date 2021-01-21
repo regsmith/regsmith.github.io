@@ -10,8 +10,9 @@
     border-width: 1px;
     font-family: "Fira Sans", sans-serif;
     font-size: 14px;
+    font-size: 4vw;
     overflow: hidden;
-    padding: 10px 5px;
+    padding: 5px 5px;
     word-break: normal;
 }
 
@@ -32,6 +33,7 @@
     border-color: #000000;
     color: #efefef;
     font-size: 18px;
+    font-size: 4vw;
     font-weight: bold;
     text-align: center;
     vertical-align: center;
@@ -50,6 +52,7 @@
 .tg .tg-gmla {
     border-color: inherit;
     font-size: 16px;
+    font-size: 2vw;
     text-align: center;
     vertical-align: top
 }
