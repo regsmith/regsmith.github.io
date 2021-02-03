@@ -38,3 +38,4 @@ gem "kramdown-parser-gfm"
 
 gem "jekyll-theme-dinky", "~> 0.1.1"
 gem "jekyll-theme-basically-basic"
+gem 'jekyll-redirect-from'

@@ -7,8 +7,12 @@ twitter_username: TheFifthsWord
 github_username:  regsmith
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 regsmith:
   name: Reg Smith
   twitter: TheFifthsWord
   picture: /assets/authors/regsmith.jpeg
+
+whitelist:
+  - jekyll-redirect-from
