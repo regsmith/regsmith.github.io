@@ -1,6 +1,6 @@
 {
     "seasons": {
-        "2016": [{
+        "2016": {
             "Calgary Cannons": [
                 {
                     "Name": "Allen Robinson II",
@@ -85,8 +85,8 @@
                     "Points": 222.30
                 }
             ]
-        }],
-        "2017": [{
+        },
+        "2017": {
             "Calgary Mooses": [{
                 "Name": "Allen Robinson II",
                 "Position": "WR",
@@ -97,6 +97,6 @@
                 "Position": "QB",
                 "Points": 222.30
             }]
-        }]
+        }
     }
 }
