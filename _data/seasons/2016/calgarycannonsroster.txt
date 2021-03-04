@@ -1,79 +1,79 @@
 {
     "players":[
         {
-            "name" : "Allen Robinson II",
-            "position" : "WR",
-            "points" : 162.80
+            "Name" : "Allen Robinson II",
+            "Position" : "WR",
+            "Points" : 162.80
         },
         {
-            "name" : "Travis Benjamin",
-            "position" : "WR",
-            "points" : 108.90
+            "Name" : "Travis Benjamin",
+            "Position" : "WR",
+            "Points" : 108.90
         },
         {
-            "name" : "Randall Cobb",
-            "position" : "WR",
-            "points" : 118.30
+            "Name" : "Randall Cobb",
+            "Position" : "WR",
+            "Points" : 118.30
         },
         {
-            "name" : "Stefon Diggs",
-            "position" : "WR",
-            "points" : 151.30
+            "Name" : "Stefon Diggs",
+            "Position" : "WR",
+            "Points" : 151.30
         },
         {
-            "name" : "Jared Cook",
-            "position" : "TE",
-            "points" : 56.70
+            "Name" : "Jared Cook",
+            "Position" : "TE",
+            "Points" : 56.70
         },
         {
-            "name" : "Todd Gurley II",
-            "position" : "RB",
-            "points" : 176.70
+            "Name" : "Todd Gurley II",
+            "Position" : "RB",
+            "Points" : 176.70
         },
         {
-            "name" : "Jordan Howard",
-            "position" : "RB",
-            "points" : 215.60
+            "Name" : "Jordan Howard",
+            "Position" : "RB",
+            "Points" : 215.60
         },
         {
-            "name" : "Ryan Matthews",
-            "position" : "RB",
-            "points" : 138.10
+            "Name" : "Ryan Matthews",
+            "Position" : "RB",
+            "Points" : 138.10
         },
         {
-            "name" : "Ty Montgomery",
-            "position" : "RB",
-            "points" : 118.50
+            "Name" : "Ty Montgomery",
+            "Position" : "RB",
+            "Points" : 118.50
         },
         {
-            "name" : "Kyle Rudolph",
-            "position" : "TE",
-            "points" : 167.50
+            "Name" : "Kyle Rudolph",
+            "Position" : "TE",
+            "Points" : 167.50
         },
         {
-            "name" : "Wendall Smallwood",
-            "position" : "RB",
-            "points" : 49.70
+            "Name" : "Wendall Smallwood",
+            "Position" : "RB",
+            "Points" : 49.70
         },
         {
-            "name" : "James Starks",
-            "position" : "RB",
-            "points" : 49.40
+            "Name" : "James Starks",
+            "Position" : "RB",
+            "Points" : 49.40
         },
         {
-            "name" : "Tyrod Taylor",
-            "position" : "QB",
-            "points" : 276.92
+            "Name" : "Tyrod Taylor",
+            "Position" : "QB",
+            "Points" : 276.92
         },
         {
-            "name" : "Dan Bailey",
-            "position" : "K",
-            "points" : 140.00
+            "Name" : "Dan Bailey",
+            "Position" : "K",
+            "Points" : 140.00
         },
         {
-            "name" : "Baltimore",
-            "position" : "DST",
-            "points" : 127.00
+            "Name" : "Baltimore",
+            "Position" : "DST",
+            "Points" : 127.00
         }
     ]
 }
