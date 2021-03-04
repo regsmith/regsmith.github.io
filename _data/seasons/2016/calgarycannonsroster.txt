@@ -1,0 +1,79 @@
+{
+    "players":[
+        {
+            "name" : "Allen Robinson II",
+            "position" : "WR",
+            "points" : 162.80
+        },
+        {
+            "name" : "Travis Benjamin",
+            "position" : "WR",
+            "points" : 108.90
+        },
+        {
+            "name" : "Randall Cobb",
+            "position" : "WR",
+            "points" : 118.30
+        },
+        {
+            "name" : "Stefon Diggs",
+            "position" : "WR",
+            "points" : 151.30
+        },
+        {
+            "name" : "Jared Cook",
+            "position" : "TE",
+            "points" : 56.70
+        },
+        {
+            "name" : "Todd Gurley II",
+            "position" : "RB",
+            "points" : 176.70
+        },
+        {
+            "name" : "Jordan Howard",
+            "position" : "RB",
+            "points" : 215.60
+        },
+        {
+            "name" : "Ryan Matthews",
+            "position" : "RB",
+            "points" : 138.10
+        },
+        {
+            "name" : "Ty Montgomery",
+            "position" : "RB",
+            "points" : 118.50
+        },
+        {
+            "name" : "Kyle Rudolph",
+            "position" : "TE",
+            "points" : 167.50
+        },
+        {
+            "name" : "Wendall Smallwood",
+            "position" : "RB",
+            "points" : 49.70
+        },
+        {
+            "name" : "James Starks",
+            "position" : "RB",
+            "points" : 49.40
+        },
+        {
+            "name" : "Tyrod Taylor",
+            "position" : "QB",
+            "points" : 276.92
+        },
+        {
+            "name" : "Dan Bailey",
+            "position" : "K",
+            "points" : 140.00
+        },
+        {
+            "name" : "Baltimore",
+            "position" : "DST",
+            "points" : 127.00
+        }
+    ]
+}
