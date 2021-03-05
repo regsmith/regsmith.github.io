@@ -1,0 +1,43 @@
+---
+layout: page
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/stylesheets/teampage.css">
+        <link rel="stylesheet" href="/assets/stylesheets/pages.css">
+        <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+    </head>
+    <body>
+        <div class="managerbanner">
+            <div class="align">
+                <img class="logo" src="/assets/photos/teamlogos/{{page.teamlogo}}.png" />
+            </div>
+            <div class="align text_padding" style="text-align: right;">
+                <div><b>Manager:</b></div>
+                <div><b>Season:</b></div>
+                <div><b>Record:</b></div>
+            </div>
+            <div class="align text_padding">
+                <div>{{page.manager}}</div>
+                <div><a href="/seasons/{{page.year}}">{{page.year}}</a></div>
+                <div>"{{page.record}} ({{page.position}})"</div>
+            </div>
+        </div>
+        <section id="roster"></section>
+        <script type="text/javascript">
+            var season = "{{page.year}}"
+            var team = "{{page.title}}"
+        </script>
+        <script type="text/javascript" src="/assets/jscripts/rosters.js"></script>
+        <script type="text/javascript">
+            window.addEventListener('load', function() {
+                sorttable.makeSortable(document.getElementById("roster_table"));
+            })
+        </script>
+        <section>
+            {{ content }}
+        </section>
+    </body>
+</html>

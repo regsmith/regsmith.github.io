@@ -1,0 +1,22 @@
+.managerbanner {
+    background-image: linear-gradient(to right, #b8babd 1%, #eee 99%);
+    height: 75px;
+    font-size: 16px;
+    transform:translate(0,-20px);
+}
+
+.align {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text_padding{
+    padding-top: 1px;
+}
+
+img.logo {
+    background: #F1F1FA;
+    width: 75px;
+    border: 6px ridge grey;
+    vertical-align: text-bottom;
+}

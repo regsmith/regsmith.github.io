@@ -1,67 +1,84 @@
-.tg {
-    border-collapse: collapse;
-    border-spacing: 0;
-    sorttable;
-}
-
-.tg td {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    font-family: "Fira Sans", sans-serif;
-    font-size: 14px;
-    font-size: 4vw;
-    overflow: hidden;
-    padding: 5px 5px;
-    word-break: normal;
-}
-
-.tg th {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    font-family: "Fira Sans", sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    overflow: hidden;
-    padding: 10px 5px;
-    word-break: normal;
-}
-
-.tg .tg-wc04 {
-    background-color: #646a71;
-    border-color: #000000;
-    color: #efefef;
+table.sortable tr {
+    text-align: center;
     font-size: 18px;
-    font-size: 4vw;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: center;
+    border-left: 2px ridge grey;
+    border-right: 2px ridge grey;
 }
 
-.tg .tg-wc05 {
+table.sortable tr:last-child td {
+    border-bottom: 2px ridge grey;
+}
+
+table.sortable thead {
     background-color: #646a71;
-    border-color: #000000;
+    border: 2px ridge grey;
+}
+
+table.sortable th {
+    table-layout: fixed;
+    width: 90px;
     color: #efefef;
-    font-size: 12px;
-    font-weight: bold;
     text-align: center;
-    vertical-align: center
+    font-size: 22px;
 }
 
-.tg .tg-gmla {
-    border-color: inherit;
-    font-size: 16px;
-    font-size: 2vw;
-    text-align: center;
-    vertical-align: top
+table.sortable tbody tr:nth-child(2n) td {
+    background: #e3e3e5;
+}
+table.sortable tbody tr:nth-child(2n+1) td {
+    background: #b8babd;
+}
+table.sortable th::after, th.sorttable_sorted::after, th.sorttable_sorted_reverse::after {
+    content: " ";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
 }
 
-.tg .tg-gmla2 {
-    border-color: inherit;
-    font-size: 10px;
+th.sorttable_sorted::after {
+    background: url(https://www.kryogenix.org/code/browser/sorttable/sort_up_green.png);
+    background-size: contain;
+}
+
+th.sorttable_sorted_reverse::after {
+    background: url(https://www.kryogenix.org/code/browser/sorttable/sort_down_green.png);
+    background-size: cover;
+}
+#sorttable_sortfwdind, #sorttable_sortrevind { display: none; }
+
+table.championship {
+    table-layout: fixed;
     text-align: center;
-    vertical-align: top
+    border: 2px ridge grey;
+}
+
+table.championship tbody tr:nth-child(2n-1) td {
+    background-color: #b8babd;
+    color: black;
+}
+
+table.championship tbody tr:nth-child(2n) td {
+    background: #e3e3e5;
+}
+
+table.championship tbody tr:nth-child(2) td {
+    border-bottom: 2px ridge grey;
+}
+
+table.championship tbody td: {
+    border-right: 2px ridge grey;
+}
+
+@media screen and (max-width: 600px) {
+    table.sortable th {
+      font-size: 14px;
+    }
+    table.sortable tr {
+      font-size: 12px;
+    }
+    table.championship td {
+      font-size: 10px;
+    }
 }
 
 .img draftimg {
