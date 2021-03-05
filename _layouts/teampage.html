@@ -22,7 +22,7 @@ layout: page
             <div class="align text_padding">
                 <div>{{page.manager}}</div>
                 <div><a href="/seasons/{{page.year}}">{{page.year}}</a></div>
-                <div>"{{page.record}} ({{page.position}})"</div>
+                <div>{{page.record}} ({{page.position}})</div>
             </div>
         </div>
         <section id="roster"></section>
@@ -32,7 +32,8 @@ layout: page
         </script>
         <script type="text/javascript" src="/assets/jscripts/rosters.js"></script>
         <script type="text/javascript">
-            window.addEventListener('load', function() {
+            window.addEventListener('load', async function() {
+                await new Promise(r => setTimeout(r, 20));
                 sorttable.makeSortable(document.getElementById("roster_table"));
             })
         </script>
