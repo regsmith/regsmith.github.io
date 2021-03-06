@@ -78,12 +78,82 @@
                     "Points": 127.00
                 }
             ],
-            "Brussels Wilson": [
+            "'Most Boring Team'": [
                 {
-                    "Name": "Tom Brady",
+                    "Name": "Davante Adams",
+                    "Position": "WR",
+                    "Points": 209.20
+                },
+                {
+                    "Name": "Tavon Austin",
+                    "Position": "WR",
+                    "Points": 117.80
+                },
+                {
+                    "Name": "Cole Beasley",
+                    "Position": "WR",
+                    "Points": 151.50
+                },
+                {
+                    "Name": "John Brown",
+                    "Position": "WR",
+                    "Points": 84.20
+                },
+                {
+                    "Name": "Eric Ebron",
+                    "Position": "TE",
+                    "Points": 113.70
+                },
+                {
+                    "Name": "Melvin Gordon III",
+                    "Position": "RB",
+                    "Points": 230.10
+                },
+                {
+                    "Name": "Rob Gronkowski",
+                    "Position": "TE",
+                    "Points": 84.50
+                },
+                {
+                    "Name": "Jeremy Maclin",
+                    "Position": "WE",
+                    "Points": 87.50
+                },
+                {
+                    "Name": "Matt Ryan",
                     "Position": "QB",
-                    "Points": 222.30
-                }
+                    "Points": 354.46
+                },
+                {
+                    "Name": "Matthew Stafford",
+                    "Position": "QB",
+                    "Points": 289.78
+                },
+                {
+                    "Name": "Jonathan Stewart",
+                    "Position": "RB",
+                    "Points": 142.40
+                },
+                {
+                    "Name": "Demaryius Thomas",
+                    "Position": "WR",
+                    "Points": 181.30
+                },
+                {
+                    "Name": "Terrance West",
+                    "Position": "RB",
+                    "Points": 154.00
+                },
+                {
+                    "Name": "Brandon McManus",
+                    "Position": "K",
+                    "Points": 132.60
+                },
+                {
+                    "Name": "New Orleans",
+                    "Position": "RB",
+                    "Points": 58.00
+                },
             ]
         },
         "2017": {
