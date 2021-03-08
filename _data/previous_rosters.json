@@ -151,8 +151,624 @@
                 },
                 {
                     "Name": "New Orleans",
-                    "Position": "RB",
+                    "Position": "DST",
                     "Points": 58.00
+                }
+            ],
+            "Fighting Mongooses": [
+                {
+                    "Name": "Keenan Allen",
+                    "Position": "WR",
+                    "Points": 9.30
+                },
+                {
+                    "Name": "C.J. Anderson",
+                    "Position": "RB",
+                    "Points": 94.50
+                },
+                {
+                    "Name": "Odell Beckham Jr.",
+                    "Position": "WR",
+                    "Points": 246.10
+                },
+                {
+                    "Name": "Martellus Bennett",
+                    "Position": "TE",
+                    "Points": 140.60
+                },
+                {
+                    "Name": "Eric Decker",
+                    "Position": "WR",
+                    "Points": 35.90
+                },
+                {
+                    "Name": "Larry Fitzgerald",
+                    "Position": "WR",
+                    "Points": 190.30
+                },
+                {
+                    "Name": "Matt Forte",
+                    "Position": "RB",
+                    "Points": 168.60
+                },
+                {
+                    "Name": "Jimmy Graham",
+                    "Position": "TE",
+                    "Points": 156.80
+                },
+                {
+                    "Name": "Jarvis Landry",
+                    "Position": "WR",
+                    "Points": 184.30
+                },
+                {
+                    "Name": "LeSean McCoy",
+                    "Position": "RB",
+                    "Points": 273.30
+                },
+                {
+                    "Name": "Cam Newton",
+                    "Position": "QB",
+                    "Points": 268.26
+                },
+                {
+                    "Name": "Adrian Peterson",
+                    "Position": "RB",
+                    "Points": 7.5
+                },
+                {
+                    "Name": "Willie Snead IV",
+                    "Position": "WR",
+                    "Points": 155.50
+                },
+                {
+                    "Name": "Danny Woodhead",
+                    "Position": "RB",
+                    "Points": 24.10
+                },
+                {
+                    "Name": "New England",
+                    "Position": "DST",
+                    "Points": 129.00
+                }
+            ],
+            "The Better Brother": [
+                {
+                    "Name": "Doug Baldwin",
+                    "Position": "WR",
+                    "Points": 206.60
+                },
+                {
+                    "Name": "Brandin Cooks",
+                    "Position": "WR",
+                    "Points": 207.30
+                },
+                {
+                    "Name": "Kirk Cousins",
+                    "Position": "QB",
+                    "Points": 312.28
+                },
+                {
+                    "Name": "Zack Ertz",
+                    "Position": "TE",
+                    "Points": 144.60
+                },
+                {
+                    "Name": "Kenneth Farrow",
+                    "Position": "RB",
+                    "Points": 30.70
+                },
+                {
+                    "Name": "Justin Forsett",
+                    "Position": "RB",
+                    "Points": 51.60
+                },
+                {
+                    "Name": "Andrew Luck",
+                    "Position": "RB",
+                    "Points": 320.70
+                },
+                {
+                    "Name": "Malcolm Mitchell",
+                    "Position": "WR",
+                    "Points": 80.10
+                },
+                {
+                    "Name": "Jordy Nelson",
+                    "Position": "WR",
+                    "Points": 256.20
+                },
+                {
+                    "Name": "Charles Sims",
+                    "Position": "RB",
+                    "Points": 55.90
+                },
+                {
+                    "Name": "Spencer Ware",
+                    "Position": "RB",
+                    "Points": 177.30
+                },
+                {
+                    "Name": "Sammy Watkins",
+                    "Position": "WR",
+                    "Points": 69.00
+                },
+                {
+                    "Name": "Justin Tucker",
+                    "Position": "K",
+                    "Points": 175.00
+                },
+                {
+                    "Name": "Arizona",
+                    "Position": "DST",
+                    "Points": 148.00
+                },
+                {
+                    "Name": "New York",
+                    "Position": "DST",
+                    "Points": 143.00
+                }
+            ],
+            "A Team Has No Name": [
+                {
+                    "Name": "Dex Bryant",
+                    "Position": "WR",
+                    "Points": 155.0
+                },
+                {
+                    "Name": "Andy Dalton",
+                    "Position": "QB",
+                    "Points": 268.64
+                },
+                {
+                    "Name": "Kenneth Dixon",
+                    "Position": "RB",
+                    "Points": 87.40
+                },
+                {
+                    "Name": "Devonta Freeman",
+                    "Position": "RB",
+                    "Points": 257.10
+                },
+                {
+                    "Name": "Derrick Henry",
+                    "Position": "RB",
+                    "Points": 99.20
+                },
+                {
+                    "Name": "Tim Hightower",
+                    "Position": "RB",
+                    "Points": 115.80
+                },
+                {
+                    "Name": "DeAndre Hopkins",
+                    "Position": "WR",
+                    "Points": 158.40
+                },
+                {
+                    "Name": "DeSean Jackson",
+                    "Position": "WR",
+                    "Points": 152.50
+                },
+                {
+                    "Name": "Travis Kelce",
+                    "Position": "TE",
+                    "Points": 180.50
+                },
+                {
+                    "Name": "Rishard Matthews",
+                    "Position": "WR",
+                    "Points": 179.00
+                },
+                {
+                    "Name": "DeMarco Murray",
+                    "Position": "RB",
+                    "Points": 267.30
+                },
+                {
+                    "Name": "Ben Roethlisberger",
+                    "Position": "QB",
+                    "Points": 265.16
+                },
+                {
+                    "Name": "Darren Sproles",
+                    "Position": "RB",
+                    "Points": 136.50
+                },
+                {
+                    "Name": "Cairo Santos",
+                    "Position": "K",
+                    "Points": 139.00
+                },
+                {
+                    "Name": "Las Vegas",
+                    "Position": "DST",
+                    "Points": 96.00
+                }
+            ],
+            "#1 Boelhouwer": [
+                {
+                    "Name": "Drew Brees",
+                    "Position": "QB",
+                    "Points": 347.32
+                },
+                {
+                    "Name": "Amari Cooper",
+                    "Position": "WR",
+                    "Points": 190.80
+                },
+                {
+                    "Name": "Taylor Gabriel",
+                    "Position": "WR",
+                    "Points": 122.50
+                },
+                {
+                    "Name": "Tyreek Hill",
+                    "Position": "WR",
+                    "Points": 186.50
+                },
+                {
+                    "Name": "Dontrelle Inman",
+                    "Position": "WR",
+                    "Points": 134.00
+                },
+                {
+                    "Name": "Rashad Jennings",
+                    "Position": "RB",
+                    "Points": 120.90
+                },
+                {
+                    "Name": "Julio Jones",
+                    "Position": "WR",
+                    "Points": 218.40
+                },
+                {
+                    "Name": "Marvin Jones Jr.",
+                    "Position": "WR",
+                    "Points": 144.80
+                },
+                {
+                    "Name": "Rob Kelly",
+                    "Position": "RB",
+                    "Points": 126.60
+                },
+                {
+                    "Name": "Cameron Meredith",
+                    "Position": "WR",
+                    "Points": 146.48
+                },
+                {
+                    "Name": "Greg Olsen",
+                    "Position": "TE",
+                    "Points": 167.30
+                },
+                {
+                    "Name": "Bilal Powell",
+                    "Position": "RB",
+                    "Points": 168.00
+                },
+                {
+                    "Name": "Stephen Gostkowski",
+                    "Position": "K",
+                    "Points": 140.00
+                },
+                {
+                    "Name": "Matt Prater",
+                    "Position": "K",
+                    "Points": 148.00
+                },
+                {
+                    "Name": "Denver",
+                    "Position": "DST",
+                    "Points": 153.00
+                }
+            ],
+            "From Wentz You Came": [
+                {
+                    "Name": "Jay Ajayi",
+                    "Position": "RB",
+                    "Points": 201.80
+                },
+                {
+                    "Name": "Jeremy Hill",
+                    "Position": "RB",
+                    "Points": 165.80
+                },
+                {
+                    "Name": "David Johnson",
+                    "Position": "RB",
+                    "Points": 367.80
+                },
+                {
+                    "Name": "Brandon Marshall",
+                    "Position": "WR",
+                    "Points": 126.30
+                },
+                {
+                    "Name": "Doug Martin",
+                    "Position": "RB",
+                    "Points": 78.50
+                },
+                {
+                    "Name": "Jordan Matthews",
+                    "Position": "WR",
+                    "Points": 134.90
+                },
+                {
+                    "Name": "DeVante Parker",
+                    "Position": "WR",
+                    "Points": 126.40
+                },
+                {
+                    "Name": "Jordan Reed",
+                    "Position": "TE",
+                    "Points": 135.60
+                },
+                {
+                    "Name": "Philip Rivers",
+                    "Position": "QB",
+                    "Points": 279.94
+                },
+                {
+                    "Name": "Golden Tate",
+                    "Position": "WR",
+                    "Points": 177.60
+                },
+                {
+                    "Name": "Michael Thomas",
+                    "Position": "WR",
+                    "Points": 209.70
+                },
+                {
+                    "Name": "Chandler Catanzaro",
+                    "Position": "K",
+                    "Points": 118.00
+                },
+                {
+                    "Name": "Caleb Sturgis",
+                    "Position": "K",
+                    "Points": 150.00
+                },
+                {
+                    "Name": "Buffalo",
+                    "Position": "DST",
+                    "Points": 105.00
+                },
+                {
+                    "Name": "Los Angeles",
+                    "Position": "DST",
+                    "Points": 93.00
+                }
+            ],
+            "Antonio Brownderas": [
+                {
+                    "Name": "LeGarrette Blount",
+                    "Position": "RB",
+                    "Points": 229.40
+                },
+                {
+                    "Name": "Tom Brady",
+                    "Position": "QB",
+                    "Points": 260.56
+                },
+                {
+                    "Name": "Cameron Brate",
+                    "Position": "TE",
+                    "Points": 142.50
+                },
+                {
+                    "Name": "Antonio Brown",
+                    "Position": "WR",
+                    "Points": 254.30
+                },
+                {
+                    "Name": "Derek Carr",
+                    "Position": "WR",
+                    "Points": 274.48
+                },
+                {
+                    "Name": "Tevin Coleman",
+                    "Position": "RB",
+                    "Points": 175.60
+                },
+                {
+                    "Name": "Michael Crabtree",
+                    "Position": "WR",
+                    "Points": 194.80
+                },
+                {
+                    "Name": "T.Y. Hilton",
+                    "Position": "WR",
+                    "Points": 228.30
+                },
+                {
+                    "Name": "Mark Ingram II",
+                    "Position": "RB",
+                    "Points": 219.20
+                },
+                {
+                    "Name": "Latavius Murray",
+                    "Position": "RB",
+                    "Points": 191.70
+                },
+                {
+                    "Name": "Steve Smith Sr.",
+                    "Position": "WR",
+                    "Points": 148.90
+                },
+                {
+                    "Name": "Jason Witten",
+                    "Position": "TE",
+                    "Points": 117.80
+                },
+                {
+                    "Name": "Adam Vinatieri",
+                    "Position": "K",
+                    "Points": 149.00
+                },
+                {
+                    "Name": "Miami",
+                    "Position": "DST",
+                    "Points": 118.00
+                },
+                {
+                    "Name": "Minnesota",
+                    "Position": "DST",
+                    "Points": 158.00
+                }
+            ],
+            "4 Ring GOAT Circus": [
+                {
+                    "Name": "Le'Veon Bell",
+                    "Position": "RB",
+                    "Points": 279.90
+                },
+                {
+                    "Name": "Kelvin Benjamin",
+                    "Position": "WR",
+                    "Points": 165.60
+                },
+                {
+                    "Name": "Jamison Crowder",
+                    "Position": "WR",
+                    "Points": 164.00
+                },
+                {
+                    "Name": "Isaiah Crowell",
+                    "Position": "RB",
+                    "Points": 185.10
+                },
+                {
+                    "Name": "Julian Edleman",
+                    "Position": "WR",
+                    "Points": 181.30
+                },
+                {
+                    "Name": "Tyler Eifert",
+                    "Position": "TE",
+                    "Points": 83.90
+                },
+                {
+                    "Name": "Mike Evans",
+                    "Position": "WR",
+                    "Points": 256.10
+                },
+                {
+                    "Name": "Antonio Gates",
+                    "Position": "TE",
+                    "Points": 121.30
+                },
+                {
+                    "Name": "Dion Lewis",
+                    "Position": "RB",
+                    "Points": 46.20
+                },
+                {
+                    "Name": "Lamar Miller",
+                    "Position": "RB",
+                    "Points": 175.60
+                },
+                {
+                    "Name": "Aaron Rodgers",
+                    "Position": "QB",
+                    "Points": 387.02
+                },
+                {
+                    "Name": "Tyrell Williams",
+                    "Position": "WR",
+                    "Points": 182.40
+                },
+                {
+                    "Name": "Jameis Winston",
+                    "Position": "QB",
+                    "Points": 274.10
+                },
+                {
+                    "Name": "Matt Bryant",
+                    "Position": "K",
+                    "Points": 179.00
+                },
+                {
+                    "Name": "Seattle",
+                    "Position": "DST",
+                    "Points": 119.00
+                }
+            ],
+            "Brussels Wilson": [
+                {
+                    "Name": "Tyler Boyd",
+                    "Position": "WR",
+                    "Points": 97.10
+                },
+                {
+                    "Name": "Ezekiel Elliott",
+                    "Position": "RB",
+                    "Points": 309.40
+                },
+                {
+                    "Name": "Frank Gore",
+                    "Position": "RB",
+                    "Points": 195.20
+                },
+                {
+                    "Name": "A.J. Green",
+                    "Position": "WR",
+                    "Points": 153.40
+                },
+                {
+                    "Name": "Ladarius Green",
+                    "Position": "RB",
+                    "Points": 45.40
+                },
+                {
+                    "Name": "Carlos Hyde",
+                    "Position": "RB",
+                    "Points": 178.60
+                },
+                {
+                    "Name": "Alshon Jeffery",
+                    "Position": "WR",
+                    "Points": 120.10
+                },
+                {
+                    "Name": "Donte Moncrief",
+                    "Position": "WR",
+                    "Points": 87.60
+                },
+                {
+                    "Name": "Thomas Rawls",
+                    "Position": "RB",
+                    "Points": 69.00
+                },
+                {
+                    "Name": "Emmanuel Sanders",
+                    "Position": "WR",
+                    "Points": 173.10
+                },
+                {
+                    "Name": "Delanie Walker",
+                    "Position": "TE",
+                    "Points": 155.60
+                },
+                {
+                    "Name": "Russell Wilson",
+                    "Position": "QB",
+                    "Points": 280.06
+                },
+                {
+                    "Name": "Josh Lambo",
+                    "Position": "K",
+                    "Points": 126.00
+                },
+                {
+                    "Name": "Kansas City",
+                    "Position": "DST",
+                    "Points": 164.00
+                },
+                {
+                    "Name": "Los Angeles",
+                    "Position": "DST",
+                    "Points": 120.00
                 }
             ]
         },
