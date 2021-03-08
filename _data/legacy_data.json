@@ -596,12 +596,12 @@
                         "Points": 158.00
                     }
                 ],
-                "Wins", "7",
+                "Wins": "7",
                 "Losses": "6",
                 "Points Scored": "1469.86",
                 "Points Against": "1461.32",
                 "Rank": "4",
-                "antoniobrownderas.png"
+                "logo": "antoniobrownderas.png"
             },
             "#1 Boelhouwer": {
                 "Owner": "Ben B",
@@ -1452,7 +1452,7 @@
                         "Points": 127.00
                     }
                 ],
-                "Wins", "7",
+                "Wins": "7",
                 "Losses": "6",
                 "Points Scored": "1469.86",
                 "Points Against": "1461.32",
@@ -1713,6 +1713,6 @@
                 "Points Against": "1329.64",
                 "Rank": "1"
             }
-        },
+        }
     }
 }
