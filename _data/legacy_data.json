@@ -174,7 +174,7 @@
                 "logo": "mostboringteam.png"
             },
             "A Team Has No Name": {
-                "Owner", "Stefan G",
+                "Owner": "Stefan G",
                 "Roster": [
                     {
                         "Name": "Dex Bryant",
@@ -260,7 +260,7 @@
                 "logo": "ateamhasnoname.png"
             },
             "Brussels Wilson": {
-                "Owner", "Reggie S",
+                "Owner": "Reggie S",
                 "Roster": [
                     {
                         "Name": "Tyler Boyd",
@@ -1034,7 +1034,7 @@
                 "Rank": "9"
             },
             "A Team Has No Name": {
-                "Owner", "Stefan G",
+                "Owner": "Stefan G",
                 "Roster": [
                     {
                         "Name": "Allen Robinson II",
@@ -1119,7 +1119,7 @@
                 "Rank": "8"
             },
             "Brussels Wilson": {
-                "Owner", "Reggie S",
+                "Owner": "Reggie S",
                 "Roster": [
                     {
                         "Name": "Allen Robinson II",
