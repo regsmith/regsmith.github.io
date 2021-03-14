@@ -85,7 +85,7 @@
                 "Points Scored": "1382.96",
                 "Points Against": "1470.02",
                 "Rank": "10",
-                "logo": "calgarycannons.png"
+                "logo": "calgarycannons.jpg"
             },
             "'Most Boring Team'": {
                 "Owner": "Alex R",
@@ -257,7 +257,7 @@
                 "Points Scored": "1409.34",
                 "Points Against": "1411.84",
                 "Rank": "8",
-                "logo": "ateamhasnoname.png"
+                "logo": "ateamhasnoname.jpg"
             },
             "Brussels Wilson": {
                 "Owner": "Reggie S",
@@ -515,7 +515,8 @@
                 "Points Scored": "1366.16",
                 "Points Against": "1430.26",
                 "Rank": "5",
-                "logo": "thebetterbrother.png"
+                "league_champion": true,
+                "logo": "yellowhelmet.png"
             },
             "Antonio Brownderas": {
                 "Owner": "Keith C",
@@ -687,7 +688,7 @@
                 "Points Scored": "1522.80",
                 "Points Against": "1453.30",
                 "Rank": "3",
-                "logo": "num1boelhouwer.png"
+                "logo": "gameofjones.jpg"
             },
             "From Wentz You Came": {
                 "Owner": "Zane C",
@@ -773,7 +774,7 @@
                 "Points Scored": "1469.58",
                 "Points Against": "1383.24",
                 "Rank": "2",
-                "logo": "fromwentzyoucame.png"
+                "logo": "fromwentzyoucame.jpg"
             },
             "4 Ring GOAT Circus": {
                 "Owner": "Zack C",
@@ -867,851 +868,1785 @@
                 "Owner": "Connor R",
                 "Roster": [
                     {
-                        "Name": "Allen Robinson II",
-                        "Position": "WR",
-                        "Points": 162.80
+                        "Name": "Ben Roethlisberger",
+                        "Position": "QB",
+                        "Points": 274.74
                     },
                     {
-                        "Name": "Travis Benjamin",
+                        "Name": "Michael Thomas",
                         "Position": "WR",
-                        "Points": 108.90
-                    },
-                    {
-                        "Name": "Randall Cobb",
-                        "Position": "WR",
-                        "Points": 118.30
+                        "Points": 206.50
                     },
                     {
                         "Name": "Stefon Diggs",
                         "Position": "WR",
-                        "Points": 151.30
+                        "Points": 166.20
                     },
                     {
-                        "Name": "Jared Cook",
-                        "Position": "TE",
-                        "Points": 56.70
+                        "Name": "Leonard Fournette",
+                        "Position": "RB",
+                        "Points": 212.20
                     },
                     {
                         "Name": "Todd Gurley II",
                         "Position": "RB",
-                        "Points": 176.70
+                        "Points": 351.30
+                    },
+                    {
+                        "Name": "Travis Kelce",
+                        "Position": "TE",
+                        "Points": 193.00
+                    },
+                    {
+                        "Name": "Joe Mixon",
+                        "Position": "RB",
+                        "Points": 126.30
+                    },
+                    {
+                        "Name": "Samaje Perine",
+                        "Position": "RB",
+                        "Points": 97.50
+                    },
+                    {
+                        "Name": "Kerwynn Williams",
+                        "Position": "RB",
+                        "Points": 62.90
+                    },
+                    {
+                        "Name": "Chris Hogan",
+                        "Position": "WR",
+                        "Points": 92.60
+                    },
+                    {
+                        "Name": "Chris Ivory",
+                        "Position": "RB",
+                        "Points": 74.20
+                    },
+                    {
+                        "Name": "Eric Ebron",
+                        "Position": "TE",
+                        "Points": 105.90
+                    },
+                    {
+                        "Name": "Martavis Bryant",
+                        "Position": "WR",
+                        "Points": 107.50
+                    },
+                    {
+                        "Name": "Andrew Luck",
+                        "Position": "QB",
+                        "Points": 0.00
+                    },
+                    {
+                        "Name": "Will Lutz",
+                        "Position": "K",
+                        "Points": 163.40
+                    },
+                    {
+                        "Name": "Pittsburgh",
+                        "Position": "DST",
+                        "Points": 139.00
+                    }
+                ],
+                "Wins": "11",
+                "Losses": "2",
+                "Points Scored": "1461.00",
+                "Points Against": "1242.80",
+                "Rank": "1",
+                "league_champion": true,
+                "logo": "calgarycannons.jpg"
+            },
+            "De more de Maryius": {
+                "Owner": "Alex R",
+                "Roster": [
+                    {
+                        "Name": "Matt Ryan",
+                        "Position": "QB",
+                        "Points": 240.10
+                    },
+                    {
+                        "Name": "Demaryius Thomas",
+                        "Position": "WR",
+                        "Points": 164.40
+                    },
+                    {
+                        "Name": "Alshon Jeffery",
+                        "Position": "WR",
+                        "Points": 167.40
+                    },
+                    {
+                        "Name": "Melvin Gordon III",
+                        "Position": "RB",
+                        "Points": 259.10
                     },
                     {
                         "Name": "Jordan Howard",
                         "Position": "RB",
-                        "Points": 215.60
-                    },
-                    {
-                        "Name": "Ryan Matthews",
-                        "Position": "RB",
-                        "Points": 138.10
-                    },
-                    {
-                        "Name": "Ty Montgomery",
-                        "Position": "RB",
-                        "Points": 118.50
+                        "Points": 188.20
                     },
                     {
                         "Name": "Kyle Rudolph",
                         "Position": "TE",
-                        "Points": 167.50
+                        "Points": 129.70
                     },
                     {
-                        "Name": "Wendall Smallwood",
+                        "Name": "C.J. Anderson",
                         "Position": "RB",
-                        "Points": 49.70
+                        "Points": 161.10
                     },
                     {
-                        "Name": "James Starks",
+                        "Name": "Sterling Shepard",
+                        "Position": "WR",
+                        "Points": 115.00
+                    },
+                    {
+                        "Name": "Frank Gore",
                         "Position": "RB",
-                        "Points": 49.40
+                        "Points": 159.10
                     },
                     {
-                        "Name": "Tyrod Taylor",
-                        "Position": "QB",
-                        "Points": 276.92
+                        "Name": "Jared Cook",
+                        "Position": "TE",
+                        "Points": 105.80
                     },
                     {
-                        "Name": "Dan Bailey",
+                        "Name": "Jonathan Stewart",
+                        "Position": "RB",
+                        "Points": 113.20
+                    },
+                    {
+                        "Name": "Marlon Mack",
+                        "Position": "RB",
+                        "Points": 92.80
+                    },
+                    {
+                        "Name": "Josh Doctson",
+                        "Position": "WR",
+                        "Points": 102.30
+                    },
+                    {
+                        "Name": "Corey Coleman",
+                        "Position": "WR",
+                        "Points": 54.00
+                    },
+                    {
+                        "Name": "Ka'imi Fairbairn",
                         "Position": "K",
-                        "Points": 140.00
+                        "Points": 104.00
                     },
                     {
-                        "Name": "Baltimore",
+                        "Name": "Denver",
                         "Position": "DST",
-                        "Points": 127.00
+                        "Points": 110.00
                     }
                 ],
                 "Wins": "4",
                 "Losses": "9",
-                "Points Scored": "1382.96",
-                "Points Against": "1470.02",
-                "Rank": "10"
-            },
-            "'Most Boring Team'": {
-                "Owner": "Alex R",
-                "Roster": [
-                    {
-                        "Name": "Allen Robinson II",
-                        "Position": "WR",
-                        "Points": 162.80
-                    },
-                    {
-                        "Name": "Travis Benjamin",
-                        "Position": "WR",
-                        "Points": 108.90
-                    },
-                    {
-                        "Name": "Randall Cobb",
-                        "Position": "WR",
-                        "Points": 118.30
-                    },
-                    {
-                        "Name": "Stefon Diggs",
-                        "Position": "WR",
-                        "Points": 151.30
-                    },
-                    {
-                        "Name": "Jared Cook",
-                        "Position": "TE",
-                        "Points": 56.70
-                    },
-                    {
-                        "Name": "Todd Gurley II",
-                        "Position": "RB",
-                        "Points": 176.70
-                    },
-                    {
-                        "Name": "Jordan Howard",
-                        "Position": "RB",
-                        "Points": 215.60
-                    },
-                    {
-                        "Name": "Ryan Matthews",
-                        "Position": "RB",
-                        "Points": 138.10
-                    },
-                    {
-                        "Name": "Ty Montgomery",
-                        "Position": "RB",
-                        "Points": 118.50
-                    },
-                    {
-                        "Name": "Kyle Rudolph",
-                        "Position": "TE",
-                        "Points": 167.50
-                    },
-                    {
-                        "Name": "Wendall Smallwood",
-                        "Position": "RB",
-                        "Points": 49.70
-                    },
-                    {
-                        "Name": "James Starks",
-                        "Position": "RB",
-                        "Points": 49.40
-                    },
-                    {
-                        "Name": "Tyrod Taylor",
-                        "Position": "QB",
-                        "Points": 276.92
-                    },
-                    {
-                        "Name": "Dan Bailey",
-                        "Position": "K",
-                        "Points": 140.00
-                    },
-                    {
-                        "Name": "Baltimore",
-                        "Position": "DST",
-                        "Points": 127.00
-                    }
-                ],
-                "Wins": "5",
-                "Losses": "8",
-                "Points Scored": "1365.78",
-                "Points Against": "1461.72",
-                "Rank": "9"
+                "Points Scored": "1213.50",
+                "Points Against": "1398.08",
+                "Rank": "10",
+                "logo": "demoredemaryius.jpg"
             },
             "A Team Has No Name": {
                 "Owner": "Stefan G",
                 "Roster": [
                     {
-                        "Name": "Allen Robinson II",
-                        "Position": "WR",
-                        "Points": 162.80
-                    },
-                    {
-                        "Name": "Travis Benjamin",
-                        "Position": "WR",
-                        "Points": 108.90
-                    },
-                    {
-                        "Name": "Randall Cobb",
-                        "Position": "WR",
-                        "Points": 118.30
-                    },
-                    {
-                        "Name": "Stefon Diggs",
-                        "Position": "WR",
-                        "Points": 151.30
-                    },
-                    {
-                        "Name": "Jared Cook",
-                        "Position": "TE",
-                        "Points": 56.70
-                    },
-                    {
-                        "Name": "Todd Gurley II",
-                        "Position": "RB",
-                        "Points": 176.70
-                    },
-                    {
-                        "Name": "Jordan Howard",
-                        "Position": "RB",
-                        "Points": 215.60
-                    },
-                    {
-                        "Name": "Ryan Matthews",
-                        "Position": "RB",
-                        "Points": 138.10
-                    },
-                    {
-                        "Name": "Ty Montgomery",
-                        "Position": "RB",
-                        "Points": 118.50
-                    },
-                    {
-                        "Name": "Kyle Rudolph",
-                        "Position": "TE",
-                        "Points": 167.50
-                    },
-                    {
-                        "Name": "Wendall Smallwood",
-                        "Position": "RB",
-                        "Points": 49.70
-                    },
-                    {
-                        "Name": "James Starks",
-                        "Position": "RB",
-                        "Points": 49.40
-                    },
-                    {
-                        "Name": "Tyrod Taylor",
+                        "Name": "Tom Brady",
                         "Position": "QB",
-                        "Points": 276.92
+                        "Points": 303.88
                     },
                     {
-                        "Name": "Dan Bailey",
+                        "Name": "Josh Gordon",
+                        "Position": "WR",
+                        "Points": 48.50
+                    },
+                    {
+                        "Name": "Goldten Tate",
+                        "Position": "WR",
+                        "Points": 178.50
+                    },
+                    {
+                        "Name": "DeMarco Murray",
+                        "Position": "RB",
+                        "Points": 152.00
+                    },
+                    {
+                        "Name": "Theo Riddick",
+                        "Position": "RB",
+                        "Points": 127.50
+                    },
+                    {
+                        "Name": "Zach Ertz",
+                        "Position": "TE",
+                        "Points": 165.40
+                    },
+                    {
+                        "Name": "Robert Woods",
+                        "Position": "WR",
+                        "Points": 135.30
+                    },
+                    {
+                        "Name": "Cooper Kupp",
+                        "Position": "WR",
+                        "Points": 145.90
+                    },
+                    {
+                        "Name": "Austin Hooper",
+                        "Position": "TE",
+                        "Points": 95.10
+                    },
+                    {
+                        "Name": "Duke Johnson",
+                        "Position": "RB",
+                        "Points": 179.10
+                    },
+                    {
+                        "Name": "Dez Bryant",
+                        "Position": "WR",
+                        "Points": 151.90
+                    },
+                    {
+                        "Name": "Sammy Watkins",
+                        "Position": "WR",
+                        "Points": 126.80
+                    },
+                    {
+                        "Name": "Dede Westbrook",
+                        "Position": "WR",
+                        "Points": 53.40
+                    },
+                    {
+                        "Name": "Chris Thompson",
+                        "Position": "RB",
+                        "Points": 133.90
+                    },
+                    {
+                        "Name": "Matt Bryant",
                         "Position": "K",
-                        "Points": 140.00
+                        "Points": 162.00
                     },
                     {
                         "Name": "Baltimore",
                         "Position": "DST",
-                        "Points": 127.00
+                        "Points": 187.00
                     }
                 ],
                 "Wins": "5",
                 "Losses": "8",
-                "Points Scored": "1409.34",
-                "Points Against": "1411.84",
-                "Rank": "8"
+                "Points Scored": "1273.96",
+                "Points Against": "1386.86",
+                "Rank": "7",
+                "logo": "ateamhasnoname.jpg"
             },
-            "Brussels Wilson": {
+            "BMS Goats": {
                 "Owner": "Reggie S",
                 "Roster": [
                     {
-                        "Name": "Allen Robinson II",
-                        "Position": "WR",
-                        "Points": 162.80
+                        "Name": "Philip Rivers",
+                        "Position": "QB",
+                        "Points": 280.40
                     },
                     {
-                        "Name": "Travis Benjamin",
+                        "Name": "A.J. Green",
                         "Position": "WR",
                         "Points": 108.90
                     },
                     {
-                        "Name": "Randall Cobb",
+                        "Name": "Mohamed Sanu",
                         "Position": "WR",
-                        "Points": 118.30
+                        "Points": 140.84
                     },
                     {
-                        "Name": "Stefon Diggs",
-                        "Position": "WR",
-                        "Points": 151.30
+                        "Name": "Alvin Kamara",
+                        "Position": "RB",
+                        "Points": 279.90
                     },
                     {
-                        "Name": "Jared Cook",
+                        "Name": "Peyton Barber",
+                        "Position": "RB",
+                        "Points": 77.70
+                    },
+                    {
+                        "Name": "Jimmy Graham",
                         "Position": "TE",
-                        "Points": 56.70
+                        "Points": 142.50
                     },
                     {
-                        "Name": "Todd Gurley II",
+                        "Name": "Kenyan Drake",
                         "Position": "RB",
-                        "Points": 176.70
+                        "Points": 126.30
                     },
                     {
-                        "Name": "Jordan Howard",
+                        "Name": "Alfred Morris",
                         "Position": "RB",
-                        "Points": 215.60
+                        "Points": 68.70
                     },
                     {
-                        "Name": "Ryan Matthews",
-                        "Position": "RB",
-                        "Points": 138.10
-                    },
-                    {
-                        "Name": "Ty Montgomery",
-                        "Position": "RB",
-                        "Points": 118.50
-                    },
-                    {
-                        "Name": "Kyle Rudolph",
-                        "Position": "TE",
-                        "Points": 167.50
-                    },
-                    {
-                        "Name": "Wendall Smallwood",
-                        "Position": "RB",
-                        "Points": 49.70
-                    },
-                    {
-                        "Name": "James Starks",
-                        "Position": "RB",
-                        "Points": 49.40
-                    },
-                    {
-                        "Name": "Tyrod Taylor",
+                        "Name": "Blake Bortles",
                         "Position": "QB",
-                        "Points": 276.92
+                        "Points": 262.68
                     },
                     {
-                        "Name": "Dan Bailey",
+                        "Name": "Carlos Hyde",
+                        "Position": "RB",
+                        "Points": 204.30
+                    },
+                    {
+                        "Name": "Marquise Goodwin",
+                        "Position": "WR",
+                        "Points": 140.60
+                    },
+                    {
+                        "Name": "Jerick McKinnon",
+                        "Position": "RB",
+                        "Points": 152.60
+                    },
+                    {
+                        "Name": "Chris Boswell",
                         "Position": "K",
-                        "Points": 140.00
+                        "Points": 159.00
                     },
                     {
-                        "Name": "Baltimore",
+                        "Name": "Jacksonville",
                         "Position": "DST",
-                        "Points": 127.00
+                        "Points": 205.00
+                    },
+                    {
+                        "Name": "Philadelphia",
+                        "Position": "DST",
+                        "Points": 170.00
                     }
                 ],
                 "Wins": "5",
                 "Losses": "8",
-                "Points Scored": "1447.44",
-                "Points Against": "1479.44",
-                "Rank": "7"
+                "Points Scored": "1412.48",
+                "Points Against": "1417.32",
+                "Rank": "6",
+                "logo": "bmsgoats.jpg"
             },
             "Fighting Mongooses": {
                 "Owner": "Evan G",
                 "Roster": [
                     {
-                        "Name": "Allen Robinson II",
-                        "Position": "WR",
-                        "Points": 162.80
+                        "Name": "Kirk Cousins",
+                        "Position": "QB",
+                        "Points": 290.62
                     },
                     {
-                        "Name": "Travis Benjamin",
+                        "Name": "Jarvis Landry",
                         "Position": "WR",
-                        "Points": 108.90
+                        "Points": 204.00
                     },
                     {
-                        "Name": "Randall Cobb",
+                        "Name": "Keenan Allen",
                         "Position": "WR",
-                        "Points": 118.30
+                        "Points": 233.20
                     },
                     {
-                        "Name": "Stefon Diggs",
-                        "Position": "WR",
-                        "Points": 151.30
+                        "Name": "LeSean McCoy",
+                        "Position": "RB",
+                        "Points": 234.10
                     },
                     {
-                        "Name": "Jared Cook",
+                        "Name": "Dion Lewis",
+                        "Position": "RB",
+                        "Points": 187.00
+                    },
+                    {
+                        "Name": "Vernon Davis",
                         "Position": "TE",
-                        "Points": 56.70
+                        "Points": 100.30
                     },
                     {
-                        "Name": "Todd Gurley II",
-                        "Position": "RB",
-                        "Points": 176.70
-                    },
-                    {
-                        "Name": "Jordan Howard",
-                        "Position": "RB",
+                        "Name": "Michael Crabtree",
+                        "Position": "WR",
                         "Points": 215.60
                     },
                     {
-                        "Name": "Ryan Matthews",
-                        "Position": "RB",
-                        "Points": 138.10
+                        "Name": "Emmanuel Sanders",
+                        "Position": "WR",
+                        "Points": 91.00
                     },
                     {
-                        "Name": "Ty Montgomery",
-                        "Position": "RB",
-                        "Points": 118.50
-                    },
-                    {
-                        "Name": "Kyle Rudolph",
-                        "Position": "TE",
-                        "Points": 167.50
-                    },
-                    {
-                        "Name": "Wendall Smallwood",
-                        "Position": "RB",
-                        "Points": 49.70
-                    },
-                    {
-                        "Name": "James Starks",
-                        "Position": "RB",
-                        "Points": 49.40
-                    },
-                    {
-                        "Name": "Tyrod Taylor",
+                        "Name": "Matthew Stafford",
                         "Position": "QB",
-                        "Points": 276.92
+                        "Points": 283.64
                     },
                     {
-                        "Name": "Dan Bailey",
+                        "Name": "Tarik Cohen",
+                        "Position": "RB",
+                        "Points": 123.64
+                    },
+                    {
+                        "Name": "Bilal Powell",
+                        "Position": "RB",
+                        "Points": 133.70
+                    },
+                    {
+                        "Name": "Jordan Reed",
+                        "Position": "TE",
+                        "Points": 46.60
+                    },
+                    {
+                        "Name": "Dalvin Cook",
+                        "Position": "RB",
+                        "Points": 59.90
+                    },
+                    {
+                        "Name": "Odell Beckham Jr.",
+                        "Position": "WR",
+                        "Points": 61.50
+                    },
+                    {
+                        "Name": "Ryan Succop",
                         "Position": "K",
-                        "Points": 140.00
+                        "Points": 156.00
                     },
                     {
-                        "Name": "Baltimore",
+                        "Name": "Detroit",
                         "Position": "DST",
-                        "Points": 127.00
+                        "Points": 159.00
                     }
                 ],
-                "Wins": 6,
-                "Losses": 7,
+                "Wins": "6",
+                "Losses": "7",
                 "Points Scored": "1349.38",
                 "Points Against": "1426.50",
-                "Rank": "6"
+                "Rank": "8",
+                "logo": "fightingmongooses.png"
             },
-            "The Better Brother": {
+            "5-Star Men": {
                 "Owner": "Nic B",
                 "Roster": [
                     {
-                        "Name": "Allen Robinson II",
-                        "Position": "WR",
-                        "Points": 162.80
-                    },
-                    {
-                        "Name": "Travis Benjamin",
-                        "Position": "WR",
-                        "Points": 108.90
-                    },
-                    {
-                        "Name": "Randall Cobb",
-                        "Position": "WR",
-                        "Points": 118.30
-                    },
-                    {
-                        "Name": "Stefon Diggs",
-                        "Position": "WR",
-                        "Points": 151.30
-                    },
-                    {
-                        "Name": "Jared Cook",
-                        "Position": "TE",
-                        "Points": 56.70
-                    },
-                    {
-                        "Name": "Todd Gurley II",
-                        "Position": "RB",
-                        "Points": 176.70
-                    },
-                    {
-                        "Name": "Jordan Howard",
-                        "Position": "RB",
-                        "Points": 215.60
-                    },
-                    {
-                        "Name": "Ryan Matthews",
-                        "Position": "RB",
-                        "Points": 138.10
-                    },
-                    {
-                        "Name": "Ty Montgomery",
-                        "Position": "RB",
-                        "Points": 118.50
-                    },
-                    {
-                        "Name": "Kyle Rudolph",
-                        "Position": "TE",
-                        "Points": 167.50
-                    },
-                    {
-                        "Name": "Wendall Smallwood",
-                        "Position": "RB",
-                        "Points": 49.70
-                    },
-                    {
-                        "Name": "James Starks",
-                        "Position": "RB",
-                        "Points": 49.40
-                    },
-                    {
-                        "Name": "Tyrod Taylor",
+                        "Name": "Cam Newton",
                         "Position": "QB",
-                        "Points": 276.92
+                        "Points": 315.48
                     },
                     {
-                        "Name": "Dan Bailey",
-                        "Position": "K",
-                        "Points": 140.00
-                    },
-                    {
-                        "Name": "Baltimore",
-                        "Position": "DST",
-                        "Points": 127.00
-                    }
-                ],
-                "Wins": "7",
-                "Losses": "6",
-                "Points Scored": "1366.16",
-                "Points Against": "1430.26",
-                "Rank": "5"
-            },
-            "Antonio Brownderas": {
-                "Owner": "Keith C",
-                "Roster": [
-                    {
-                        "Name": "Allen Robinson II",
+                        "Name": "Doug Baldwin",
                         "Position": "WR",
-                        "Points": 162.80
+                        "Points": 185.80
                     },
                     {
-                        "Name": "Travis Benjamin",
+                        "Name": "Brandin Cooks",
                         "Position": "WR",
-                        "Points": 108.90
+                        "Points": 188.70
                     },
                     {
-                        "Name": "Randall Cobb",
-                        "Position": "WR",
-                        "Points": 118.30
+                        "Name": "Mark Ingram II",
+                        "Position": "RB",
+                        "Points": 249.00
                     },
                     {
-                        "Name": "Stefon Diggs",
-                        "Position": "WR",
-                        "Points": 151.30
+                        "Name": "Kareem Hunt",
+                        "Position": "RB",
+                        "Points": 268.70
                     },
                     {
-                        "Name": "Jared Cook",
+                        "Name": "Jack Doyle",
                         "Position": "TE",
-                        "Points": 56.70
+                        "Points": 129.00
                     },
                     {
-                        "Name": "Todd Gurley II",
+                        "Name": "Ezekiel Elliott",
                         "Position": "RB",
-                        "Points": 176.70
+                        "Points": 190.20
                     },
                     {
-                        "Name": "Jordan Howard",
-                        "Position": "RB",
-                        "Points": 215.60
-                    },
-                    {
-                        "Name": "Ryan Matthews",
-                        "Position": "RB",
-                        "Points": 138.10
-                    },
-                    {
-                        "Name": "Ty Montgomery",
-                        "Position": "RB",
-                        "Points": 118.50
-                    },
-                    {
-                        "Name": "Kyle Rudolph",
+                        "Name": "Hunter Henry",
                         "Position": "TE",
-                        "Points": 167.50
+                        "Points": 104.40
                     },
                     {
-                        "Name": "Wendall Smallwood",
+                        "Name": "Jordy Nelson",
+                        "Position": "WR",
+                        "Points": 110.70
+                    },
+                    {
+                        "Name": "Robby Anderson",
+                        "Position": "WR",
+                        "Points": 168.50
+                    },
+                    {
+                        "Name": "Tevin Coleman",
                         "Position": "RB",
-                        "Points": 49.70
+                        "Points": 154.20
                     },
                     {
-                        "Name": "James Starks",
-                        "Position": "RB",
-                        "Points": 49.40
-                    },
-                    {
-                        "Name": "Tyrod Taylor",
+                        "Name": "Carson Wentz",
                         "Position": "QB",
-                        "Points": 276.92
+                        "Points": 288.74
                     },
                     {
-                        "Name": "Dan Bailey",
+                        "Name": "Justin Tucker",
                         "Position": "K",
-                        "Points": 140.00
+                        "Points": 162.00
                     },
                     {
-                        "Name": "Baltimore",
+                        "Name": "Chicago",
                         "Position": "DST",
-                        "Points": 127.00
-                    }
-                ],
-                "Wins": "7",
-                "Losses": "6",
-                "Points Scored": "1469.86",
-                "Points Against": "1461.32",
-                "Rank": "4"
-            },
-            "#1 Boelhouwer": {
-                "Owner": "Ben B",
-                "Roster": [
-                    {
-                        "Name": "Allen Robinson II",
-                        "Position": "WR",
-                        "Points": 162.80
+                        "Points": 138.00
                     },
                     {
-                        "Name": "Travis Benjamin",
-                        "Position": "WR",
-                        "Points": 108.90
-                    },
-                    {
-                        "Name": "Randall Cobb",
-                        "Position": "WR",
-                        "Points": 118.30
-                    },
-                    {
-                        "Name": "Stefon Diggs",
-                        "Position": "WR",
-                        "Points": 151.30
-                    },
-                    {
-                        "Name": "Jared Cook",
-                        "Position": "TE",
-                        "Points": 56.70
-                    },
-                    {
-                        "Name": "Todd Gurley II",
-                        "Position": "RB",
-                        "Points": 176.70
-                    },
-                    {
-                        "Name": "Jordan Howard",
-                        "Position": "RB",
-                        "Points": 215.60
-                    },
-                    {
-                        "Name": "Ryan Matthews",
-                        "Position": "RB",
-                        "Points": 138.10
-                    },
-                    {
-                        "Name": "Ty Montgomery",
-                        "Position": "RB",
-                        "Points": 118.50
-                    },
-                    {
-                        "Name": "Kyle Rudolph",
-                        "Position": "TE",
-                        "Points": 167.50
-                    },
-                    {
-                        "Name": "Wendall Smallwood",
-                        "Position": "RB",
-                        "Points": 49.70
-                    },
-                    {
-                        "Name": "James Starks",
-                        "Position": "RB",
-                        "Points": 49.40
-                    },
-                    {
-                        "Name": "Tyrod Taylor",
-                        "Position": "QB",
-                        "Points": 276.92
-                    },
-                    {
-                        "Name": "Dan Bailey",
-                        "Position": "K",
-                        "Points": 140.00
-                    },
-                    {
-                        "Name": "Baltimore",
+                        "Name": "Buffalo",
                         "Position": "DST",
-                        "Points": 127.00
-                    }
-                ],
-                "Wins": "7",
-                "Losses": "6",
-                "Points Scored": "1522.80",
-                "Points Against": "1453.30",
-                "Rank": "3"
-            },
-            "From Wentz You Came": {
-                "Owner": "Zane C",
-                "Roster": [
-                    {
-                        "Name": "Allen Robinson II",
-                        "Position": "WR",
-                        "Points": 162.80
+                        "Points": 104.00
                     },
                     {
-                        "Name": "Travis Benjamin",
-                        "Position": "WR",
-                        "Points": 108.90
-                    },
-                    {
-                        "Name": "Randall Cobb",
-                        "Position": "WR",
-                        "Points": 118.30
-                    },
-                    {
-                        "Name": "Stefon Diggs",
-                        "Position": "WR",
-                        "Points": 151.30
-                    },
-                    {
-                        "Name": "Jared Cook",
-                        "Position": "TE",
-                        "Points": 56.70
-                    },
-                    {
-                        "Name": "Todd Gurley II",
-                        "Position": "RB",
-                        "Points": 176.70
-                    },
-                    {
-                        "Name": "Jordan Howard",
-                        "Position": "RB",
-                        "Points": 215.60
-                    },
-                    {
-                        "Name": "Ryan Matthews",
-                        "Position": "RB",
-                        "Points": 138.10
-                    },
-                    {
-                        "Name": "Ty Montgomery",
-                        "Position": "RB",
-                        "Points": 118.50
-                    },
-                    {
-                        "Name": "Kyle Rudolph",
-                        "Position": "TE",
-                        "Points": 167.50
-                    },
-                    {
-                        "Name": "Wendall Smallwood",
-                        "Position": "RB",
-                        "Points": 49.70
-                    },
-                    {
-                        "Name": "James Starks",
-                        "Position": "RB",
-                        "Points": 49.40
-                    },
-                    {
-                        "Name": "Tyrod Taylor",
-                        "Position": "QB",
-                        "Points": 276.92
-                    },
-                    {
-                        "Name": "Dan Bailey",
-                        "Position": "K",
-                        "Points": 140.00
-                    },
-                    {
-                        "Name": "Baltimore",
+                        "Name": "Arizona",
                         "Position": "DST",
-                        "Points": 127.00
+                        "Points": 112.00
                     }
                 ],
                 "Wins": "8",
                 "Losses": "5",
-                "Points Scored": "1469.58",
-                "Points Against": "1383.24",
-                "Rank": "2"
+                "Points Scored": "1504.54",
+                "Points Against": "1259.94",
+                "Rank": "3",
+                "logo": "yellowhelmet.png"
             },
-            "4 Ring GOAT Circus": {
-                "Owner": "Zack C",
+            "Carrface": {
+                "Owner": "Keith C",
                 "Roster": [
                     {
-                        "Name": "Allen Robinson II",
-                        "Position": "WR",
-                        "Points": 162.80
+                        "Name": "Dak Prescott",
+                        "Position": "QB",
+                        "Points": 273.66
                     },
                     {
-                        "Name": "Travis Benjamin",
+                        "Name": "Antonion Brown",
                         "Position": "WR",
-                        "Points": 108.90
+                        "Points": 259.80
                     },
                     {
-                        "Name": "Randall Cobb",
+                        "Name": "T.Y. Hilton",
                         "Position": "WR",
-                        "Points": 118.30
+                        "Points": 147.10
                     },
                     {
-                        "Name": "Stefon Diggs",
-                        "Position": "WR",
-                        "Points": 151.30
+                        "Name": "Marshawn Lynch",
+                        "Position": "RB",
+                        "Points": 154.20
                     },
                     {
-                        "Name": "Jared Cook",
+                        "Name": "Devonta Freeman",
+                        "Position": "RB",
+                        "Points": 182.20
+                    },
+                    {
+                        "Name": "Greg Olsen",
                         "Position": "TE",
-                        "Points": 56.70
+                        "Points": 33.60
                     },
                     {
-                        "Name": "Todd Gurley II",
+                        "Name": "Rex Burkhead",
                         "Position": "RB",
-                        "Points": 176.70
+                        "Points": 114.80
                     },
                     {
-                        "Name": "Jordan Howard",
-                        "Position": "RB",
-                        "Points": 215.60
+                        "Name": "Amari Cooper",
+                        "Position": "WR",
+                        "Points": 134.40
                     },
                     {
-                        "Name": "Ryan Matthews",
+                        "Name": "Ricky Seals-Jones",
+                        "Position": "TE",
+                        "Points": 44.10
+                    },
+                    {
+                        "Name": "Derek Carr",
+                        "Position": "TE",
+                        "Points": 219.44
+                    },
+                    {
+                        "Name": "Nelson Agholor",
+                        "Position": "WR",
+                        "Points": 162.50
+                    },
+                    {
+                        "Name": "Austin Ekler",
                         "Position": "RB",
-                        "Points": 138.10
+                        "Points": 93.40
+                    },
+                    {
+                        "Name": "Graham Gano",
+                        "Position": "K",
+                        "Points": 131.00
+                    },
+                    {
+                        "Name": "New Orleans",
+                        "Position": "DST",
+                        "Points": 150.00
+                    },
+                    {
+                        "Name": "Green Bay",
+                        "Position": "DST",
+                        "Points": 95.00
+                    }
+                ],
+                "Wins": "7",
+                "Losses": "6",
+                "Points Scored": "1264.66",
+                "Points Against": "1332.86",
+                "Rank": "5",
+                "logo": "carrface.jpg"
+            },
+            "Game of Jones": {
+                "Owner": "Jaron T",
+                "Roster": [
+                    {
+                        "Name": "Drew Brees",
+                        "Position": "QB",
+                        "Points": 270.56
+                    },
+                    {
+                        "Name": "Julio Jones",
+                        "Position": "WR",
+                        "Points": 207.90
+                    },
+                    {
+                        "Name": "DeAndre Hopkins",
+                        "Position": "WR",
+                        "Points": 261.80
+                    },
+                    {
+                        "Name": "Lamar Miller",
+                        "Position": "RB",
+                        "Points": 175.50
                     },
                     {
                         "Name": "Ty Montgomery",
                         "Position": "RB",
-                        "Points": 118.50
+                        "Points": 80.10
                     },
                     {
-                        "Name": "Kyle Rudolph",
+                        "Name": "Delanie Walker",
                         "Position": "TE",
-                        "Points": 167.50
+                        "Points": 137.50
                     },
                     {
-                        "Name": "Wendall Smallwood",
+                        "Name": "DeSean Jackson",
+                        "Position": "WR",
+                        "Points": 113.60
+                    },
+                    {
+                        "Name": "Adam Thielen",
+                        "Position": "WR",
+                        "Points": 194.20
+                    },
+                    {
+                        "Name": "Davante Adams",
+                        "Position": "WR",
+                        "Points": 185.50
+                    },
+                    {
+                        "Name": "LeGarrette Blount",
                         "Position": "RB",
-                        "Points": 49.70
+                        "Points": 103.60
                     },
                     {
-                        "Name": "James Starks",
+                        "Name": "Tyrell Williams",
+                        "Position": "WR",
+                        "Points": 116.30
+                    },
+                    {
+                        "Name": "Latavius Murray",
                         "Position": "RB",
-                        "Points": 49.40
+                        "Points": 150.00
                     },
                     {
-                        "Name": "Tyrod Taylor",
-                        "Position": "QB",
-                        "Points": 276.92
+                        "Name": "D'Onta Freeman",
+                        "Position": "RB",
+                        "Points": 54.00
                     },
                     {
-                        "Name": "Dan Bailey",
+                        "Name": "Greg Zuerlein",
                         "Position": "K",
-                        "Points": 140.00
+                        "Points": 182.00
                     },
                     {
-                        "Name": "Baltimore",
+                        "Name": "Kansas City",
+                        "Position": "DST",
+                        "Points": 125.00
+                    }
+                ],
+                "Wins": "4",
+                "Losses": "9",
+                "Points Scored": "1268.72",
+                "Points Against": "1315.56",
+                "Rank": "9",
+                "logo": "gameofjones.jpg"
+            },
+            "R.I.P Ginger Jesus": {
+                "Owner": "Zane C",
+                "Roster": [
+                    {
+                        "Name": "Russell Wilson",
+                        "Position": "QB",
+                        "Points": 358.92
+                    },
+                    {
+                        "Name": "Larry Fitzgerald",
+                        "Position": "WR",
+                        "Points": 206.94
+                    },
+                    {
+                        "Name": "Marvin Jones Jr.",
+                        "Position": "WR",
+                        "Points": 194.60
+                    },
+                    {
+                        "Name": "Jamaal Williams",
+                        "Position": "RB",
+                        "Points": 130.30
+                    },
+                    {
+                        "Name": "Alex Collins",
+                        "Position": "RB",
+                        "Points": 159.50
+                    },
+                    {
+                        "Name": "Rob Gronkowski",
+                        "Position": "TE",
+                        "Points": 192.90
+                    },
+                    {
+                        "Name": "Devin Funchess",
+                        "Position": "WR",
+                        "Points": 163.50
+                    },
+                    {
+                        "Name": "OrLeans Darkwa",
+                        "Position": "RB",
+                        "Points": 128.20
+                    },
+                    {
+                        "Name": "Jay Ajayi",
+                        "Position": "RB",
+                        "Points": 123.10
+                    },
+                    {
+                        "Name": "JuJu Smith-Schuster",
+                        "Position": "WR",
+                        "Points": 168.70
+                    },
+                    {
+                        "Name": "Allen Robinson II",
+                        "Position": "WR",
+                        "Points": 2.20
+                    },
+                    {
+                        "Name": "David Johnson",
+                        "Position": "RB",
+                        "Points": 10.00
+                    },
+                    {
+                        "Name": "Stephen Gostkowski",
+                        "Position": "K",
+                        "Points": 172.00
+                    },
+                    {
+                        "Name": "Washington",
+                        "Position": "DST",
+                        "Points": 113.00
+                    },
+                    {
+                        "Name": "Carolina",
+                        "Position": "DST",
+                        "Points": 138.00
+                    },
+                    {
+                        "Name": "Miami",
+                        "Position": "DST",
+                        "Points": 93.00
+                    }
+                ],
+                "Wins": "7",
+                "Losses": "6",
+                "Points Scored": "1386.66",
+                "Points Against": "1306.80",
+                "Rank": "4",
+                "logo": "fromwentzyoucame.jpg"
+            },
+            "Bradys Dad Kisses": {
+                "Owner": "Zack C",
+                "Roster": [
+                    {
+                        "Name": "Case Keenum",
+                        "Position": "QB",
+                        "Points": 244.88
+                    },
+                    {
+                        "Name": "Tyreek Hill",
+                        "Position": "WR",
+                        "Points": 208.70
+                    },
+                    {
+                        "Name": "Mike Evans",
+                        "Position": "WR",
+                        "Points": 167.60
+                    },
+                    {
+                        "Name": "Le'Veon Bell",
+                        "Position": "RB",
+                        "Points": 299.10
+                    },
+                    {
+                        "Name": "Christian McCaffrey",
+                        "Position": "RB",
+                        "Points": 188.60
+                    },
+                    {
+                        "Name": "Evan Engram",
+                        "Position": "TE",
+                        "Points": 141.60
+                    },
+                    {
+                        "Name": "Mike Wallace",
+                        "Position": "WR",
+                        "Points": 125.20
+                    },
+                    {
+                        "Name": "Jamison Crowder",
+                        "Position": "WR",
+                        "Points": 127.30
+                    },
+                    {
+                        "Name": "Marqise Lee",
+                        "Position": "TE",
+                        "Points": 119.90
+                    },
+                    {
+                        "Name": "Jimmy Garoppolo",
+                        "Position": "QB",
+                        "Points": 92.40
+                    },
+                    {
+                        "Name": "Derrick Henry",
+                        "Position": "RB",
+                        "Points": 129.50
+                    },
+                    {
+                        "Name": "Jared Goff",
+                        "Position": "QB",
+                        "Points": 262.26
+                    },
+                    {
+                        "Name": "Deshaun Watson",
+                        "Position": "QB",
+                        "Points": 176.86
+                    },
+                    {
+                        "Name": "Matt Prater",
+                        "Position": "K",
+                        "Points": 151.00
+                    },
+                    {
+                        "Name": "Los Angeles",
+                        "Position": "DST",
+                        "Points": 160.00
+                    },
+                    {
+                        "Name": "New England",
                         "Position": "DST",
                         "Points": 127.00
                     }
                 ],
                 "Wins": "11",
                 "Losses": "2",
-                "Points Scored": "1523.98",
-                "Points Against": "1329.64",
-                "Rank": "1"
+                "Points Scored": "1400.62",
+                "Points Against": "1366.84",
+                "Rank": "2",
+                "logo": "bradysdadkisses.jpg"
+            }
+        },
+        "2018": {
+            "Calgary Cannons": {
+                "Owner": "Connor R",
+                "Roster": [
+                    {
+                        "Name": "Matthew Stafford",
+                        "Position": "QB",
+                        "Points": 212.18
+                    },
+                    {
+                        "Name": "Kenny Golladay",
+                        "Position": "WR",
+                        "Points": 172.10
+                    },
+                    {
+                        "Name": "Allen Robinson II",
+                        "Position": "WR",
+                        "Points": 125.80
+                    },
+                    {
+                        "Name": "Joe Mixon",
+                        "Position": "RB",
+                        "Points": 221.90
+                    },
+                    {
+                        "Name": "Matt Breida",
+                        "Position": "RB",
+                        "Points": 149.00
+                    },
+                    {
+                        "Name": "David Njoku",
+                        "Position": "TE",
+                        "Points": 115.90
+                    },
+                    {
+                        "Name": "Courtland Sutton",
+                        "Position": "WR",
+                        "Points": 115.30
+                    },
+                    {
+                        "Name": "Todd Gurley II",
+                        "Position": "RB",
+                        "Points": 342.60
+                    },
+                    {
+                        "Name": "Corey Davis",
+                        "Position": "WR",
+                        "Points": 151.10
+                    },
+                    {
+                        "Name": "Josh Adams",
+                        "Position": "RB",
+                        "Points": 78.40
+                    },
+                    {
+                        "Name": "Peyton Barber",
+                        "Position": "RB",
+                        "Points": 140.30
+                    },
+                    {
+                        "Name": "Ronald Jones II",
+                        "Position": "RB",
+                        "Points": 17.20
+                    },
+                    {
+                        "Name": "Mike Williams",
+                        "Position": "WR",
+                        "Points": 158.70
+                    },
+                    {
+                        "Name": "Matt Bryant",
+                        "Position": "K",
+                        "Points": 108.00
+                    },
+                    {
+                        "Name": "Indianapolis",
+                        "Position": "DST",
+                        "Points": 120.00
+                    }
+                ],
+                "Wins": "4",
+                "Losses": "9",
+                "Points Scored": "1518.42",
+                "Points Against": "1534.68",
+                "Rank": "8",
+                "logo": "calgarycannons.jpg"
+            },
+            "De more de Maryius": {
+                "Owner": "Alex R",
+                "Roster": [
+                    {
+                        "Name": "Cam Newton",
+                        "Position": "QB",
+                        "Points": 282.60
+                    },
+                    {
+                        "Name": "Mike Evans",
+                        "Position": "WR",
+                        "Points": 247.40
+                    },
+                    {
+                        "Name": "Devin Funchess",
+                        "Position": "WR",
+                        "Points": 100.90
+                    },
+                    {
+                        "Name": "Dion Lewis",
+                        "Position": "RB",
+                        "Points": 131.20
+                    },
+                    {
+                        "Name": "LeSean McCoy",
+                        "Position": "RB",
+                        "Points": 110.20
+                    },
+                    {
+                        "Name": "Trey Burton",
+                        "Position": "TE",
+                        "Points": 120.10
+                    },
+                    {
+                        "Name": "Sammy Watkins",
+                        "Position": "WR",
+                        "Points": 95.10
+                    },
+                    {
+                        "Name": "Demaryius Thomas",
+                        "Position": "WR",
+                        "Points": 127.20
+                    },
+                    {
+                        "Name": "Melvin Gordon III",
+                        "Position": "RB",
+                        "Points": 250.50
+                    },
+                    {
+                        "Name": "Jalen Richard",
+                        "Position": "WR",
+                        "Points": 122.60
+                    },
+                    {
+                        "Name": "Frank Gore",
+                        "Position": "RB",
+                        "Points": 96.60
+                    },
+                    {
+                        "Name": "Rashaad Penny",
+                        "Position": "RB",
+                        "Points": 65.90
+                    },
+                    {
+                        "Name": "Justin Jackson",
+                        "Position": "RB",
+                        "Points": 53.60
+                    },
+                    {
+                        "Name": "Jake Elliott",
+                        "Position": "K",
+                        "Points": 122.00
+                    },
+                    {
+                        "Name": "Los Angeles",
+                        "Position": "DST",
+                        "Points": 154.00
+                    }
+                ],
+                "Wins": "5",
+                "Losses": "8",
+                "Points Scored": "1344.14",
+                "Points Against": "1550.36",
+                "Rank": "7",
+                "logo": "demoredemaryius.jpg"
+            },
+            "A Team Has No Name": {
+                "Owner": "Stefan G",
+                "Roster": [
+                    {
+                        "Name": "Matt Ryan",
+                        "Position": "QB",
+                        "Points": 354.46
+                    },
+                    {
+                        "Name": "Michael Thomas",
+                        "Position": "WR",
+                        "Points": 253.00
+                    },
+                    {
+                        "Name": "Robert Woods",
+                        "Position": "WR",
+                        "Points": 222.60
+                    },
+                    {
+                        "Name": "Lamar Miller",
+                        "Position": "RB",
+                        "Points": 160.10
+                    },
+                    {
+                        "Name": "Leonard Fournette",
+                        "Position": "RB",
+                        "Points": 109.40
+                    },
+                    {
+                        "Name": "Zach Ertz",
+                        "Position": "TE",
+                        "Points": 222.30
+                    },
+                    {
+                        "Name": "Damien Williams",
+                        "Position": "RB",
+                        "Points": 87.10
+                    },
+                    {
+                        "Name": "Aaron Rodgers",
+                        "Position": "QB",
+                        "Points": 312.58
+                    },
+                    {
+                        "Name": "T.J. Yeldon",
+                        "Position": "RB",
+                        "Points": 145.60
+                    },
+                    {
+                        "Name": "Larry Fitzgerald",
+                        "Position": "WR",
+                        "Points": 151.18
+                    },
+                    {
+                        "Name": "Adam Humphries",
+                        "Position": "WR",
+                        "Points": 150.70
+                    },
+                    {
+                        "Name": "John Brown",
+                        "Position": "WR",
+                        "Points": 122.90
+                    },
+                    {
+                        "Name": "Doug Martin",
+                        "Position": "RB",
+                        "Points": 110.90
+                    },
+                    {
+                        "Name": "Derrius Guice",
+                        "Position": "RB",
+                        "Points": 0.00
+                    },
+                    {
+                        "Name": "Stephen Gostkowski",
+                        "Position": "K",
+                        "Points": 138.00
+                    },
+                    {
+                        "Name": "Miami",
+                        "Position": "DST",
+                        "Points": 120.00
+                    }
+                ],
+                "Wins": "4",
+                "Losses": "9",
+                "Points Scored": "1435.38",
+                "Points Against": "1575.74",
+                "Rank": "9",
+                "logo": "ateamhasnoname.jpg"
+            },
+            "BMS Goats": {
+                "Owner": "Reggie S",
+                "Roster": [
+                    {
+                        "Name": "Josh Allen",
+                        "Position": "QB",
+                        "Points": 208.06
+                    },
+                    {
+                        "Name": "Alshon Jeffery",
+                        "Position": "WR",
+                        "Points": 152.80
+                    },
+                    {
+                        "Name": "Keenan Allen",
+                        "Position": "WR",
+                        "Points": 211.60
+                    },
+                    {
+                        "Name": "Derrick Henry",
+                        "Position": "RB",
+                        "Points": 193.86
+                    },
+                    {
+                        "Name": "Alvin Karmara",
+                        "Position": "RB",
+                        "Points": 313.70
+                    },
+                    {
+                        "Name": "Evan Engram",
+                        "Position": "TE",
+                        "Points": 103.80
+                    },
+                    {
+                        "Name": "Julio Jones",
+                        "Position": "WR",
+                        "Points": 269.40
+                    },
+                    {
+                        "Name": "Gus Edwards",
+                        "Position": "RB",
+                        "Points": 88.80
+                    },
+                    {
+                        "Name": "Philip Rivers",
+                        "Position": "QB",
+                        "Points": 285.02
+                    },
+                    {
+                        "Name": "Robert Foster",
+                        "Position": "WR",
+                        "Points": 85.60
+                    },
+                    {
+                        "Name": "Kalen Ballage",
+                        "Position": "RB",
+                        "Points": 33.20
+                    },
+                    {
+                        "Name": "C.J. Anderson",
+                        "Position": "RB",
+                        "Points": 64.90
+                    },
+                    {
+                        "Name": "Antonio Callaway",
+                        "Position": "WR",
+                        "Points": 110.80
+                    },
+                    {
+                        "Name": "Kerryon Johnson",
+                        "Position": "RB",
+                        "Points": 123.40
+                    },
+                    {
+                        "Name": "Adam Vinatieri",
+                        "Position": "K",
+                        "Points": 126.00
+                    },
+                    {
+                        "Name": "Denver",
+                        "Position": "DST",
+                        "Points": 132.00
+                    }
+                ],
+                "Wins": "9",
+                "Losses": "4",
+                "Points Scored": "1482.50",
+                "Points Against": "1510.66",
+                "Rank": "2",
+                "logo": "bmsgoats.jpg"
+            },
+            "2 Headed Garbage Men": {
+                "Owner": "Lee W",
+                "Roster": [
+                    {
+                        "Name": "Lamar Jackson",
+                        "Position": "QB",
+                        "Points": 157.54
+                    },
+                    {
+                        "Name": "JuJu Smith-Schuster",
+                        "Position": "WR",
+                        "Points": 241.40
+                    },
+                    {
+                        "Name": "Odell Beckham Jr.",
+                        "Position": "WR",
+                        "Points": 191.84
+                    },
+                    {
+                        "Name": "Adrian Peterson",
+                        "Position": "RB",
+                        "Points": 179.00
+                    },
+                    {
+                        "Name": "Dalvin Cook",
+                        "Position": "RB",
+                        "Points": 132.00
+                    },
+                    {
+                        "Name": "Vance McDonald",
+                        "Position": "TE",
+                        "Points": 108.00
+                    },
+                    {
+                        "Name": "Jordan Howard",
+                        "Position": "RB",
+                        "Points": 170.00
+                    },
+                    {
+                        "Name": "Patrick Mahomes",
+                        "Position": "QB",
+                        "Points": 417.08
+                    },
+                    {
+                        "Name": "Nick Chubb",
+                        "Position": "RB",
+                        "Points": 184.50
+                    },
+                    {
+                        "Name": "Jarvis Landry",
+                        "Position": "WR",
+                        "Points": 176.62
+                    },
+                    {
+                        "Name": "Latavius Murray",
+                        "Position": "RB",
+                        "Points": 120.90
+                    },
+                    {
+                        "Name": "Tyler Lockett",
+                        "Position": "WR",
+                        "Points": 193.90
+                    },
+                    {
+                        "Name": "Cody Parkey",
+                        "Position": "K",
+                        "Points": 122.00
+                    },
+                    {
+                        "Name": "Pittsburgh",
+                        "Position": "DST",
+                        "Points": 116.00
+                    },
+                    {
+                        "Name": "Jacksonville",
+                        "Position": "DST",
+                        "Points": 115.00
+                    }
+                ],
+                "Wins": "4",
+                "Losses": "9",
+                "Points Scored": "1403.88",
+                "Points Against": "1548.68",
+                "Rank": "10",
+                "logo": "2headedgarbagemen.jpg"
+            },
+            "The Golden Geese": {
+                "Owner": "Nic B",
+                "Roster": [
+                    {
+                        "Name": "Russell Wilson",
+                        "Position": "QB",
+                        "Points": 298.92
+                    },
+                    {
+                        "Name": "Davante Adams",
+                        "Position": "WR",
+                        "Points": 274.10
+                    },
+                    {
+                        "Name": "Robby Anderson",
+                        "Position": "WR",
+                        "Points": 131.40
+                    },
+                    {
+                        "Name": "Ezekiel Elliott",
+                        "Position": "RB",
+                        "Points": 290.60
+                    },
+                    {
+                        "Name": "Tevin Coleman",
+                        "Position": "RB",
+                        "Points": 177.60
+                    },
+                    {
+                        "Name": "Travis Kelce",
+                        "Position": "TE",
+                        "Points": 243.10
+                    },
+                    {
+                        "Name": "Doug Baldwin",
+                        "Position": "WR",
+                        "Points": 116.80
+                    },
+                    {
+                        "Name": "Curtis Samuel",
+                        "Position": "WR",
+                        "Points": 117.30
+                    },
+                    {
+                        "Name": "Dede Westbrook",
+                        "Position": "WR",
+                        "Points": 146.50
+                    },
+                    {
+                        "Name": "Andrew Luck",
+                        "Position": "QB",
+                        "Points": 327.42
+                    },
+                    {
+                        "Name": "Austin Ekler",
+                        "Position": "RB",
+                        "Points": 149.30
+                    },
+                    {
+                        "Name": "Kareem Hunt",
+                        "Position": "RB",
+                        "Points": 217.20
+                    },
+                    {
+                        "Name": "John Kelly",
+                        "Position": "RB",
+                        "Points": 11.10
+                    },
+                    {
+                        "Name": "Will Fuller V",
+                        "Position": "WR",
+                        "Points": 90.30
+                    },
+                    {
+                        "Name": "Harrison Butker",
+                        "Position": "K",
+                        "Points": 147.00
+                    },
+                    {
+                        "Name": "New England",
+                        "Position": "DST",
+                        "Points": 139.00
+                    }
+                ],
+                "Wins": "10",
+                "Losses": "3",
+                "Points Scored": "1650.14",
+                "Points Against": "1420.96",
+                "Rank": "1",
+                "league_champion": true,
+                "logo": "yellowhelmet.png"
+            },
+            "Globo Gym Pur Cobras": {
+                "Owner": "Keith C",
+                "Roster": [
+                    {
+                        "Name": "Deshaun Watson",
+                        "Position": "QB",
+                        "Points": 331.70
+                    },
+                    {
+                        "Name": "Antonio Brown",
+                        "Position": "WR",
+                        "Points": 271.70
+                    },
+                    {
+                        "Name": "Amari Cooper",
+                        "Position": "WR",
+                        "Points": 178.00
+                    },
+                    {
+                        "Name": "Marlon Mack",
+                        "Position": "RB",
+                        "Points": 169.60
+                    },
+                    {
+                        "Name": "Sony Michel",
+                        "Position": "RB",
+                        "Points": 135.60
+                    },
+                    {
+                        "Name": "Jared Cook",
+                        "Position": "TE",
+                        "Points": 159.60
+                    },
+                    {
+                        "Name": "Calvin Ridley",
+                        "Position": "RB",
+                        "Points": 174.80
+                    },
+                    {
+                        "Name": "Brandin Cooks",
+                        "Position": "WR",
+                        "Points": 203.20
+                    },
+                    {
+                        "Name": "Aaron Jones",
+                        "Position": "RB",
+                        "Points": 158.40
+                    },
+                    {
+                        "Name": "Jaylen Samuels",
+                        "Position": "RB",
+                        "Points": 76.50
+                    },
+                    {
+                        "Name": "Jared Goff",
+                        "Position": "QB",
+                        "Points": 310.32
+                    },
+                    {
+                        "Name": "Kenyan Drake",
+                        "Position": "RB",
+                        "Points": 179.70
+                    },
+                    {
+                        "Name": "Rex Burkhead",
+                        "Position": "RB",
+                        "Points": 42.70
+                    },
+                    {
+                        "Name": "Will Lutz",
+                        "Position": "K",
+                        "Points": 151.00
+                    },
+                    {
+                        "Name": "Chicago",
+                        "Position": "DST",
+                        "Points": 187.00
+                    }
+                ],
+                "Wins": "7",
+                "Losses": "6",
+                "Points Scored": "1504.92",
+                "Points Against": "1370.92",
+                "Rank": "5",
+                "logo": "globogympurcobras.jpg"
+            },
+            "Gil Harris": {
+                "Owner": "Jaron T",
+                "Roster": [
+                    {
+                        "Name": "Tom Brady",
+                        "Position": "QB",
+                        "Points": 280.80
+                    },
+                    {
+                        "Name": "Adam Thielen",
+                        "Position": "WR",
+                        "Points": 250.80
+                    },
+                    {
+                        "Name": "DeAndre Hopkins",
+                        "Position": "WR",
+                        "Points": 276.00
+                    },
+                    {
+                        "Name": "Mark Ingram II",
+                        "Position": "RB",
+                        "Points": 132.00
+                    },
+                    {
+                        "Name": "Elijah McGuire",
+                        "Position": "RB",
+                        "Points": 76.40
+                    },
+                    {
+                        "Name": "Eric Ebron",
+                        "Position": "TE",
+                        "Points": 189.20
+                    },
+                    {
+                        "Name": "T.Y. Hilton",
+                        "Position": "WR",
+                        "Points": 201.00
+                    },
+                    {
+                        "Name": "James Connor",
+                        "Position": "RB",
+                        "Points": 252.50
+                    },
+                    {
+                        "Name": "Mitchell Trubisky",
+                        "Position": "QB",
+                        "Points": 263.02
+                    },
+                    {
+                        "Name": "Sterling Shepard",
+                        "Position": "WR",
+                        "Points": 149.50
+                    },
+                    {
+                        "Name": "Stevan Ridley",
+                        "Position": "RB",
+                        "Points": 13.30
+                    },
+                    {
+                        "Name": "Dak Prescott",
+                        "Position": "QB",
+                        "Points": 285.90
+                    },
+                    {
+                        "Name": "Le'Veon Bell",
+                        "Position": "RB",
+                        "Points": 0.00
+                    },
+                    {
+                        "Name": "Grep Zuerlein",
+                        "Position": "K",
+                        "Points": 128.00
+                    },
+                    {
+                        "Name": "Buffalo",
+                        "Position": "DST",
+                        "Points": 107.00
+                    },
+                    {
+                        "Name": "Green Bay",
+                        "Position": "DST",
+                        "Points": 95.00
+                    }
+                ],
+                "Wins": "7",
+                "Losses": "6",
+                "Points Scored": "1579.26",
+                "Points Against": "1492.98",
+                "Rank": "4",
+                "logo": "gameofjones.jpg"
+            },
+            "Came & Wentz": {
+                "Owner": "Zane C",
+                "Roster": [
+                    {
+                        "Name": "Jameis Winston",
+                        "Position": "QB",
+                        "Points": 195.78
+                    },
+                    {
+                        "Name": "Julian Edleman",
+                        "Position": "WR",
+                        "Points": 170.42
+                    },
+                    {
+                        "Name": "Stefon Diggs",
+                        "Position": "WR",
+                        "Points": 215.30
+                    },
+                    {
+                        "Name": "David Johnson",
+                        "Position": "RB",
+                        "Points": 221.60
+                    },
+                    {
+                        "Name": "Philip Lindsay",
+                        "Position": "RB",
+                        "Points": 205.30
+                    },
+                    {
+                        "Name": "Jordan Reed",
+                        "Position": "TE",
+                        "Points": 92.80
+                    },
+                    {
+                        "Name": "James White",
+                        "Position": "RB",
+                        "Points": 233.10
+                    },
+                    {
+                        "Name": "Rob Gronkowski",
+                        "Position": "TE",
+                        "Points": 107.70
+                    },
+                    {
+                        "Name": "Chris Thompson",
+                        "Position": "RB",
+                        "Points": 71.10
+                    },
+                    {
+                        "Name": "Josh Reynolds",
+                        "Position": "WR",
+                        "Points": 85.50
+                    },
+                    {
+                        "Name": "Jeff Wilson Jr.",
+                        "Position": "RB",
+                        "Points": 38.40
+                    },
+                    {
+                        "Name": "Ben Roethlisberger",
+                        "Position": "QB",
+                        "Points": 341.36
+                    },
+                    {
+                        "Name": "Ka'imi Fairbairn",
+                        "Position": "K",
+                        "Points": 170.00
+                    },
+                    {
+                        "Name": "Tennessee",
+                        "Position": "DST",
+                        "Points": 119.00
+                    },
+                    {
+                        "Name": "Minnesota",
+                        "Position": "DST",
+                        "Points": 124.00
+                    }
+                ],
+                "Wins": "7",
+                "Losses": "6",
+                "Points Scored": "1451.12",
+                "Points Against": "1544.12",
+                "Rank": "6",
+                "logo": "fromwentzyoucame.jpg"
+            },
+            "Bradys Dad Kisses": {
+                "Owner": "Zack C",
+                "Roster": [
+                    {
+                        "Name": "Drew Brees",
+                        "Position": "QB",
+                        "Points": 304.48
+                    },
+                    {
+                        "Name": "Tyreek Hill",
+                        "Position": "WR",
+                        "Points": 290.50
+                    },
+                    {
+                        "Name": "DJ Moore",
+                        "Position": "WR",
+                        "Points": 129.50
+                    },
+                    {
+                        "Name": "Saquon Barkley",
+                        "Position": "RB",
+                        "Points": 340.30
+                    },
+                    {
+                        "Name": "Christian McCaffrey",
+                        "Position": "RB",
+                        "Points": 332.00
+                    },
+                    {
+                        "Name": "George Kittle",
+                        "Position": "TE",
+                        "Points": 214.70
+                    },
+                    {
+                        "Name": "Chris Carson",
+                        "Position": "RB",
+                        "Points": 191.40
+                    },
+                    {
+                        "Name": "Tarik Cohen",
+                        "Position": "RB",
+                        "Points": 198.44
+                    },
+                    {
+                        "Name": "Tyler Boyd",
+                        "Position": "WR",
+                        "Points": 183.10
+                    },
+                    {
+                        "Name": "Chris Godwin",
+                        "Position": "WR",
+                        "Points": 155.70
+                    },
+                    {
+                        "Name": "Zay Jones",
+                        "Position": "WR",
+                        "Points": 137.20
+                    },
+                    {
+                        "Name": "Cameron BRate",
+                        "Position": "TE",
+                        "Points": 77.90
+                    },
+                    {
+                        "Name": "O.J. Howard",
+                        "Position": "TE",
+                        "Points": 103.50
+                    },
+                    {
+                        "Name": "Devonta Freeman",
+                        "Position": "RB",
+                        "Points": 11.60
+                    },
+                    {
+                        "Name": "Justin Tucker",
+                        "Position": "K",
+                        "Points": 160.00
+                    },
+                    {
+                        "Name": "Houston",
+                        "Position": "DST",
+                        "Points": 148.00
+                    }
+                ],
+                "Wins": "8",
+                "Losses": "5",
+                "Points Scored": "1679.06",
+                "Points Against": "1499.72",
+                "Rank": "3",
+                "logo": "bradysdadkisses.jpg"
             }
         }
     }
