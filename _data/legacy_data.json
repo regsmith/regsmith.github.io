@@ -1135,7 +1135,7 @@
                 "Losses": "8",
                 "Points Scored": "1273.96",
                 "Points Against": "1386.86",
-                "Rank": "7",
+                "Rank": "8",
                 "logo": "ateamhasnoname.jpg"
             },
             "BMS Goats": {
@@ -1221,7 +1221,7 @@
                 "Losses": "8",
                 "Points Scored": "1412.48",
                 "Points Against": "1417.32",
-                "Rank": "6",
+                "Rank": "7",
                 "logo": "bmsgoats.jpg"
             },
             "Fighting Mongooses": {
@@ -1312,7 +1312,7 @@
                 "Losses": "7",
                 "Points Scored": "1349.38",
                 "Points Against": "1426.50",
-                "Rank": "8",
+                "Rank": "6",
                 "logo": "fightingmongooses.png"
             },
             "5-Star Men": {
@@ -1753,8 +1753,8 @@
                         "Points": 127.00
                     }
                 ],
-                "Wins": "11",
-                "Losses": "2",
+                "Wins": "9",
+                "Losses": "4",
                 "Points Scored": "1400.62",
                 "Points Against": "1366.84",
                 "Rank": "2",
