@@ -1,8 +1,21 @@
+:root {
+  --th-bg-color: #646a71;
+  --th-text-color: #efefef;
+  --tr-color-primary: #e3e3e5;
+  --tr-color-secondary: #d1d2d4;
+  --tr-hover-color: #bbbdbf;
+}
+
 table.sortable tr {
     text-align: center;
-    font-size: 18px;
+    font-size: 0.85em;
     border-left: 2px ridge grey;
     border-right: 2px ridge grey;
+    height: 3em;
+}
+
+table.sortable td {
+    padding: 0.4em;
 }
 
 table.sortable tr:last-child td {
@@ -10,29 +23,50 @@ table.sortable tr:last-child td {
 }
 
 table.sortable thead {
-    background-color: #646a71;
+    background-color: var(--th-bg-color);
     border: 2px ridge grey;
 }
 
 table.sortable th {
     table-layout: fixed;
-    width: 90px;
-    color: #efefef;
+    color: var(--th-text-color);
     text-align: center;
-    font-size: 22px;
+    font-size: 1.1rem;
 }
 
-table.sortable tbody tr:nth-child(2n) td {
-    background: #e3e3e5;
+#standings_table, #roster_table th {
+    cursor: pointer;
 }
-table.sortable tbody tr:nth-child(2n+1) td {
-    background: #b8babd;
+
+#standings_table tbody tr:nth-child(-n+6) {
+    background: var(--tr-color-primary);
 }
+
+#standings_table tbody tr:nth-child(6) {
+    border-bottom: 4px outset grey;
+}
+
+#standings_table tbody tr:nth-child(n+7) {
+    background: var(--tr-color-secondary);
+}
+
+#standings_table tbody tr:hover {
+    background-color: var(--tr-hover-color);
+}
+
+#roster_table tbody tr:nth-child(2n) td {
+    background: var(--tr-color-primary);
+}
+
+#roster_table tbody tr:nth-child(2n+1) td {
+    background: var(--tr-color-secondary);
+}
+
 table.sortable th::after, th.sorttable_sorted::after, th.sorttable_sorted_reverse::after {
     content: " ";
-    display: inline-block;
-    width: 12px;
-    height: 12px;
+    display: inline-flex;
+    width: 0.75em;
+    height: 0.75em;
 }
 
 th.sorttable_sorted::after {
@@ -69,19 +103,27 @@ table.championship tbody td: {
     border-right: 2px ridge grey;
 }
 
+img.minilogo {
+    border: 2px grey outset;
+    max-width: 35px;
+}
+
 @media screen and (max-width: 600px) {
     table.sortable th {
-      font-size: 14px;
+      font-size: 0.90em;
     }
     table.sortable tr {
-      font-size: 12px;
+      font-size: 0.80em;
     }
     table.championship td {
-      font-size: 10px;
+      font-size: 0.90em;
+    }
+    img.minilogo {
+        display: none;
     }
 }
 
-.img draftimg {
+img.draftimg {
     background: #F1F1FA;
     width: 100%;
     display: block;

@@ -1,0 +1,65 @@
+---
+layout: page
+---
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Season Summary</title>
+    <link rel="stylesheet" href="../../assets/stylesheets/pages.css">
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+    <script src="../../assets/jscripts/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <section id="standings">
+        <h1>Season Standings</h1>
+        <script type="text/javascript">
+            var season = "{{page.year}}";
+        </script>
+        <script type="text/javascript" src="../../assets/jscripts/standings.js"></script>
+    </section>
+    <section id="draft">
+        <h1>Draft Recap</h1>
+        <div>
+            <a href="../../assets/photos/{{page.year}}_draft.png" title="{{page.year}} Draft Class">
+                <img src="../../assets/photos/{{page.year}}_draft.png" alt="" class="draftimg">
+            </a>
+        </div>
+    </section>
+    <section id="playoffs">
+        <h1>Playoff Recap</h1>
+        <p>{{page.playoff_recap}}</p>
+    </section>
+    <section id="championship">
+        <h1>Championship Games</h1>
+        <table class="championship">
+            <tbody>
+                <tr>
+                    <td colspan="5">Finals</td>
+                </tr>
+                <tr>
+                    <td>Team 1</td>
+                    <td>Score</td>
+                    <td>|</td>
+                    <td>Team 2</td>
+                    <td>Score</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Third Place</td>
+                </tr>
+                <tr>
+                    <td>Team 3</td>
+                    <td>Score</td>
+                    <td>|</td>
+                    <td>Team 4</td>
+                    <td>Score</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    {{ content }}
+</body>
+</html>
