@@ -2,6 +2,7 @@
 layout: page
 title: 2019 Season
 year: 2019
+permalink: seasons/2019
 ---
 
 <!DOCTYPE html>
@@ -10,9 +11,22 @@ year: 2019
 <script src="../../assets/jscripts/lazyload.js"></script>
 <head>
     <link href="../../assets/stylesheets/pages.css" rel="stylesheet">
+    <script type="text/javascript" src="../../assets/jscripts/standings_sleeper.js"></script>
 </head>
 
 <body>
+    <p id="demo"></p>
+    <script type="text/javascript">
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var myObj = JSON.parse(this.responseText);
+            document.getElementById("demo").innerHTML = myObj.position;
+          }
+        };
+        xmlhttp.open("GET", "/_data/players.json", true);
+        xmlhttp.send();
+    </script>
     <h1>Season Standings</h1>
     <table class="tg">
         <thead>
