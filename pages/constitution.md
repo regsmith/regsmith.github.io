@@ -15,14 +15,13 @@ permalink: /constitution/
 
 ## Keepers <a name="keepers"></a>
 Each team will get the option of 2 players to keep in place of a drafted player during each off season.
-A Keeper player’s value will be considered on 3 basis
+A player's keeper value will be determined on 3 basis
 1. 1 round higher than their previous year’s draft round
-2. A player kept for a second consecutive year will automatically cost a 1st round pick
+2. A player kept for a second consecutive year will cost a 1st round pick
 3. For players drafted that spent the majority of the year on IR with a season ending injury (ex. Saquon Barkley) will be reset to their ADP.
   - **Note:** A player must be _submitted to IR_ and miss 6+ weeks of the fantasy regular season (13 weeks). (2020: George Kittle would not qualify but Barkley and Mixon would)
-  - ADP is determined 1 month prior to the following draft date
-
-Players picked up from waivers (including dropped drafted players except keepers) will have a value relative to their price. Scale is:
+  - ADP is set 1 month prior to the upcoming draft
+4. Players picked up through free agency (including dropped drafted players) will have a value relative to their price. Scale is:
 
 |$ Spent|Round|
 |:-:|:-:|
