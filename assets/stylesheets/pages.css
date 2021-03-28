@@ -80,27 +80,31 @@ th.sorttable_sorted_reverse::after {
 }
 #sorttable_sortfwdind, #sorttable_sortrevind { display: none; }
 
-table.championship {
+.championship {
     table-layout: fixed;
     text-align: center;
     border: 2px ridge grey;
+    font-size: 0.9rem;
 }
 
-table.championship tbody tr:nth-child(2n-1) td {
+.championship th {
     background-color: #b8babd;
     color: black;
+    text-align: center;
+    border: none;
 }
 
-table.championship tbody tr:nth-child(2n) td {
+.championship td {
     background: #e3e3e5;
 }
 
-table.championship tbody tr:nth-child(2) td {
+.championship tbody tr:nth-child(2) td {
     border-bottom: 2px ridge grey;
 }
 
-table.championship tbody td: {
-    border-right: 2px ridge grey;
+.championship td:nth-child(2n) {
+    border-spacing: 1px;
+    border-right: 1px dashed black;
 }
 
 img.minilogo {
@@ -109,16 +113,16 @@ img.minilogo {
 }
 
 @media screen and (max-width: 600px) {
-    table.sortable th {
+    .sortable th {
       font-size: 0.90em;
     }
-    table.sortable tr {
+    .sortable tr {
       font-size: 0.80em;
     }
-    table.championship td {
-      font-size: 0.90em;
+    .championship th, td {
+      font-size: 0.80em;
     }
-    img.minilogo {
+    .minilogo {
         display: none;
     }
 }

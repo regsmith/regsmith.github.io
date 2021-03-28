@@ -25,7 +25,7 @@ layout: page
         <h1>Draft Recap</h1>
         <div>
             <a href="../../assets/photos/{{page.year}}_draft.png" title="{{page.year}} Draft Class">
-                <img src="../../assets/photos/{{page.year}}_draft.png" alt="" class="draftimg">
+                <img src="../../assets/photos/{{page.year}}_draft.png" alt="In progress" class="draftimg">
             </a>
         </div>
     </section>
@@ -38,24 +38,22 @@ layout: page
         <table class="championship">
             <tbody>
                 <tr>
-                    <td colspan="5">Finals</td>
+                    <th colspan="4">Finals</th>
                 </tr>
                 <tr>
-                    <td>Team 1</td>
-                    <td>Score</td>
-                    <td>|</td>
-                    <td>Team 2</td>
-                    <td>Score</td>
+                    <td>{{page.playoffs.team1}}</td>
+                    <td>{{page.playoffs.score1}}</td>
+                    <td>{{page.playoffs.score2}}</td>
+                    <td>{{page.playoffs.team2}}</td>
                 </tr>
                 <tr>
-                    <td colspan="5">Third Place</td>
+                    <th colspan="4">Third Place</th>
                 </tr>
                 <tr>
-                    <td>Team 3</td>
-                    <td>Score</td>
-                    <td>|</td>
-                    <td>Team 4</td>
-                    <td>Score</td>
+                    <td>{{page.playoffs.team3}}</td>
+                    <td>{{page.playoffs.score3}}</td>
+                    <td>{{page.playoffs.score4}}</td>
+                    <td>{{page.playoffs.team4}}</td>
                 </tr>
             </tbody>
         </table>

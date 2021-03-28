@@ -7,13 +7,21 @@ fetch(source)
 showRoster = teams => {
     function addHeaders(table) {
         var row = table.createTHead().insertRow();
-        let keys = ["Team", "Owner", "Record", "Points Scored", "Points Against"];
+        let keys = ["", "Team", "Owner", "Record", "Points Scored", "Points Against"];
         for(const key of keys) {
             // console.log(key);
             th = document.createElement('th');
             th.innerHTML = key;
             row.appendChild(th);
         }
+    }
+
+    function miniLogo(team) {
+        let minilogo_src = `/assets/photos/teamlogos/${team["logo"]}`;
+        let img = document.createElement("img");
+        img.setAttribute("class", "minilogo");
+        img.src = minilogo_src;
+        return img;
     }
 
     function isNumeric(str) {
@@ -40,6 +48,7 @@ showRoster = teams => {
                 row.setAttribute("class", "clickable-row");
                 let teampage = `/seasons/${season}/${team.replace(/\W/g, '').toLowerCase()}`;
                 row.setAttribute("data-href", teampage);
+                row.insertCell().appendChild(miniLogo(teams[team]));
                 row.insertCell().appendChild(document.createTextNode(team));
                 team = teams[team];
                 console.log(team);
