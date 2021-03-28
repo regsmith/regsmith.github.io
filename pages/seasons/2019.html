@@ -11,92 +11,81 @@ permalink: seasons/2019
 <script src="../../assets/jscripts/lazyload.js"></script>
 <head>
     <link href="../../assets/stylesheets/pages.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="../../assets/jscripts/standings_sleeper.js"></script>
 </head>
 
 <body>
-    <p id="demo"></p>
-    <script type="text/javascript">
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            var myObj = JSON.parse(this.responseText);
-            document.getElementById("demo").innerHTML = myObj.position;
-          }
-        };
-        xmlhttp.open("GET", "/_data/players.json", true);
-        xmlhttp.send();
-    </script>
     <h1>Season Standings</h1>
-    <table class="tg">
+    <table class="sortable" id="standings_table">
         <thead>
             <tr>
-                <th class="tg-wc04">Team</th>
-                <th class="tg-wc04">Record</th>
-                <th class="tg-wc04">Points For</th>
-                <th class="tg-wc04">Points Against</th>
+                <th>Team</th>
+                <th>Record</th>
+                <th>Points For</th>
+                <th>Points Against</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="tg-gmla">The Dukes of Hazzard</td>
-                <td class="tg-gmla">10-3</td>
-                <td class="tg-gmla">1572</td>
-                <td class="tg-gmla">1306</td>
+                <td>The Dukes of Hazzard</td>
+                <td sorttable_customkey="1">10-3</td>
+                <td>1572</td>
+                <td>1306</td>
             </tr>
             <tr>
-                <td class="tg-gmla">Ezekiel 25:17</td>
-                <td class="tg-gmla">9-4</td>
-                <td class="tg-gmla">1536</td>
-                <td class="tg-gmla">1255</td>
+                <td>Ezekiel 25:17</td>
+                <td sorttable_customkey="2">9-4</td>
+                <td>1536</td>
+                <td>1255</td>
             </tr>
             <tr>
-                <td class="tg-gmla">Calgary Cannons</td>
-                <td class="tg-gmla">9-4</td>
-                <td class="tg-gmla">1461</td>
-                <td class="tg-gmla">1421</td>
+                <td>Calgary Cannons</td>
+                <td sorttable_customkey="3">9-4</td>
+                <td>1461</td>
+                <td>1421</td>
             </tr>
             <tr>
-                <td class="tg-gmla">GorebaChubb</td>
-                <td class="tg-gmla">8-5</td>
-                <td class="tg-gmla">1413</td>
-                <td class="tg-gmla">1337</td>
+                <td>Goreba Chubb</td>
+                <td sorttable_customkey="4">8-5</td>
+                <td>1413</td>
+                <td>1337</td>
             </tr>
             <tr>
-                <td class="tg-gmla">Naples City Thunder Cats</td>
-                <td class="tg-gmla">7-6</td>
-                <td class="tg-gmla">1387</td>
-                <td class="tg-gmla">1417</td>
+                <td>Naples City Thunder Cats</td>
+                <td sorttable_customkey="5">7-6</td>
+                <td>1387</td>
+                <td>1417</td>
             </tr>
             <tr>
-                <td class="tg-gmla">This Machine Runs on W's</td>
-                <td class="tg-gmla">6-7</td>
-                <td class="tg-gmla">1391</td>
-                <td class="tg-gmla">1442</td>
+                <td>This Machine Runs on W's</td>
+                <td sorttable_customkey="6">6-7</td>
+                <td>1391</td>
+                <td>1442</td>
             </tr>
             <tr>
-                <td class="tg-gmla">Cold Feet</td>
-                <td class="tg-gmla">6-7</td>
-                <td class="tg-gmla">1367</td>
-                <td class="tg-gmla">1456</td>
+                <td>Cold Feet</td>
+                <td sorttable_customkey="7">6-7</td>
+                <td>1367</td>
+                <td>1456</td>
             </tr>
             <tr>
-                <td class="tg-gmla">BMS Goats</td>
-                <td class="tg-gmla">4-9</td>
-                <td class="tg-gmla">1362</td>
-                <td class="tg-gmla">1481</td>
+                <td>BMS Goats</td>
+                <td sorttable_customkey="8">4-9</td>
+                <td>1362</td>
+                <td>1481</td>
             </tr>
             <tr>
-                <td class="tg-gmla">The LockettShip Armada</td>
-                <td class="tg-gmla">4-9</td>
-                <td class="tg-gmla">1352</td>
-                <td class="tg-gmla">1538</td>
+                <td>The LockettShip Armada</td>
+                <td sorttable_customkey="9">4-9</td>
+                <td>1352</td>
+                <td>1538</td>
             </tr>
             <tr>
-                <td class="tg-gmla">AlwaysSonyInPhiladelphia</td>
-                <td class="tg-gmla">2-11</td>
-                <td class="tg-gmla">1346</td>
-                <td class="tg-gmla">1535</td>
+                <td>Always Sony In Philadelphia</td>
+                <td sorttable_customkey="10">2-11</td>
+                <td>1346</td>
+                <td>1535</td>
             </tr>
         </tbody>
     </table>
@@ -109,45 +98,45 @@ permalink: seasons/2019
     <hr>
 
     <h1>Keepers</h1>
-    <table class="tg" style="table-layout: fixed">
+    <table class="championship">
         <tbody>
             <tr>
-                <th class="tg-wc05" colspan="2">BMS Goats</th>
-                <th class="tg-wc05" colspan="2">Ezekiel 25:17</th>
-                <th class="tg-wc05" colspan="2">Calgary Cannons</th>
-                <th class="tg-wc05" colspan="2">GorebaChubb</th>
-                <th class="tg-wc05" colspan="2">Naples City Thunder Cats</th>
+                <th colspan="2">BMS Goats</th>
+                <th colspan="2">Ezekiel 25:17</th>
+                <th colspan="2">Calgary Cannons</th>
+                <th colspan="2">Goreba Chubb</th>
+                <th colspan="2">Naples City Thunder Cats</th>
             </tr>
             <tr>
-                <td class="tg-gmla2">Alvin Kamara (1st)</td>
-                <td class="tg-gmla2">Kerryon Johnson (5th)</td>
-                <td class="tg-gmla2">Ezekiel Elliott (1st)</td>
-                <td class="tg-gmla2">Travis Kelce (3rd)</td>
-                <td class="tg-gmla2">Todd Gurley (3rd)</td>
-                <td class="tg-gmla2">Kenny Golladay (7th)</td>
-                <td class="tg-gmla2">Nic Chubb (9th)</td>
-                <td class="tg-gmla2">Patrick Mahommes (10th)</td>
-                <td class="tg-gmla2">DeAndre Hopkins (1st)</td>
-                <td class="tg-gmla2">James Connor (14th)</td>
+                <td>Alvin Kamara (1st)</td>
+                <td>Kerryon Johnson (5th)</td>
+                <td>Ezekiel Elliott (1st)</td>
+                <td>Travis Kelce (3rd)</td>
+                <td>Todd Gurley (3rd)</td>
+                <td>Kenny Golladay (7th)</td>
+                <td>Nic Chubb (9th)</td>
+                <td>Patrick Mahommes (10th)</td>
+                <td>DeAndre Hopkins (1st)</td>
+                <td>James Connor (14th)</td>
             </tr>
             <tr>
-                <th class="tg-wc05" colspan="2">This Machine Runs on W's</th>
-                <th class="tg-wc05" colspan="2">Cold Feet</th>
-                <th class="tg-wc05" colspan="2">AlwaysSonyInPhiladelphia</th>
-                <th class="tg-wc05" colspan="2">The LockettShip Armada</th>
-                <th class="tg-wc05" colspan="2">The Dukes of Hazzard</th>
+                <th colspan="2">This Machine Runs on W's</th>
+                <th colspan="2">Cold Feet</th>
+                <th colspan="2">Always Sony In Philadelphia</th>
+                <th colspan="2">The LockettShip Armada</th>
+                <th colspan="2">The Dukes of Hazzard</th>
             </tr>
             <tr>
-                <td class="tg-gmla2">Chris Carson (5th)</td>
-                <td class="tg-gmla2">Chris Godwin (13th)</td>
-                <td class="tg-gmla2">Marlon Mack (8th)</td>
-                <td class="tg-gmla2">Calvin Ridley (13th)</td>
-                <td class="tg-gmla2">David Johnson (1st)</td>
-                <td class="tg-gmla2">Julian Edelman (9th)</td>
-                <td class="tg-gmla2">JuJu Smith-Schuster (4th)</td>
-                <td class="tg-gmla2">Aaron Jones (10th)</td>
-                <td class="tg-gmla2">Christian McCaffrey (1st)</td>
-                <td class="tg-gmla2">Derrius Guice Was (13th)</td>
+                <td>Chris Carson (5th)</td>
+                <td>Chris Godwin (13th)</td>
+                <td>Marlon Mack (8th)</td>
+                <td>Calvin Ridley (13th)</td>
+                <td>David Johnson (1st)</td>
+                <td>Julian Edelman (9th)</td>
+                <td>JuJu Smith-Schuster (4th)</td>
+                <td>Aaron Jones (10th)</td>
+                <td>Christian McCaffrey (1st)</td>
+                <td>Derrius Guice Was (13th)</td>
             </tr>
         </tbody>
     </table>
@@ -162,25 +151,25 @@ permalink: seasons/2019
     </p>
 
     <h1>Championship Games</h1>
-    <table class="tg" style="table-layout: fixed">
+    <table class="championship">
         <tbody>
             <tr>
-                <th class="tg-wc04" colspan="4">Finals</th>
+                <th colspan="4">Finals</th>
             </tr>
             <tr>
-                <td class="tg-gmla">Ezekiel 25:17</td>
-                <td class="tg-gmla"><b>102.00</b></td>
-                <td class="tg-gmla">The Dukes of Hazzard</td>
-                <td class="tg-gmla"><b>94.58</b></td>
+                <td>Ezekiel 25:17</td>
+                <td><b>102.00</b></td>
+                <td><b>94.58</b></td>
+                <td>The Dukes of Hazzard</td>
             </tr>
             <tr>
-                <th class="tg-wc04" colspan="4">Third Place</th>
+                <th colspan="4">Third Place</th>
             </tr>
             <tr>
-                <td class="tg-gmla">This Machine Runs on W's</td>
-                <td class="tg-gmla"><b>113.72</b></td>
-                <td class="tg-gmla">Naples City Thunder Cats</td>
-                <td class="tg-gmla"><b>91.42</b></td>
+                <td>This Machine Runs on W's</td>
+                <td><b>113.72</b></td>
+                <td><b>91.42</b></td>
+                <td>Naples City Thunder Cats</td>
             </tr>
         </tbody>
     </table>
