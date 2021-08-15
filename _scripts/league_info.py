@@ -9,6 +9,7 @@ from tabulate import tabulate
 
 # 2019: 410927631714754560
 # 2020: 519359914084585472
+# 2021: 683509409514627072
 
 def draft_id():
     drafts = league.get_all_drafts()
@@ -78,22 +79,30 @@ def rostered_players(roster):
     for player_id in roster['players']:
         player_info = map_id_to_player(player_id)
         keeper_value = 10
-        # print(player_info)
-        # print(player_was_dropped(player_id))
+        reason = ""
+        print_debug("Player Info: ", player_info)
+        print_debug("Player was dropped?: ", player_was_dropped(player_id))
         if player_id in previous_keepers and not player_was_dropped(player_id):
             keeper_value = 1
+            reason = "Previous Draft Keeper"
         elif player_was_dropped(player_id) or not player_was_drafted(player_id):
-            keeper_value = keeper_value_from_bid(bid_amount(latest_add_by_player_id(player_id)))
+            transaction = latest_add_by_player_id(player_id)
+            week = str(transaction['leg'])
+            bid = bid_amount(transaction)
+            keeper_value = keeper_value_from_bid(bid)
+            reason = "Picked up week " + week + " for $" + str(bid)
         else:
-            keeper_value = keeper_value_from_draft(player_was_drafted(player_id))
-        players.extend([[player_info['position'], player_info['first_name'] + " " + player_info['last_name'], keeper_value]])
+            round_drafted = player_was_drafted(player_id)
+            keeper_value = keeper_value_from_draft(round_drafted)
+            reason = "Drafted in round " + str(round_drafted)
+        players.extend([[player_info['position'], player_info['first_name'] + " " + player_info['last_name'], str(keeper_value), reason]])
     return players
 
 def league_winners():
     bracket = league.get_playoff_winners_bracket()
-    print(bracket)
+    print_debug("Winners Bracket:", bracket)
     user_rosters = league.map_rosterid_to_ownerid(rosters)
-    print(user_rosters)
+    print_debug("User Rosters:", user_rosters)
     return {"first": user_rosters[bracket[-2]['w']], "second": user_rosters[bracket[-2]['l']], "third": user_rosters[bracket[-1]['w']]}
 
 def league_owners():
@@ -101,9 +110,9 @@ def league_owners():
     for record in standings:
         for owner in users:
             team_name = owner['metadata'].get('team_name')
-            print(owner)
             if team_name is None:
                 team_name = owner['display_name']
+            print_debug("Owner: " + team_name, owner)
             if team_name in record:
                 for roster in rosters:
                     if owner['user_id'] == roster['owner_id']:
@@ -117,21 +126,28 @@ def league_standings():
     headers = ["User", "Team Name", "Record", "Points Scored", "Points Against"]
     for owner in league_owners:
         place_str = ""
-        # for place, user_id in league_winners().items():
-        #     if owner['user_id'] == user_id:
-        #         place_str = " (" + place + ")"
+        for place, user_id in league_winners().items():
+            if owner['user_id'] == user_id:
+                place_str = " (" + place + ")"
         table.append([owner['display_name'] + place_str, owner['team_name'], owner['record'], owner['points_scored'], owner['points_against']])
     print(tabulate(table, headers, tablefmt="github"))
 
 def team_rosters():
     print("\nTeam Rosters\n")
-    headers = ["Position", "Player", "Keeper Value"]
+    headers = ["Position", "Player", "Keeper Value", "Reason"]
     for owner in league_owners:
         for roster in rosters:
             if owner['user_id'] == roster['owner_id']:
-                print(owner['team_name'] + " run by " + owner['display_name'])
-                print(tabulate(rostered_players(roster), headers, tablefmt="presto"))
+                header = owner['team_name'] + " run by " + owner['display_name']
+                print(header)
+                printable_roster = rostered_players(roster)
+                print(tabulate(printable_roster, headers, tablefmt="presto"))
                 print("\n")
+                if save_keepers is True:
+                    table_to_write = tabulate(printable_roster, headers, tablefmt="html")
+                    with open('../pages/keeper_values.html', 'a') as file:
+                        file.write("<h2>" + header + "</h2>")
+                        file.write(table_to_write)
 
 def all_transactions():
     all_transactions = []
@@ -173,36 +189,44 @@ def help():
 def parse(argv):
     ifile=''
     league_id=''
+    debug=False
+    save_keepers=False
 
     try:
-        myopts, args = getopt.getopt(sys.argv[1:],"i:l:s:h")
+        myopts, args = getopt.getopt(sys.argv[1:],"i:l:s:hdk")
     except getopt.GetoptError as e:
         print (str(e))
         help()
 
     for o, a in myopts:
-        if not a and o != '-h':
-            print("Can not have empty value for " + o)
-            help()
+        if o == '-i':
+            ifile=a
+        elif o == '-l':
+            league_id=a
+        elif o == '-s':
+            get_all_players(a)
+            print("Saved all players to " + a)
+            sys.exit(2)
+        elif o == '-d':
+            debug=True
+        elif o == '-k':
+            save_keepers=True
         else:
-            if o == '-i':
-                ifile=a
-            elif o == '-l':
-                league_id=a
-            elif o == '-s':
-                get_all_players(a)
-                print("Saved all players to " + a)
-                sys.exit(2)
-            else:
-                help()
+            help()
     if not ifile or not league_id:
         print("Both -i and -l are required")
         help()
-    return league_id, ifile
+    return league_id, ifile, debug, save_keepers
 
 def team_logo(user_id):
     avatar_id = User(597616010341711872).get_user()['avatar']
     return "https://sleepercdn.com/avatars/" + str(avatar_id)
+
+def print_debug(title, value):
+    if debug is True:
+        print(title)
+        print(value)
+        print("------------------------------\n")
 
 # Full size URL
 #
@@ -212,23 +236,23 @@ def team_logo(user_id):
 #
 # https://sleepercdn.com/avatars/thumbs/<avatar_id>
 
-league_id, inputfile = parse(sys.argv[1:])
+league_id, inputfile, debug, save_keepers = parse(sys.argv[1:])
 league = League(league_id)
 rosters = league.get_rosters()
 users = league.get_users()
 standings = league.get_standings(rosters, users)
 league_owners = league_owners()
-# draft_picks = Drafts(draft_id()).get_all_picks()
-# previous_keepers = keepers_from_draft()
-# weekly_transactions = all_transactions()
-#
+draft_picks = Drafts(draft_id()).get_all_picks()
+previous_keepers = keepers_from_draft()
+weekly_transactions = all_transactions()
+
 # print(users)
 # user = User(597616010341711872)
 # print(user.get_user())
 # print(team_logo(597616010341711872))
 
-# with open(inputfile) as json_file:
-#     players = json.load(json_file)
-#
+with open(inputfile) as json_file:
+    players = json.load(json_file)
+
 league_standings()
-# team_rosters()
+team_rosters()
