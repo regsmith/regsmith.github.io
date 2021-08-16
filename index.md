@@ -5,7 +5,7 @@ alt_title: "The League of Calamitous Intent"
 actions:
   - label: "Sleeper"
     icon: arrow-right  # references name of svg icon, see full list below
-    url: "https://sleeper.app/leagues/519359914084585472"
+    url: "https://sleeper.app/leagues/683509409514627072"
   - label: "Cheat Sheet"
     icon: arrow-right  # references name of svg icon, see full list below
     url: "https://docs.google.com/spreadsheets/d/1keMUpBgbXyp4BaSvILwSKM7kVXf2tq3oaIPlIIAaji8/edit?usp=sharing"

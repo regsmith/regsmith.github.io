@@ -132,6 +132,13 @@ def league_standings():
         table.append([owner['display_name'] + place_str, owner['team_name'], owner['record'], owner['points_scored'], owner['points_against']])
     print(tabulate(table, headers, tablefmt="github"))
 
+def draft_order():
+    print("Draft Order:")
+    i = 1
+    for owner in reversed(league_owners):
+        print(str(i) + ": " + owner['display_name'])
+        i += 1
+
 def team_rosters():
     print("\nTeam Rosters\n")
     headers = ["Position", "Player", "Keeper Value", "Reason"]
@@ -189,11 +196,12 @@ def help():
 def parse(argv):
     ifile=''
     league_id=''
-    debug=False
+    verbose=False
     save_keepers=False
+    drafting_order=False
 
     try:
-        myopts, args = getopt.getopt(sys.argv[1:],"i:l:s:hdk")
+        myopts, args = getopt.getopt(sys.argv[1:],"i:l:s:hdvk")
     except getopt.GetoptError as e:
         print (str(e))
         help()
@@ -207,8 +215,10 @@ def parse(argv):
             get_all_players(a)
             print("Saved all players to " + a)
             sys.exit(2)
+        elif o == '-v':
+            verbose=True
         elif o == '-d':
-            debug=True
+            drafting_order=True
         elif o == '-k':
             save_keepers=True
         else:
@@ -216,14 +226,14 @@ def parse(argv):
     if not ifile or not league_id:
         print("Both -i and -l are required")
         help()
-    return league_id, ifile, debug, save_keepers
+    return league_id, ifile, verbose, save_keepers, drafting_order
 
 def team_logo(user_id):
     avatar_id = User(597616010341711872).get_user()['avatar']
     return "https://sleepercdn.com/avatars/" + str(avatar_id)
 
 def print_debug(title, value):
-    if debug is True:
+    if verbose is True:
         print(title)
         print(value)
         print("------------------------------\n")
@@ -236,12 +246,17 @@ def print_debug(title, value):
 #
 # https://sleepercdn.com/avatars/thumbs/<avatar_id>
 
-league_id, inputfile, debug, save_keepers = parse(sys.argv[1:])
+league_id, inputfile, verbose, save_keepers, drafting_order = parse(sys.argv[1:])
 league = League(league_id)
 rosters = league.get_rosters()
 users = league.get_users()
 standings = league.get_standings(rosters, users)
 league_owners = league_owners()
+
+if drafting_order is True:
+    draft_order()
+    sys.exit(0)
+
 draft_picks = Drafts(draft_id()).get_all_picks()
 previous_keepers = keepers_from_draft()
 weekly_transactions = all_transactions()
