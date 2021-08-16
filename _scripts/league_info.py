@@ -133,11 +133,15 @@ def league_standings():
     print(tabulate(table, headers, tablefmt="github"))
 
 def draft_order():
-    print("Draft Order:")
+    table = []
+    headers = ["Pick Position", "Owner"]
     i = 1
     for owner in reversed(league_owners):
-        print(str(i) + ": " + owner['display_name'])
+        table.append([str(i), owner['display_name']])
         i += 1
+    print("<h2>Draft Order:<h2>")
+    print(tabulate(table, headers, tablefmt="html"))
+
 
 def team_rosters():
     print("\nTeam Rosters\n")
