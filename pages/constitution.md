@@ -15,6 +15,7 @@ permalink: /constitution/
 
 ## Keepers <a name="keepers"></a>
 Each team will get the option of 2 players to keep in place of a drafted player during each off season.
+These players, if any, need to be submitted 1 week prior to the draft date.
 A player's keeper value will be determined on 3 basis
 1. 1 round higher than their previous year’s draft round
 2. A player kept for a second consecutive year will cost a 1st round pick
