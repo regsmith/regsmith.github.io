@@ -177,7 +177,7 @@ def bid_amount(transaction):
 def latest_add_by_player_id(player_id):
     for week in weekly_transactions:
         for transaction in week:
-            if transaction.get('type') != 'trade':
+            if transaction.get('type') != 'trade' and transaction.get('status') == 'complete':
                 adds = transaction.get('adds')
                 if adds is not None:
                     for id in adds:
