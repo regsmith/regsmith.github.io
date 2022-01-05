@@ -6,14 +6,14 @@ actions:
   - label: "Sleeper"
     icon: arrow-right  # references name of svg icon, see full list below
     url: "https://sleeper.app/leagues/683509409514627072"
-  - label: "Cheat Sheet"
+  - label: "Podcast"
     icon: arrow-right  # references name of svg icon, see full list below
-    url: "https://docs.google.com/spreadsheets/d/1keMUpBgbXyp4BaSvILwSKM7kVXf2tq3oaIPlIIAaji8/edit?usp=sharing"
+    url: "https://anchor.fm/lcipodcast"
 
 image: /assets/logo.png # URL to a hero image associated with the post (e.g., /assets/page-pic.jpg)
 entries_layout: grid
 ---
 
-# Zane is your 2020 Champion!
+## Welcome to the league home page
 
-Congratulations to Zane winning the 2020 Championship title! This is his first win in LCI after a 2019 season where he only had 2 wins.
+Here you will find links to the league history, power rankings, keeper values, and blog posts! Subscribe to the podcast for weekly updates during the season.
