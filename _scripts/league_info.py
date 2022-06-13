@@ -42,11 +42,13 @@ def keepers_from_draft():
 def player_was_dropped(player_id):
     for week in weekly_transactions:
         for transaction in week:
-            if transaction.get('type') not in ['trade', 'commissioner']:
+            if transaction.get('type') not in ['trade', 'commissioner'] and transaction.get('status') == 'complete':
                 drops = transaction.get('drops')
                 if drops is not None:
                     for id in drops:
                         if player_id == id:
+                            print_debug("dropped player: ", player_id)
+                            print_debug("weekly transaction: ", transaction)
                             return True
     return False
 
@@ -87,10 +89,11 @@ def rostered_players(roster):
             reason = "Previous Draft Keeper"
         elif player_was_dropped(player_id) or not player_was_drafted(player_id):
             transaction = latest_add_by_player_id(player_id)
-            week = str(transaction['leg'])
-            bid = bid_amount(transaction)
-            keeper_value = keeper_value_from_bid(bid)
-            reason = "Picked up week " + week + " for $" + str(bid)
+            week = transaction.get('leg')
+            if week is not None:
+                bid = bid_amount(transaction)
+                keeper_value = keeper_value_from_bid(bid)
+                reason = "Picked up week " + str(week) + " for $" + str(bid)
         else:
             round_drafted = player_was_drafted(player_id)
             keeper_value = keeper_value_from_draft(round_drafted)
@@ -162,7 +165,7 @@ def team_rosters():
 
 def all_transactions():
     all_transactions = []
-    for week in range(16, 0, -1):
+    for week in range(17, 0, -1):
         all_transactions.append(league.get_transactions(week))
     return all_transactions
 
