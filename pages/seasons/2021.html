@@ -1,0 +1,185 @@
+---
+layout: page
+title: 2021 Season
+year: 2021
+permalink: seasons/2021
+---
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+<script src="../../assets/jscripts/lazyload.js"></script>
+<head>
+    <link href="../../assets/stylesheets/pages.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Season Standings</h1>
+    <table class="sortable" id="standings_table">
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Record</th>
+                <th>Points For</th>
+                <th>Points Against</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Here Kwity Kwity</td>
+                <td>10-4</td>
+                <td>1923</td>
+                <td>1672</td>
+            </tr>
+            <tr>
+                <td>Cobra Kyler</td>
+                <td>9-5</td>
+                <td>1735</td>
+                <td>1557</td>
+            </tr>
+            <tr>
+                <td>King Henrys Sunday Sermon</td>
+                <td>8-6</td>
+                <td>1740</td>
+                <td>1717</td>
+            </tr>
+            <tr>
+                <td>St. Hérbert</td>
+                <td>7-7</td>
+                <td>1804</td>
+                <td>1684</td>
+            </tr>
+            <tr>
+                <td>Ceedeez Nuts</td>
+                <td>7-7</td>
+                <td>1726</td>
+                <td>1684</td>
+            </tr>
+            <tr>
+                <td>Gronk Stonks</td>
+                <td>7-7</td>
+                <td>1718</td>
+                <td>1719</td>
+            </tr>
+            <tr>
+                <td>AlwaysSonyInPhiladelphia</td>
+                <td>7-7</td>
+                <td>1706</td>
+                <td>1744</td>
+            </tr>
+            <tr>
+                <td>Hillmans Ohnonaise</td>
+                <td>6-8</td>
+                <td>1639</td>
+                <td>1711</td>
+            </tr>
+            <tr>
+                <td>Calgary Cannons</td>
+                <td>5-9</td>
+                <td>1605</td>
+                <td>1834</td>
+            </tr>
+            <tr>
+                <td>Bob Barkers Barkanaughts</td>
+                <td>4-10</td>
+                <td>1577</td>
+                <td>1793</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h1>Draft Recap</h1>
+    <a href="https://sleeper.com/draft/nfl/683509409514627073">
+        <img class="draftimg" src="../../assets/photos/2021_draft.png" />
+    </a>
+
+    <hr>
+
+    <h1>Keepers</h1>
+    <table class="championship">
+        <tbody>
+            <tr>
+                <th colspan="2">St. Hérbert</th>
+                <th colspan="2">Here Kwity Kwity</th>
+                <th colspan="2">Gronk Stonks</th>
+                <th colspan="2">Hillmans Ohnonaise</th>
+                <th colspan="2">AlwaysSonyInPhiladelphia</th>
+            </tr>
+            <tr>
+                <td>Antonio Gibson (3rd)</td>
+                <td>Clyde Edwards-Helaire (9th)</td>
+                <td>Jonathan Taylor (2nd)</td>
+                <td>Josh Allen (7th)</td>
+                <td>Ezekiel Elliott (1st)</td>
+                <td>Stefon Diggs (4th)</td>
+                <td>D'Andre Swift (6th)</td>
+                <td>Damien Harris (12th)</td>
+                <td>Alvin Kamara (1st)</td>
+                <td>Justin Jefferson (5th)</td>
+            </tr>
+            <tr>
+                <th colspan="2">King Henrys Sunday Sermon</th>
+                <th colspan="2">Calgary Cannons</th>
+                <th colspan="2">Ceedeez Nuts</th>
+                <th colspan="2">Cobra Kyler</th>
+                <th colspan="2">Bob Barkers Barkanaughts</th>
+            </tr>
+            <tr>
+                <td>Derrick Henry (1st)</td>
+                <td> -- </td>
+                <td>Dalvin Cook (1st)</td>
+                <td> -- </td>
+                <td>Christian McCaffrey (1st)</td>
+                <td>CeeDee Lamb (9th)</td>
+                <td>Aaron Jones (1st)</td>
+                <td>Tee Higgins (9th)</td>
+                <td>Darren Waller (6th)</td>
+                <td>James Robinson (10th)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h1>Playoff Recap</h1>
+    <p></p>
+
+    <h1>Championship Games</h1>
+    <table class="championship">
+        <tbody>
+            <tr>
+                <th colspan="4">Finals</th>
+            </tr>
+            <tr>
+                <td>ZaneChurchill</td>
+                <td><b>163.62</b></td>
+                <td><b>102.24</b></td>
+                <td>Henry’s Bag of Tunyuns</td>
+            </tr>
+            <tr>
+                <th colspan="4">Third Place</th>
+            </tr>
+            <tr>
+                <td>Double Chubble</td>
+                <td><b>143.54</b></td>
+                <td><b>132.18</b></td>
+                <td>There’sADrakeInMyBoot</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>2020 Posts</h2>
+    {% for post in site.posts %}
+    {% capture post_year %}{{post.date | date: "%Y"}}{% endcapture %}
+    {% if post_year == "2020" %}
+    <ul>
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    </ul>
+    {% endif %}
+    {% endfor %}
+</body>
+</html>
