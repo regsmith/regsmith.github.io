@@ -52,6 +52,17 @@ def player_was_dropped(player_id):
                             return True
     return False
 
+def dropped_week(player_id):
+    for week in weekly_transactions:
+        for transaction in week:
+            if transaction.get('type') not in ['trade', 'commissioner'] and transaction.get('status') == 'complete':
+                drops = transaction.get('drops')
+                if drops is not None:
+                    for id in drops:
+                        if player_id == id:
+                            return transaction
+    return False
+
 def player_was_drafted(player_id):
     for pick in draft_picks:
         if pick.get('player_id') == player_id:
@@ -94,6 +105,8 @@ def rostered_players(roster):
                 bid = bid_amount(transaction)
                 keeper_value = keeper_value_from_bid(bid)
                 reason = "Picked up week " + str(week) + " for $" + str(bid)
+                if player_was_dropped(player_id):
+                    reason = "Dropped week " + str(dropped_week(player_id).get('leg')) + ", " + reason
         else:
             round_drafted = player_was_drafted(player_id)
             keeper_value = keeper_value_from_draft(round_drafted)
