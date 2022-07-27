@@ -211,6 +211,12 @@ def help():
     print("\tPrints the league standings and keeper values\n")
     print("Usage: %s -s output_players_file")
     print("\tSaves all players to file. Use sparingly\n")
+    print("Usage: %s -k")
+    print("\tSaves html file with results\n")
+    print("Usage: %s -d")
+    print("\tPrints the drafting order\n")
+    print("Usage: %s -v")
+    print("\tVerbose logging\n")
     sys.exit(2)
 
 def parse(argv):
