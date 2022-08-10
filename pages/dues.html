@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="google" content="notranslate"><meta name="viewport" content="target-densitydpi=device-dpi,user-scalable=1,minimum-scale=1,maximum-scale=2.5,initial-scale=1,width=device-width"><meta http-equiv="X-UA-Compatible" content="IE=edge;"><meta name="referrer" content="strict-origin-when-cross-origin"><title>League Info - Google Drive</title><link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/favicon3.ico"><link href="League%20Info%20-%20Google%20Drive_files/167191120-waffle_k_ltr.css" type="text/css" rel="stylesheet" nonce=""><style type="text/css" nonce="">
+        html { overflow: visible; }
+        #sheets-viewport { overflow: auto; }
+        #sheets-viewport.widget-viewport { overflow: hidden; }
+        .grid-container { overflow: visible; background: white;}
+        .grid-table-container { overflow: visible; }
+        #top-bar {
+          margin: 0;
+          overflow: hidden;
+        }
+        #top-bar {
+          border-bottom: 1px solid #ccc;
+          padding: 6px 6px 0;
+        }
+        #doc-title { padding-bottom: 5px; }
+        #doc-title .name { font-size: 15px; }
+        #sheet-menu {
+          font-size: 13px;
+          margin: 6px 0 0;
+          padding: 0 0 5px;
+        }
+        #sheet-menu li {
+          display: inline;
+          list-style-type: none;
+          margin: 0;
+          padding: 5px 8px;
+        }
+        #sheet-menu li.active {
+          background-color: #fff;
+          font-weight: bold;
+          border: 1px solid #999;
+        }
+        #top-bar #sheet-menu li.active {
+          border-bottom: 0;
+        }
+        #sheet-menu a, #sheet-menu a:visited { color: #07c; }
+        #footer {
+          background: #f0f0f0;
+          border-top: 1px #ccc solid;
+          border-bottom: 1px #ccc solid;
+          font-size: 13;
+          padding: 10px 10px;
+        }
+        .dash {
+          padding: 0 6px;
+        }
+        .ritz .waffle a { color: inherit; }.ritz .waffle .s0{border-bottom:1px SOLID #000000;background-color:#ffffff;}.ritz .waffle .s2{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#e06666;text-align:center;font-weight:bold;color:#000000;font-family:'Arial';font-size:14pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s6{border-right:1px SOLID #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s9{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#cfe2f3;text-align:center;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s1{border-right:1px SOLID #000000;background-color:#ffffff;}.ritz .waffle .s3{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#f9cb9c;text-align:center;font-weight:bold;color:#000000;font-family:'Arial';font-size:14pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s4{border-bottom:1px SOLID #000000;background-color:#f3f3f3;text-align:center;color:#000000;font-family:'Arial';font-size:12pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s5{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#f3f3f3;text-align:center;color:#000000;font-family:'Arial';font-size:12pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s10{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#f4cccc;text-align:center;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s8{border-right:1px SOLID #000000;background-color:#f4cccc;text-align:center;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s7{border-right:1px SOLID #000000;background-color:#cfe2f3;text-align:center;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}</style><script type="text/javascript" nonce="">
+        var activeSheetId;
+
+        function switchToSheet(id) {
+          if (document.getElementById('sheet-menu')) {
+            document.getElementById('sheet-button-' + activeSheetId)
+                .className = '';
+            document.getElementById('sheet-button-' + id).className = 'active';
+          }
+
+          document.getElementById(activeSheetId).style.display = 'none';
+          document.getElementById(id).style.display = '';
+          activeSheetId = id;
+
+          // posObjs() is defined in embeddedObjectJs (see EmbeddedObjectHtmlBuilder.java)
+          posObjs();
+          return false;
+        }
+
+        function init() {
+        var optPageSwitcher;
+
+        function resize() {
+          var optMobileWebHeader = document.getElementById('docs-ml-header-id');
+          var optTopBar = document.getElementById('top-bar');
+          var optFooter = document.getElementById('footer');
+          var sheetsViewport = document.getElementById('sheets-viewport');
+
+          if (optMobileWebHeader) {
+            sheetsViewport.style.marginTop = optMobileWebHeader.offsetHeight +
+                (optTopBar ? optTopBar.offsetHeight : 0) + 'px';
+          }
+          var adjustedHeight = window.innerHeight -
+              (optTopBar ? optTopBar.offsetHeight : 0) -
+              (optFooter ? optFooter.offsetHeight : 0);
+          var adjustedWidth = window.innerWidth;
+          sheetsViewport.style.width = (adjustedWidth + 'px');
+          sheetsViewport.style.height = (adjustedHeight + 'px');
+          if (optPageSwitcher) {
+            optPageSwitcher.resize(adjustedWidth, adjustedHeight);
+          }
+        }
+        resize();
+        window.onresize = resize;
+        var currentUrl = window.location.href;
+        var newUrl = currentUrl.replace('?sle=true&', '?');
+        newUrl = newUrl.replace('?sle=true', '');
+        newUrl = newUrl.replace('&sle=true&', '&');
+        newUrl = newUrl.replace('&sle=true', '');
+        window.history.replaceState(null, '', newUrl);
+        }
+        </script><script nonce="">_docs_flag_initialData={"docs-mwid":true,"docs-smheo":true,"info_params":{"token":"AC4w5VgGEKUjBpnRLhf0UWQASCDhE6PBzw:1660104503634","includes_info_params":true},"ilcm":{"eui":"ADFN-ctrW9X9NVCYRnXEa9eQ1sawN8CbqN5Pkbku_ZpwE2FtKl3oKBP-2gngRn4EzS0GwSlmxJLX","je":1,"sstu":1660104503646004,"si":"CK2t65mzu_kCFQ6STwkd5J4AcQ","gsc":1,"ei":[5700019,5700057,5700103,5700333,5700422,5700559,5700579,5700884,5700893,5701034,5701927,5702135,5702445,5702785,5702912,5702936,5703182,5703259,5703839,5703913,5703938,5704063,5704144,5704621,5704641,5704883,5705039,5705299,5705777,5705891,5706007,5706069,5706169,5706270,5706523,5706786,5706933,5707047,5707204,5707445,5707609,5707711,5707819,5707945,5708480,5708560,5708870,5708886,5709085,5709357,5709476,5709661,5709673,5710692,5710744,5710938,5711230,5711471,5711522,5711550,5712146,5712298,5712477,5712635,5712909,5712913,5713195,5713207,5713554,5714310,5714326,5714465,5714550,5714628,5714674,5714800,5714839,5714843,5715364,5715824,5716149,5716457,5717157,5717949,5719462,5719482,5719527,5720060,5720568,5720788,5720925,5721307,5721814,5722567,5723284,5723365,5723679,5723739,5723871,5723987,5724085,5724435,5724533,5724896,5725052,5725240,5725511,5725934,5726695,5726752,5727063,5727257,5727853,5727901,5728475,5729092,5729206,5730225,5730285,5730485,5731174,5731783,5731835,5732341,5732541,5733203,5733263,5733768,5734392,5734632,5735134,5735252,5735670,5735806,5736431,5737153,5737196,5737254,5737800,5738081,5738215,5738509,5738649,5738894,5739308,5739778,5739837,5740008,5740186,5740341,5740731,5740814,5741522,5741578,5741734,5741775,5741994,5743104,5743144,5743452,5743550,5743787,5744128,5744348,5744691,5744833,5745003,5745438,5745602,5746312,5746563,5746603,5746724,5746864,5747351,5747881,5747941,5748129,5748290,5748468,5748488,5748612,5748950,5748991,5749715,5749835,5750110,5750254,5750313,5750371,5750750,5750790,5751157,5751461,5752369,5752610,5752734,5753046,5753262,5753433,5753681,5753856,5754209,5754269,5754614,5755018,5755409,5755429,5755545,5755664,5755704,5755964,5756128,5756188,5756254,5756335,5756655,5756995,5757382,5757773,5758415,5758674,5759107,5759278,5759462,5759562,5759582,5759771,5759955,5760127,5760167,5760307,5760390,5760410,5760450,5760470,5760760,5761447,5761584,5761626,5761869,5762381,5762441,5763213,5763395,5763475,5764007,5764466,5765491,5765687,5766203,5767006,5767326,5767386,5767771,5767931,5768912,5769631,5769915,5773513,5773795,5775037,13702623,48966202,49323018,49341837,49369525,49370060,49370241,49372039,49372328,49375222,49376668,49377540,49378789,49381162,49398749,49420959,49421452,49424716,49424980,49437646,49440030,49440615,49441253,49441749,49449976,49471971,49492002,49499289,49501724,49510628,49518590,49624180,49644113,49646149,49694059],"crc":0,"cvi":[]},"drive_url":"//drive.google.com/u/0?usp\u003dsheets_web","docs-sup":"/spreadsheets/u/0"}; _docs_flag_cek='v_zGafyjAvRWirwfYn2UqQ\x3d\x3d'; if (window['DOCS_timing']) {DOCS_timing['ifdld']=new Date().getTime();}</script><script nonce="">document.addEventListener('DOMContentLoaded', init);</script></head><body class="docs-gm"><div id="top-bar"><div id="doc-title"><span class="name">League Info : Paid</span></div></div><div id="sheets-viewport" style="width: 1728px; height: 518px;"><div id="0" style="position: relative;" dir="ltr"><div class="ritz grid-container" dir="ltr"><table class="waffle no-grid" cellspacing="0" cellpadding="0"><thead><tr><th class="row-header freezebar-origin-ltr header-shim row-header-shim"></th><th id="0C0" style="width:41px;" class="header-shim"></th><th id="0C1" style="width:100px;" class="header-shim"></th><th id="0C2" style="width:100px;" class="header-shim"></th><th id="0C3" style="width:41px;" class="header-shim"></th><th id="0C4" style="width:100px;" class="header-shim"></th><th id="0C5" style="width:100px;" class="header-shim"></th></tr></thead><tbody><tr style="height: 20px"><th id="0R0" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">1</div></th><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr style="height: 20px"><th id="0R1" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">2</div></th><td></td><td class="s0"></td><td class="s0"></td><td></td><td class="s0"></td><td class="s0"></td></tr><tr style="height: 20px"><th id="0R2" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">3</div></th><td class="s1"></td><td class="s2" dir="ltr" colspan="2">LCI</td><td class="s1"></td><td class="s3" dir="ltr" colspan="2">LCD</td></tr><tr style="height: 20px"><th id="0R3" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">4</div></th><td class="s1"></td><td class="s4" dir="ltr">Owner</td><td class="s5" dir="ltr">Paid</td><td class="s6"></td><td class="s4" dir="ltr">Owner</td><td class="s5" dir="ltr">Paid</td></tr><tr style="height: 20px"><th id="0R4" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">5</div></th><td class="s1"></td><td class="s7" dir="ltr">Ben</td><td class="s8" dir="ltr">N</td><td class="s6"></td><td class="s7" dir="ltr">Brandon</td><td class="s8" dir="ltr">N</td></tr><tr style="height: 20px"><th id="0R5" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">6</div></th><td class="s1"></td><td class="s7" dir="ltr">Connor</td><td class="s8" dir="ltr">N</td><td class="s6"></td><td class="s7" dir="ltr">Connor</td><td class="s8" dir="ltr">N</td></tr><tr style="height: 20px"><th id="0R6" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">7</div></th><td class="s1"></td><td class="s7" dir="ltr">Jaron</td><td class="s8" dir="ltr">N</td><td class="s6"></td><td class="s7" dir="ltr">Grant</td><td class="s8" dir="ltr">N</td></tr><tr style="height: 20px"><th id="0R7" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">8</div></th><td class="s1"></td><td class="s7" dir="ltr">Keith</td><td class="s8" dir="ltr">N</td><td class="s6"></td><td class="s7" dir="ltr">Ian</td><td class="s8" dir="ltr">N</td></tr><tr style="height: 20px"><th id="0R8" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">9</div></th><td class="s1"></td><td class="s7" dir="ltr">Neil</td><td class="s8" dir="ltr">N</td><td class="s6"></td><td class="s7" dir="ltr">Jaron</td><td class="s8" dir="ltr">N</td></tr><tr style="height: 20px"><th id="0R9" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">10</div></th><td class="s1"></td><td class="s7" dir="ltr">Nic</td><td class="s8" dir="ltr">N</td><td class="s6"></td><td class="s7" dir="ltr">Nic</td><td class="s8" dir="ltr">N</td></tr><tr style="height: 20px"><th id="0R10" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">11</div></th><td class="s1"></td><td class="s7" dir="ltr">Reggie</td><td class="s8" dir="ltr">N</td><td class="s6"></td><td class="s7" dir="ltr">Reggie</td><td class="s8" dir="ltr">N</td></tr><tr style="height: 20px"><th id="0R11" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">12</div></th><td class="s1"></td><td class="s7" dir="ltr">Stefan</td><td class="s8" dir="ltr">N</td><td class="s6"></td><td class="s7" dir="ltr">Stefan</td><td class="s8" dir="ltr">N</td></tr><tr style="height: 20px"><th id="0R12" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">13</div></th><td class="s1"></td><td class="s7" dir="ltr">Zach</td><td class="s8" dir="ltr">N</td><td class="s6"></td><td class="s7" dir="ltr">Will</td><td class="s8" dir="ltr">N</td></tr><tr style="height: 20px"><th id="0R13" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px">14</div></th><td class="s1"></td><td class="s9" dir="ltr">Zane</td><td class="s10" dir="ltr">N</td><td class="s6"></td><td class="s9" dir="ltr">Zach</td><td class="s10" dir="ltr">N</td></tr></tbody></table></div></div></div><div id="footer"><span>Published by <a target="_blank" title="Learn more about Google Sheets" href="https://docs.google.com/spreadsheets/u/0/?authuser=0&amp;usp=sheets_web">Google Sheets</a></span><span class="dash">–</span><a href="https://docs.google.com/u/0/abuse?id=AKkXjoybVP3qGl4jY4nhJxM8NuZevyZJm_3KKIxp-OcIH2bE6yhvZVeMFR2wBmJ-q-tMBzEwFErdiVR5TibbvgE:0">Report Abuse</a><span class="dash">–</span><span>Updated automatically every 5 minutes</span></div><script type="text/javascript" nonce="">activeSheetId = '0'; switchToSheet('0');</script><div style="position: static !important;"></div></body></html>
