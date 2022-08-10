@@ -3,6 +3,7 @@ skin: steel # default, night, plum, sea, soft, steel
 navigation_pages:
   - pages/keeper_values.html
   - pages/leaguehistory.html
+  - pages/dues.html
   - powerrankings.md
   - pages/constitution.md
   - about.md
