@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Constitution
+title: LCI Constitution
 permalink: /constitution/
 ---
 
@@ -19,10 +19,7 @@ These players, if any, need to be submitted 1 week prior to the draft date.
 A player's keeper value will be determined on 3 basis
 1. 1 round higher than their previous year’s draft round
 2. A player kept for a second consecutive year will cost a 1st round pick
-3. For players drafted that spent the majority of the year on IR with a season ending injury (ex. Saquon Barkley) will be reset to their ADP.
-  - **Note:** A player must be _submitted to IR_ and miss 6+ weeks of the fantasy regular season (13 weeks). (2020: George Kittle would not qualify but Barkley and Mixon would)
-  - ADP is set 1 month prior to the upcoming draft
-4. Players picked up through free agency (including dropped drafted players) will have a value relative to their price. Scale is:
+3. Players picked up through free agency (including dropped drafted players) will have a value relative to their price. Scale is:
 
 |$ Spent|Round|
 |:-:|:-:|
@@ -36,6 +33,8 @@ A player's keeper value will be determined on 3 basis
 |36-45|3|
 |46-65|2|
 |66-100|1|
+
+4. Players picked up from week 13 on will receive an increasing tax in order to be kept. For example, a week 15 addition will incur an added 3 rounds to the price determined in the above table. This is a flat rate and does not differ based on the price paid.
 
 ---
 
@@ -53,7 +52,7 @@ The draft order will be determined by each owner based on the inverse of the **r
 ---
 
 ## Trading <a name="trading"></a>
-Trading of **draft picks** during the regular season is not allowed. Once the playoffs have completed teams are open to trading any player or draft picks up until 1 hour before the draft. Owners are not allowed to trade “future” picks (ie. a 2021 pick for a 2022)
+Trading of **draft picks** during the regular season is not allowed. Once the playoffs have completed teams are open to trading any players up until the keeper deadline 1 week prior to the draft. Draft picks can be traded until the conclusion of the draft. Owners are not allowed to trade “future” picks (ie. a 2021 pick for a 2022)
 
 ---
 

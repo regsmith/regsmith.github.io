@@ -30,6 +30,7 @@ def bid_to_keeper_value():
             7: {'low': 11, 'high': 15},
             8: {'low': 6, 'high': 10},
             9: {'low': 1, 'high': 5},
+            10: {'low': 0, 'high': 0},
         }
 
 def keepers_from_draft():
@@ -80,12 +81,18 @@ def map_id_to_player(id_number):
         if id_number == key:
             return players[key]
 
-def keeper_value_from_bid(bid):
+def keeper_value_from_bid(bid, week):
     scale = bid_to_keeper_value()
     for round, range in scale.items():
         if range['low'] <= bid <= range['high']:
-            return round
+            return max(round - late_season_scale(week), 1)
     return 10
+
+def late_season_scale(week):
+    x_factor = 12
+    if week - x_factor <= 0:
+        return 0
+    return min(week - x_factor, 6)
 
 def rostered_players(roster):
     players = []
@@ -103,7 +110,7 @@ def rostered_players(roster):
             week = transaction.get('leg')
             if week is not None:
                 bid = bid_amount(transaction)
-                keeper_value = keeper_value_from_bid(bid)
+                keeper_value = keeper_value_from_bid(bid, week)
                 reason = "Picked up week " + str(week) + " for $" + str(bid)
                 if player_was_dropped(player_id):
                     reason = "Dropped week " + str(dropped_week(player_id).get('leg')) + ", " + reason
