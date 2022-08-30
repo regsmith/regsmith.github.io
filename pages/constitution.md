@@ -57,4 +57,4 @@ Trading of **draft picks** during the regular season is not allowed. Once the pl
 ---
 
 ## Free Agency and Waivers <a name="fawaivers"></a>
-Sleeper's default FAAB (free agent acquisition bidding) rules are in effect for free agency. Each manager will be given $100 for the year. FAAB dollars can be traded
+Sleeper's default FAAB (free agent acquisition bidding) rules are in effect for free agency. Each manager will be given $100 for the year. FAAB dollars can be traded. Free agents will be locked at the conclusion of the fantasy season and will not be able to add them to rosters except through trades
