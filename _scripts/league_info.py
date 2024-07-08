@@ -259,7 +259,7 @@ def parse(argv):
             save_keepers=True
         else:
             help()
-    if not ifile or not league_id:
+    if (not ifile and not drafting_order) or not league_id:
         print("Both -i and -l are required")
         help()
     return league_id, ifile, verbose, save_keepers, drafting_order
