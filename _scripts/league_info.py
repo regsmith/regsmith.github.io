@@ -13,6 +13,7 @@ from tabulate import tabulate
 # 2022: 784518757698699264
 # 2023: 965091267757580288
 # 2024: 1066137655869628416
+# 2025: 1250707285970255872
 
 def draft_id():
     drafts = league.get_all_drafts()
