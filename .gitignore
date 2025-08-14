@@ -40,6 +40,21 @@ wp-content/plugins/hello.php
 *.so
 
 
+### Python virtual environments
+venv/
+.venv/
+env/
+.env/
+__pycache__/
+### pyenv
+.python-version
+pyenv/
+bin/
+include/
+lib/
+pyvenv.cfg
+
+
 ### Compressed Packages ###
 *.7z
 *.dmg
@@ -96,3 +111,7 @@ $RECYCLE.BIN/
 *.msp
 *.lnk
 reference.md
+
+### Miscellaneous ###
+
+players.txt
