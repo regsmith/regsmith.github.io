@@ -16,3 +16,23 @@ regsmith:
 
 whitelist:
   - jekyll-redirect-from
+
+collections:
+  season_archive:
+    output: true
+    permalink: /seasons/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: season_archive
+    values:
+      layout: season_archive
+
+supabase:
+  url: "https://achzrhabaqtucezkuycq.supabase.co"
+  publishable_key: "sb_publishable_AdnPevt8vWg--DrnuLhxOA_DoRKiIw1"
+  commissioner_email: "reg.smith89@gmail.com"
+
+dues:
+  default_season: 2026
