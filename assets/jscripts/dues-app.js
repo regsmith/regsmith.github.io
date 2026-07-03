@@ -145,7 +145,7 @@ async function init() {
 
   const renderSummaryCards = (rows) => {
     const summary = summarizeDuesRows(rows);
-    const stats = createElement("section", { className: "lci-grid lci-grid--stats" });
+    const stats = createElement("section", { className: "lci-grid lci-grid--stats lci-dues-stats" });
 
     [
       ["Season", state.season ? String(state.season) : "—"],
@@ -167,7 +167,7 @@ async function init() {
       return null;
     }
 
-    const section = createElement("section", { className: "lci-grid lci-grid--cards" });
+    const section = createElement("section", { className: "lci-grid lci-grid--cards lci-dues-leagues" });
     leagues.forEach((league) => {
       const card = createElement("article", { className: "lci-card lci-feature-card" });
       card.append(
@@ -184,7 +184,7 @@ async function init() {
   const renderFilters = (rows) => {
     const seasons = getAvailableSeasons(state.rows);
     const leagues = getLeagueOptions(rows);
-    const section = createElement("section", { className: "lci-panel lci-stack" });
+    const section = createElement("section", { className: "lci-panel lci-stack lci-dues-filters" });
     const toolbar = createElement("div", { className: "lci-toolbar" });
 
     const seasonLabel = createElement("label", { className: "lci-field" });
@@ -223,7 +223,7 @@ async function init() {
   };
 
   const renderAuth = () => {
-    const section = createElement("section", { className: "lci-panel lci-panel--subtle lci-stack" });
+    const section = createElement("section", { className: "lci-panel lci-panel--subtle lci-stack lci-dues-auth" });
     section.append(createElement("h3", { text: "Commissioner Sign-In" }));
 
     if (!state.session?.user) {
@@ -271,12 +271,18 @@ async function init() {
   };
 
   const renderTable = (rows) => {
-    const section = createElement("section", { className: "lci-panel" });
+    const section = createElement("section", { className: "lci-panel lci-dues-table-panel" });
     section.append(createElement("h2", { text: "Dues Board" }));
     section.append(
       createElement("p", {
         className: "lci-muted",
         text: rows.length ? "Each row represents one manager, one league, and one season." : "No dues rows match the current filters.",
+      }),
+    );
+    section.append(
+      createElement("p", {
+        className: "lci-muted lci-dues-table-hint",
+        text: "On smaller screens, scroll sideways to reach the paid toggle.",
       }),
     );
 
@@ -285,8 +291,8 @@ async function init() {
       return section;
     }
 
-    const wrap = createElement("div", { className: "lci-table-wrap" });
-    const table = createElement("table", { className: "lci-table" });
+    const wrap = createElement("div", { className: "lci-table-wrap lci-dues-table-wrap" });
+    const table = createElement("table", { className: "lci-table lci-dues-table" });
     table.innerHTML = `
       <thead>
         <tr>
@@ -355,11 +361,18 @@ async function init() {
     }
 
     const filteredRows = filterDuesRows(seasonRows, { league: state.league });
-    const blocks = [renderFilters(seasonRows), renderSummaryCards(filteredRows)];
+    const blocks = [];
+    const overview = createElement("section", { className: "lci-dues-overview" });
+    const sidebar = createElement("div", { className: "lci-dues-overview__sidebar" });
+    const main = createElement("div", { className: "lci-dues-overview__main" });
+    sidebar.append(renderFilters(seasonRows));
+    main.append(renderSummaryCards(filteredRows));
     const leagueSummary = renderLeagueSummary(filteredRows);
     if (leagueSummary) {
-      blocks.push(leagueSummary);
+      main.append(leagueSummary);
     }
+    overview.append(sidebar, main);
+    blocks.push(overview);
     blocks.push(renderTable(filteredRows));
     blocks.push(renderAuth());
     root.replaceChildren(...blocks);

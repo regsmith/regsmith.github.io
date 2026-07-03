@@ -4,7 +4,7 @@ title: Dues
 permalink: /dues/
 ---
 
-<section class="lci-shell">
+<section class="lci-shell lci-shell--dues">
   <header class="lci-hero lci-hero--light">
     <p class="lci-hero__eyebrow">Commissioner Tooling</p>
     <h1>Dues Tracker</h1>
@@ -13,7 +13,7 @@ permalink: /dues/
 
   <div
     id="dues-app"
-    class="lci-stack"
+    class="lci-stack lci-dues-app"
     data-supabase-url="{{ site.supabase.url | default: '' }}"
     data-supabase-publishable-key="{{ site.supabase.publishable_key | default: '' }}"
     data-commissioner-email="{{ site.supabase.commissioner_email | default: '' }}"

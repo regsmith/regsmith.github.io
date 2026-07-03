@@ -39,6 +39,25 @@ a {
   gap: 2rem;
 }
 
+.layout--page.dues .page-content > .inner {
+  width: min(100%, 1440px);
+  max-width: 1440px;
+  padding-inline: clamp(1rem, 3vw, 3rem);
+}
+
+.layout--page.dues .entry-wrap,
+.layout--page.dues .entry-content,
+.lci-shell--dues,
+.lci-dues-app {
+  width: 100%;
+  max-width: none;
+}
+
+.lci-shell--dues,
+.lci-dues-app {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .lci-hero {
   display: grid;
   gap: 1.5rem;
@@ -144,6 +163,68 @@ a {
 .lci-panel--subtle {
   background: rgba(255, 255, 255, 0.55);
   box-shadow: none;
+}
+
+.lci-dues-overview {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+
+.lci-dues-overview__sidebar,
+.lci-dues-overview__main {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.lci-dues-filters,
+.lci-dues-auth,
+.lci-dues-table-panel,
+.lci-dues-stats,
+.lci-dues-leagues {
+  width: 100%;
+  min-width: 0;
+}
+
+.lci-dues-stats {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.lci-dues-stats .lci-kpi {
+  min-height: 9rem;
+  align-content: start;
+}
+
+.lci-dues-leagues {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lci-dues-table-wrap {
+  overflow-x: auto;
+  overflow-y: visible;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.35rem;
+}
+
+.lci-dues-table {
+  min-width: 860px;
+}
+
+.lci-dues-table-hint {
+  margin-top: -0.4rem;
+}
+
+@media (min-width: 960px) {
+  .lci-dues-overview {
+    grid-template-columns: minmax(17rem, 20rem) minmax(0, 1fr);
+  }
+
+  .lci-dues-filters {
+    position: sticky;
+    top: 1rem;
+  }
 }
 
 .lci-card h2,
@@ -417,6 +498,25 @@ a {
     min-width: 0;
     width: 100%;
   }
+
+  .lci-dues-stats,
+  .lci-dues-leagues {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lci-dues-stats .lci-kpi {
+    min-height: 8rem;
+  }
+
+  .lci-dues-filters .lci-filter-bar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.2rem;
+  }
+
+  .lci-dues-table-panel {
+    padding-inline: 1rem;
+  }
 }
 
 .lci-form-grid {
@@ -511,5 +611,20 @@ a {
 
   .lci-season-card__header {
     flex-direction: column;
+  }
+
+  .layout--page.dues .page-content > .inner {
+    padding-inline: 0.75rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .lci-dues-stats,
+  .lci-dues-leagues {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .lci-dues-table {
+    min-width: 760px;
   }
 }
