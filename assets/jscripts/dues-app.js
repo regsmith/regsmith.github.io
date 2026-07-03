@@ -223,14 +223,14 @@ async function init() {
   };
 
   const renderAuth = () => {
-    const section = createElement("section", { className: "lci-panel lci-stack" });
-    section.append(createElement("h2", { text: "Commissioner Access" }));
+    const section = createElement("section", { className: "lci-panel lci-panel--subtle lci-stack" });
+    section.append(createElement("h3", { text: "Commissioner Sign-In" }));
 
     if (!state.session?.user) {
       section.append(
         createElement("p", {
           className: "lci-muted",
-          text: "The board is public, but editing requires commissioner sign-in through Supabase Auth.",
+          text: "Public visitors can view the board. Sign in only if you need to update payment status.",
         }),
       );
 
@@ -355,12 +355,13 @@ async function init() {
     }
 
     const filteredRows = filterDuesRows(seasonRows, { league: state.league });
-    const blocks = [renderAuth(), renderFilters(seasonRows), renderSummaryCards(filteredRows)];
+    const blocks = [renderFilters(seasonRows), renderSummaryCards(filteredRows)];
     const leagueSummary = renderLeagueSummary(filteredRows);
     if (leagueSummary) {
       blocks.push(leagueSummary);
     }
     blocks.push(renderTable(filteredRows));
+    blocks.push(renderAuth());
     root.replaceChildren(...blocks);
   };
 

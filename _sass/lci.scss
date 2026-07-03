@@ -141,6 +141,11 @@ a {
   box-shadow: var(--lci-shadow);
 }
 
+.lci-panel--subtle {
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: none;
+}
+
 .lci-card h2,
 .lci-card h3,
 .lci-panel h2,
