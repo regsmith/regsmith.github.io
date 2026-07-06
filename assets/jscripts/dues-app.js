@@ -1,5 +1,5 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
-import { createElement, formatDateTime, renderError } from "./site-data.js";
+import { createElement, formatDate, renderError } from "./site-data.js";
 import { filterDuesRows, getAvailableSeasons, getLeagueOptions, normalizeDuesRows, summarizeByLeague, summarizeDuesRows } from "./dues-data.js";
 
 async function init() {
@@ -282,7 +282,7 @@ async function init() {
     section.append(
       createElement("p", {
         className: "lci-muted lci-dues-table-hint",
-        text: "On smaller screens, scroll sideways to reach the paid toggle.",
+        text: canEdit() ? "On smaller screens, scroll sideways if needed and tap status to update payment." : "On smaller screens, scroll sideways if needed to see the full table.",
       }),
     );
 
@@ -301,7 +301,6 @@ async function init() {
           <th>League</th>
           <th>Status</th>
           <th>Updated</th>
-          <th>Paid</th>
         </tr>
       </thead>
     `;
@@ -309,34 +308,32 @@ async function init() {
     const tbody = document.createElement("tbody");
     rows.forEach((row) => {
       const tr = document.createElement("tr");
-      const statusMarkup = `<span class="lci-status ${row.paid ? "lci-status--paid" : "lci-status--unpaid"}">${row.paid ? "Paid" : "Unpaid"}</span>`;
 
       tr.innerHTML = `
         <td>${row.firstName}</td>
         <td>${row.sleeperUsername || "—"}</td>
         <td>${row.leagueKey}</td>
-        <td>${statusMarkup}</td>
-        <td>${formatDateTime(row.updatedAt)}</td>
         <td></td>
+        <td>${formatDate(row.updatedAt)}</td>
       `;
 
-      const toggleCell = tr.lastElementChild;
+      const statusCell = tr.children[3];
       if (canEdit()) {
-        const checkbox = createElement("input", {
-          className: "lci-dues-toggle",
+        const button = createElement("button", {
+          className: `lci-status lci-status--interactive ${row.paid ? "lci-status--paid" : "lci-status--unpaid"}`,
+          text: row.paid ? "Paid" : "Unpaid",
           attrs: {
-            type: "checkbox",
-            "aria-label": `Mark ${row.firstName} as paid for ${row.leagueKey} ${row.seasonYear}`,
+            type: "button",
+            "aria-label": `Mark ${row.firstName} as ${row.paid ? "unpaid" : "paid"} for ${row.leagueKey} ${row.seasonYear}`,
           },
         });
-        checkbox.checked = row.paid;
-        checkbox.disabled = state.savingIds.has(row.id);
-        checkbox.addEventListener("change", () => {
-          void togglePaid(row.id, checkbox.checked);
+        button.disabled = state.savingIds.has(row.id);
+        button.addEventListener("click", () => {
+          void togglePaid(row.id, !row.paid);
         });
-        toggleCell.append(checkbox);
+        statusCell.append(button);
       } else {
-        toggleCell.textContent = row.paid ? "Yes" : "No";
+        statusCell.innerHTML = `<span class="lci-status ${row.paid ? "lci-status--paid" : "lci-status--unpaid"}">${row.paid ? "Paid" : "Unpaid"}</span>`;
       }
 
       tbody.append(tr);

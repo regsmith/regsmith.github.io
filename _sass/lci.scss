@@ -209,7 +209,7 @@ a {
 }
 
 .lci-dues-table {
-  min-width: 860px;
+  min-width: 760px;
 }
 
 .lci-dues-table-hint {
@@ -474,6 +474,22 @@ a {
   color: var(--lci-success);
 }
 
+.lci-status--interactive {
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.lci-status--interactive:hover,
+.lci-status--interactive:focus {
+  border-color: currentColor;
+  outline: none;
+}
+
+.lci-status--interactive:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
 .lci-status--partial,
 .lci-status--unpaid,
 .lci-status--unknown {
@@ -625,6 +641,6 @@ a {
   }
 
   .lci-dues-table {
-    min-width: 760px;
+    min-width: 680px;
   }
 }
