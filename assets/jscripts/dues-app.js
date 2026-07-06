@@ -12,6 +12,10 @@ async function init() {
     supabaseUrl: root.dataset.supabaseUrl || "",
     supabasePublishableKey: root.dataset.supabasePublishableKey || "",
     defaultSeason: Number(root.dataset.defaultSeason) || null,
+    commissionerUids: (root.dataset.commissionerUids || "")
+      .split(",")
+      .map((value) => value.trim())
+      .filter(Boolean),
     commissionerEmail: (root.dataset.commissionerEmail || "").trim().toLowerCase(),
   };
 
@@ -41,6 +45,10 @@ async function init() {
   const canEdit = () => {
     if (!state.session?.user) {
       return false;
+    }
+
+    if (config.commissionerUids.length) {
+      return config.commissionerUids.includes(state.session.user.id);
     }
 
     if (!config.commissionerEmail) {
@@ -251,7 +259,9 @@ async function init() {
       section.append(form);
     } else {
       const email = state.session.user.email || "Signed in";
-      const canEditLabel = canEdit() ? "Edit access enabled." : "Signed in, but this account does not match the configured commissioner email.";
+      const canEditLabel = canEdit()
+        ? "Edit access enabled."
+        : "Signed in, but this account does not have commissioner access.";
       section.append(
         createElement("p", {
           className: "lci-muted",

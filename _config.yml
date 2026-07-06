@@ -33,6 +33,9 @@ supabase:
   url: "https://achzrhabaqtucezkuycq.supabase.co"
   publishable_key: "sb_publishable_AdnPevt8vWg--DrnuLhxOA_DoRKiIw1"
   commissioner_email: "reg.smith89@gmail.com"
+  commissioner_uids:
+    - "6db8e73b-7107-47f8-84c8-9fa9ba0ec9ef"
+    - "bc7d4dda-cdf9-453d-8123-4541873a7582"
 
 dues:
   default_season: 2026
