@@ -30,8 +30,12 @@ export function getLeagueOptions(rows = []) {
   return [...new Set(rows.map((row) => row.leagueKey).filter(Boolean))].sort((left, right) => left.localeCompare(right));
 }
 
+export function getManagerOptions(rows = []) {
+  return [...new Set(rows.map((row) => row.firstName).filter(Boolean))].sort((left, right) => left.localeCompare(right));
+}
+
 export function filterDuesRows(rows = [], filters = {}) {
-  const { season, league = "ALL" } = filters;
+  const { season, league = "ALL", manager = "ALL" } = filters;
 
   return rows.filter((row) => {
     if (Number.isFinite(Number(season)) && row.seasonYear !== Number(season)) {
@@ -39,6 +43,10 @@ export function filterDuesRows(rows = [], filters = {}) {
     }
 
     if (league !== "ALL" && row.leagueKey !== league) {
+      return false;
+    }
+
+    if (manager !== "ALL" && row.firstName !== manager) {
       return false;
     }
 

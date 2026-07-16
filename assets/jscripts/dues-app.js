@@ -1,6 +1,6 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 import { createElement, formatDate, renderError } from "./site-data.js";
-import { filterDuesRows, getAvailableSeasons, getLeagueOptions, normalizeDuesRows, summarizeByLeague, summarizeDuesRows } from "./dues-data.js";
+import { filterDuesRows, getAvailableSeasons, getLeagueOptions, getManagerOptions, normalizeDuesRows, summarizeByLeague } from "./dues-data.js";
 
 async function init() {
   const root = document.getElementById("dues-app");
@@ -11,6 +11,7 @@ async function init() {
   const config = {
     supabaseUrl: root.dataset.supabaseUrl || "",
     supabasePublishableKey: root.dataset.supabasePublishableKey || "",
+    authRedirectUrl: root.dataset.authRedirectUrl || "",
     defaultSeason: Number(root.dataset.defaultSeason) || null,
     commissionerUids: (root.dataset.commissionerUids || "")
       .split(",")
@@ -21,8 +22,10 @@ async function init() {
 
   const state = {
     rows: [],
+    members: [],
     season: config.defaultSeason,
     league: "ALL",
+    manager: "ALL",
     session: null,
     loading: true,
     authMessage: "",
@@ -91,7 +94,7 @@ async function init() {
     setLoading(true);
 
     try {
-      await loadRows();
+      await Promise.all([loadRows(), loadMembers()]);
       state.authMessage = "";
       render();
     } catch (error) {
@@ -102,10 +105,22 @@ async function init() {
     }
   };
 
+  const loadMembers = async () => {
+    const { data, error } = await supabase.from("league_members").select("first_name").order("first_name", { ascending: true });
+
+    if (error) {
+      state.members = [];
+      return;
+    }
+
+    state.members = [...new Set((data || []).map((row) => row.first_name || "").filter(Boolean))].sort((left, right) => left.localeCompare(right));
+  };
+
   const handleSignIn = async (event) => {
     event.preventDefault();
     const form = event.currentTarget;
     const email = new FormData(form).get("email")?.toString().trim();
+    const fallbackRedirectUrl = `${window.location.origin}${window.location.pathname}`;
 
     if (!email) {
       state.authMessage = "Enter the commissioner email address to receive a sign-in link.";
@@ -118,7 +133,7 @@ async function init() {
 
     const { error } = await supabase.auth.signInWithOtp({
       email,
-      options: { emailRedirectTo: window.location.href },
+      options: { emailRedirectTo: config.authRedirectUrl || fallbackRedirectUrl },
     });
 
     state.authMessage = error ? error.message : `Sign-in link sent to ${email}.`;
@@ -151,24 +166,6 @@ async function init() {
     render();
   };
 
-  const renderSummaryCards = (rows) => {
-    const summary = summarizeDuesRows(rows);
-    const stats = createElement("section", { className: "lci-grid lci-grid--stats lci-dues-stats" });
-
-    [
-      ["Season", state.season ? String(state.season) : "—"],
-      ["Managers", String(summary.memberCount)],
-      ["Paid", `${summary.paidCount} / ${summary.memberCount}`],
-      ["Unpaid", String(summary.unpaidCount)],
-    ].forEach(([label, value]) => {
-      const card = createElement("div", { className: "lci-card lci-kpi" });
-      card.append(createElement("span", { className: "lci-card__meta", text: label }), createElement("strong", { className: "lci-kpi__value", text: value }));
-      stats.append(card);
-    });
-
-    return stats;
-  };
-
   const renderLeagueSummary = (rows) => {
     const leagues = summarizeByLeague(rows);
     if (!leagues.length) {
@@ -192,6 +189,7 @@ async function init() {
   const renderFilters = (rows) => {
     const seasons = getAvailableSeasons(state.rows);
     const leagues = getLeagueOptions(rows);
+    const managers = state.members.length ? state.members : getManagerOptions(state.rows);
     const section = createElement("section", { className: "lci-panel lci-stack lci-dues-filters" });
     const toolbar = createElement("div", { className: "lci-toolbar" });
 
@@ -211,6 +209,23 @@ async function init() {
     });
     seasonLabel.append(seasonSelect);
     toolbar.append(seasonLabel);
+
+    const managerLabel = createElement("label", { className: "lci-field" });
+    managerLabel.append(createElement("span", { className: "lci-card__meta", text: "Manager" }));
+    const managerSelect = createElement("select", { className: "lci-select", attrs: { name: "manager" } });
+    [["ALL", "All"], ...managers.map((manager) => [manager, manager])].forEach(([value, label]) => {
+      const option = createElement("option", { text: label, attrs: { value } });
+      if (value === state.manager) {
+        option.selected = true;
+      }
+      managerSelect.append(option);
+    });
+    managerSelect.addEventListener("change", (event) => {
+      state.manager = event.currentTarget.value;
+      render();
+    });
+    managerLabel.append(managerSelect);
+    toolbar.append(managerLabel);
 
     const leagueFilters = createElement("div", { className: "lci-filter-bar", attrs: { role: "tablist", "aria-label": "League filter" } });
     [["ALL", "All leagues"], ...leagues.map((league) => [league, league])].forEach(([value, label]) => {
@@ -361,19 +376,23 @@ async function init() {
       return;
     }
 
-    const seasonRows = filterDuesRows(state.rows, { season: state.season, league: "ALL" });
+    const seasonRows = filterDuesRows(state.rows, { season: state.season, league: "ALL", manager: "ALL" });
     const availableLeagues = getLeagueOptions(seasonRows);
     if (state.league !== "ALL" && !availableLeagues.includes(state.league)) {
       state.league = "ALL";
     }
 
-    const filteredRows = filterDuesRows(seasonRows, { league: state.league });
+    const availableManagers = state.members.length ? state.members : getManagerOptions(state.rows);
+    if (state.manager !== "ALL" && !availableManagers.includes(state.manager)) {
+      state.manager = "ALL";
+    }
+
+    const filteredRows = filterDuesRows(seasonRows, { league: state.league, manager: state.manager });
     const blocks = [];
     const overview = createElement("section", { className: "lci-dues-overview" });
     const sidebar = createElement("div", { className: "lci-dues-overview__sidebar" });
     const main = createElement("div", { className: "lci-dues-overview__main" });
     sidebar.append(renderFilters(seasonRows));
-    main.append(renderSummaryCards(filteredRows));
     const leagueSummary = renderLeagueSummary(filteredRows);
     if (leagueSummary) {
       main.append(leagueSummary);

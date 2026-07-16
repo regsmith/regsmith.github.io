@@ -2,6 +2,7 @@ remote_theme: "mmistakes/jekyll-theme-basically-basic"
 title: LCI Fantasy Football
 description: Overview of the league with seasonal stats and league history
 logo: /assets/logo.png
+url: "https://lcifantasy.ca"
 
 twitter_username: TheFifthsWord
 github_username:  regsmith

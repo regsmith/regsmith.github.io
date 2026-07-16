@@ -16,6 +16,7 @@ permalink: /dues/
     class="lci-stack lci-dues-app"
     data-supabase-url="{{ site.supabase.url | default: '' }}"
     data-supabase-publishable-key="{{ site.supabase.publishable_key | default: '' }}"
+    data-auth-redirect-url="{{ page.url | absolute_url }}"
     data-commissioner-uids="{{ site.supabase.commissioner_uids | join: ',' | default: '' }}"
     data-commissioner-email="{{ site.supabase.commissioner_email | default: '' }}"
     data-default-season="{{ site.dues.default_season | default: '' }}"

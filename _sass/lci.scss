@@ -181,19 +181,9 @@ a {
 .lci-dues-filters,
 .lci-dues-auth,
 .lci-dues-table-panel,
-.lci-dues-stats,
 .lci-dues-leagues {
   width: 100%;
   min-width: 0;
-}
-
-.lci-dues-stats {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.lci-dues-stats .lci-kpi {
-  min-height: 9rem;
-  align-content: start;
 }
 
 .lci-dues-leagues {
@@ -515,13 +505,8 @@ a {
     width: 100%;
   }
 
-  .lci-dues-stats,
   .lci-dues-leagues {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lci-dues-stats .lci-kpi {
-    min-height: 8rem;
   }
 
   .lci-dues-filters .lci-filter-bar {
@@ -635,7 +620,6 @@ a {
 }
 
 @media (max-width: 520px) {
-  .lci-dues-stats,
   .lci-dues-leagues {
     grid-template-columns: minmax(0, 1fr);
   }
