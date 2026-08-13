@@ -14,6 +14,7 @@ from tabulate import tabulate
 # 2023: 965091267757580288
 # 2024: 1066137655869628416
 # 2025: 1250707285970255872
+# 2026: 1361561303642030080
 
 def draft_id():
     drafts = league.get_all_drafts()
@@ -93,7 +94,7 @@ def keeper_value_from_bid(bid, week):
     return 10
 
 def late_season_scale(week):
-    x_factor = 12
+    x_factor = 13
     if week - x_factor <= 0:
         return 0
     return min(week - x_factor, 6)
@@ -189,7 +190,7 @@ def team_rosters():
 
 def all_transactions():
     all_transactions = []
-    for week in range(17, 0, -1):
+    for week in range(18, 0, -1):
         all_transactions.append(league.get_transactions(week))
     return all_transactions
 
