@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import sys, getopt, json
+import sys, getopt, json, os
 from sleeper_wrapper import *
 from tabulate import tabulate
 
@@ -38,11 +38,23 @@ def bid_to_keeper_value():
             10: {'low': 0, 'high': 0},
         }
 
-def keepers_from_draft():
-    keeper_ids = []
+def manual_keepers_from_config(draft_identifier):
+    config_path = os.path.join(os.path.dirname(__file__), '..', '_data', 'keeper_overrides.json')
+    if not os.path.exists(config_path):
+        return []
+
+    with open(config_path) as config_file:
+        config = json.load(config_file)
+
+    draft_config = config.get('drafts', {}).get(str(draft_identifier), {})
+    return draft_config.get('manual_keeper_player_ids', [])
+
+def keepers_from_draft(draft_identifier):
+    keeper_ids = set()
     for picks in draft_picks:
         if picks.get('is_keeper'):
-            keeper_ids.append(picks['player_id'])
+            keeper_ids.add(picks['player_id'])
+    keeper_ids.update(manual_keepers_from_config(draft_identifier))
     return keeper_ids
 
 def player_was_dropped(player_id):
@@ -295,8 +307,9 @@ if drafting_order is True:
     draft_order()
     sys.exit(0)
 
-draft_picks = Drafts(draft_id()).get_all_picks()
-previous_keepers = keepers_from_draft()
+current_draft_id = draft_id()
+draft_picks = Drafts(current_draft_id).get_all_picks()
+previous_keepers = keepers_from_draft(current_draft_id)
 weekly_transactions = all_transactions()
 
 # print(users)

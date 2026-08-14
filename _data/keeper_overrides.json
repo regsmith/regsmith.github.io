@@ -1,0 +1,16 @@
+{
+  "drafts": {
+    "1250707285978660864": {
+      "manual_keeper_player_ids": [
+        "9509",
+        "11632",
+        "6801",
+        "8228",
+        "11635",
+        "11631",
+        "11604"
+      ],
+      "notes": "Players pre-set on traded picks before the 2025 draft who were absent from the live pick activity log but not marked is_keeper by Sleeper."
+    }
+  }
+}
