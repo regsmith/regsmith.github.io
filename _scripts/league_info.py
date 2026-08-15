@@ -39,15 +39,16 @@ def bid_to_keeper_value():
         }
 
 def manual_keepers_from_config(draft_identifier):
-    config_path = os.path.join(os.path.dirname(__file__), '..', '_data', 'keeper_overrides.json')
+    config_path = os.path.join(os.path.dirname(__file__), '..', 'assets', 'data', 'keeper-config.json')
     if not os.path.exists(config_path):
         return []
 
     with open(config_path) as config_file:
         config = json.load(config_file)
 
-    draft_config = config.get('drafts', {}).get(str(draft_identifier), {})
-    return draft_config.get('manual_keeper_player_ids', [])
+    if str(config.get('draftId')) != str(draft_identifier):
+        return []
+    return config.get('manualKeeperPlayerIds', [])
 
 def keepers_from_draft(draft_identifier):
     keeper_ids = set()
