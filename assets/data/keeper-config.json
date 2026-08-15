@@ -1,0 +1,10 @@
+{
+  "analysisSeason": 2025,
+  "targetSeason": 2026,
+  "leagueId": "1250707285970255872",
+  "draftId": "1250707285978660864",
+  "transactionWeeks": 18,
+  "draftRounds": 15,
+  "teamCount": 10,
+  "manualKeeperPlayerIds": ["9509", "11632", "6801", "8228", "11635", "11631", "11604"]
+}

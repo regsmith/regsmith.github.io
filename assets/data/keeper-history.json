@@ -1,0 +1,102 @@
+{
+  "seasons": [
+    {
+      "season": 2025,
+      "leagueId": "1250707285970255872",
+      "draftId": "1250707285978660864",
+      "status": "confirmed",
+      "teams": [
+        {
+          "userId": "198586821024681984",
+          "teamName": "Calgary Cannons",
+          "username": "Killericon",
+          "keepers": [
+            { "playerId": "5844", "name": "T.J. Hockenson", "position": "TE", "round": 10, "draftSlot": 5, "source": "sleeper" },
+            { "playerId": "6806", "name": "J.K. Dobbins", "position": "RB", "round": 11, "draftSlot": 5, "source": "sleeper" }
+          ]
+        },
+        {
+          "userId": "446471654424440832",
+          "teamName": "Chasen Championships",
+          "username": "sgoerz",
+          "keepers": [
+            { "playerId": "7564", "name": "Ja'Marr Chase", "position": "WR", "round": 1, "draftSlot": 10, "source": "sleeper" },
+            { "playerId": "11604", "name": "Brock Bowers", "position": "TE", "round": 8, "draftSlot": 1, "source": "commissioner" }
+          ]
+        },
+        {
+          "userId": "597616010341711872",
+          "teamName": "Hold on to your potatoes",
+          "username": "Neison56",
+          "keepers": [
+            { "playerId": "4881", "name": "Lamar Jackson", "position": "QB", "round": 4, "draftSlot": 4, "source": "sleeper" },
+            { "playerId": "9500", "name": "Josh Downs", "position": "WR", "round": 14, "draftSlot": 4, "source": "sleeper" }
+          ]
+        },
+        {
+          "userId": "447614127335010304",
+          "teamName": "Jjettas",
+          "username": "ZaneChurchill",
+          "keepers": [
+            { "playerId": "6794", "name": "Justin Jefferson", "position": "WR", "round": 1, "draftSlot": 8, "source": "sleeper" },
+            { "playerId": "11631", "name": "Brian Thomas", "position": "WR", "round": 8, "draftSlot": 2, "source": "commissioner" }
+          ]
+        },
+        {
+          "userId": "860966410233421824",
+          "teamName": "Need a Jahmyracle",
+          "username": "igrant91",
+          "keepers": [
+            { "playerId": "9221", "name": "Jahmyr Gibbs", "position": "RB", "round": 1, "draftSlot": 3, "source": "sleeper" },
+            { "playerId": "11566", "name": "Jayden Daniels", "position": "QB", "round": 11, "draftSlot": 3, "source": "sleeper" }
+          ]
+        },
+        {
+          "userId": "992567203935346688",
+          "teamName": "Njigba's in Paris",
+          "username": "Chyzzy",
+          "keepers": [
+            { "playerId": "4866", "name": "Saquon Barkley", "position": "RB", "round": 1, "draftSlot": 6, "source": "sleeper" },
+            { "playerId": "9488", "name": "Jaxon Smith-Njigba", "position": "WR", "round": 7, "draftSlot": 6, "source": "sleeper" }
+          ]
+        },
+        {
+          "userId": "71402374425886720",
+          "teamName": "Star Command",
+          "username": "Skyefall",
+          "keepers": [
+            { "playerId": "9509", "name": "Bijan Robinson", "position": "RB", "round": 1, "draftSlot": 7, "source": "commissioner" },
+            { "playerId": "5045", "name": "Courtland Sutton", "position": "WR", "round": 10, "draftSlot": 2, "source": "sleeper" }
+          ]
+        },
+        {
+          "userId": "446470901458792448",
+          "teamName": "The Revenge Society",
+          "username": "nboelhouwer",
+          "keepers": [
+            { "playerId": "11635", "name": "Ladd McConkey", "position": "WR", "round": 8, "draftSlot": 6, "source": "commissioner" },
+            { "playerId": "9224", "name": "Chase Brown", "position": "RB", "round": 9, "draftSlot": 9, "source": "sleeper" }
+          ]
+        },
+        {
+          "userId": "412022519151726592",
+          "teamName": "The Pinball Wizards",
+          "username": "ZWChurchill",
+          "keepers": [
+            { "playerId": "6801", "name": "Tee Higgins", "position": "WR", "round": 4, "draftSlot": 2, "source": "commissioner" },
+            { "playerId": "11584", "name": "Bucky Irving", "position": "RB", "round": 7, "draftSlot": 7, "source": "sleeper" }
+          ]
+        },
+        {
+          "userId": "440760596422455296",
+          "teamName": "“I’m in Danger”",
+          "username": "jternan",
+          "keepers": [
+            { "playerId": "11632", "name": "Malik Nabers", "position": "WR", "round": 3, "draftSlot": 10, "source": "commissioner" },
+            { "playerId": "8228", "name": "Jaylen Warren", "position": "RB", "round": 7, "draftSlot": 10, "source": "commissioner" }
+          ]
+        }
+      ]
+    }
+  ]
+}
